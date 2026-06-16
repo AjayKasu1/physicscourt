@@ -12,6 +12,7 @@ results_l4_download/
 !results/environment_report.json
 !results/phase4_edited_real_report.json
 !results/phase4_edited_real_l4_fp32_report.json
+!results/phase4_l4_fp32_*_timing.json
 !results/weights_report.json
 !results/summary_table.md
 !results/calibration_report.json

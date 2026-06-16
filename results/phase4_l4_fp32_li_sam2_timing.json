@@ -1,0 +1,41 @@
+{
+  "created_at": "2026-06-16T23:29:46.253556+00:00",
+  "stage": "li_sam2",
+  "num_requested": 4,
+  "clip_timeout_seconds": 120.0,
+  "timings": [
+    {
+      "clip_id": "edited_real_object_permanence_000_possible",
+      "seconds": 1.959770983999988,
+      "num_frames": 72,
+      "stage": "li_sam2",
+      "device": "cuda",
+      "dtype": "float32"
+    },
+    {
+      "clip_id": "edited_real_object_permanence_000_impossible",
+      "seconds": 1.3393684370000187,
+      "num_frames": 72,
+      "stage": "li_sam2",
+      "device": "cuda",
+      "dtype": "float32"
+    },
+    {
+      "clip_id": "edited_real_continuity_teleportation_000_possible",
+      "seconds": 1.363103916,
+      "num_frames": 72,
+      "stage": "li_sam2",
+      "device": "cuda",
+      "dtype": "float32"
+    },
+    {
+      "clip_id": "edited_real_continuity_teleportation_000_impossible",
+      "seconds": 1.3642411030000403,
+      "num_frames": 72,
+      "stage": "li_sam2",
+      "device": "cuda",
+      "dtype": "float32"
+    }
+  ],
+  "errors": []
+}

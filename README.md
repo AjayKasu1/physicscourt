@@ -204,3 +204,12 @@ Initial frozen-detector result:
 
 See `results/phase4_edited_real_report.json` and the overlays under
 `results/figures/phase4_edited_real/`.
+
+A CUDA fp32 rerun on a GCP L4 VM is also included:
+
+- Report: `results/phase4_edited_real_l4_fp32_report.json`
+- Overlays: `results/figures/phase4_edited_real_l4_fp32/`
+- Timings: `results/phase4_l4_fp32_*_timing.json`
+
+The L4 rerun confirms the same qualitative outcome: SSRD catches the
+object-permanence edit, while all three detectors miss the teleport edit.

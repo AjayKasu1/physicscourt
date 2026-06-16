@@ -325,10 +325,36 @@ score after the ball leaves the frame, driven by `permanence_absence_run`
 rather than a continuity rule. That means this pair should be counted as
 missed by all three detectors under strict paired accuracy.
 
+### GCP L4 fp32 Check
+
+The same two edited-real pairs were rerun on a GCP `g2-standard-8` VM with an
+NVIDIA L4 GPU using CUDA fp32 outputs. This separates the result from the
+MacBook M2 memory constraint and MPS variability.
+
+L4 pair results:
+
+| Pair | Detector | Pair result | Possible score | Impossible score | Margin |
+| --- | --- | --- | ---: | ---: | ---: |
+| Object permanence | V-JEPA 2 0.3B | wrong | -2.459 | -2.576 | -0.117 |
+| Object permanence | DINOv2-small | wrong | -0.947 | -1.001 | -0.054 |
+| Object permanence | SSRD | correct | 37.120 | 55.505 | 18.385 |
+| Continuity/teleportation | V-JEPA 2 0.3B | wrong | -1.909 | -2.876 | -0.967 |
+| Continuity/teleportation | DINOv2-small | wrong | 0.027 | -0.036 | -0.063 |
+| Continuity/teleportation | SSRD | tied | 55.505 | 55.505 | 0.000 |
+
+The L4 rerun confirms the same qualitative outcome as the Mac run. The
+object-permanence edit is caught only by SSRD. The teleport edit is missed by
+all three detectors. The L4 run also confirms the runtime benefit of CUDA:
+V-JEPA 2 scored all four processed edited-real clips in about 31 seconds,
+compared with several minutes on the Mac path.
+
 Artifacts:
 
 - `results/phase4_edited_real_report.json`
 - `results/figures/phase4_edited_real/`
+- `results/phase4_edited_real_l4_fp32_report.json`
+- `results/figures/phase4_edited_real_l4_fp32/`
+- `results/phase4_l4_fp32_*_timing.json`
 
 ## Limitations
 
