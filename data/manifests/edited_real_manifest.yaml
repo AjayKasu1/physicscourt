@@ -1,0 +1,74 @@
+version: 1
+metadata:
+  created_at: '2026-06-16T13:20:00-04:00'
+  dataset: physicscourt.edited_real
+  split_note: Initial hand-edited real-video validation pair.
+  width: 1080
+  height: 608
+  fps: 30
+  num_frames: 180
+  calibration_normals: 0
+  notes: This manifest uses the same record schema as the synthetic benchmark.
+records:
+- clip_id: edited_real_object_permanence_000_possible
+  pair_id: edited_real_object_permanence_000
+  source: edited_real
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: true
+  violation_kind: object_permanence
+  violation_frame: null
+  video_path: data/edited_real/raw/object_permanence/pair000/possible.mov
+  width: 1080
+  height: 608
+  fps: 30
+  num_frames: 180
+  prompt_box_xywh:
+  - 968
+  - 417
+  - 74
+  - 60
+  prompt_point_xy:
+  - 1002
+  - 446
+  object_color_rgb:
+  - 231
+  - 39
+  - 110
+  background_variant: real_static
+  background_source: user_provided_real_video
+  photorealism_gap_control: false
+  seed: 0
+  notes: Ball rolls behind a box and reappears on the other side.
+- clip_id: edited_real_object_permanence_000_impossible
+  pair_id: edited_real_object_permanence_000
+  source: edited_real
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: false
+  violation_kind: object_permanence
+  violation_frame: 80
+  video_path: data/edited_real/raw/object_permanence/pair000/impossible.mov
+  width: 1080
+  height: 608
+  fps: 30
+  num_frames: 180
+  prompt_box_xywh:
+  - 968
+  - 417
+  - 74
+  - 60
+  prompt_point_xy:
+  - 1002
+  - 446
+  object_color_rgb:
+  - 231
+  - 39
+  - 110
+  background_variant: real_static
+  background_source: user_provided_real_video
+  photorealism_gap_control: false
+  seed: 0
+  notes: Edited twin where the ball does not reappear after occlusion; estimated t*=80.

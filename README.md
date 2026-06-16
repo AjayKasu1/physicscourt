@@ -182,3 +182,17 @@ Phase 1 generated the synthetic controlled benchmark with OpenCV/NumPy rendering
 The generated MP4 set is about 18 MB. Each clip is 512x512, 24 fps, 72 frames. Matched possible/impossible pairs are pixel-identical before their recorded violation frame.
 
 Generation is bit-reproducible from the manifest seed policy: the dataset root seed is `1729`, category/pair seeds are deterministic offsets from that root, and calibration uses a fixed `+500000` offset. Re-running `make generate-synthetic` with the same code and OpenCV encoder rewrites the same scenarios, prompts, violation frames, and manifest records.
+
+## Phase 4 Edited-Real Starter Pair
+
+Phase 4 has started with one user-provided edited-real object-permanence pair:
+
+- Manifest: `data/manifests/edited_real_manifest.yaml`
+- Videos: `data/edited_real/raw/object_permanence/pair000/`
+- Possible clip: the ball rolls behind a box and reappears
+- Impossible clip: the edited twin where the ball never reappears
+- Estimated violation onset: frame `80`
+
+This pair is not enough to make a Phase 4 claim. It is the first validation
+example and a scaffold for adding more edited-real pairs across the six
+PhysicsCourt categories.
