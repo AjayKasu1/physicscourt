@@ -1,0 +1,75 @@
+version: 1
+metadata:
+  created_at: '2026-06-16T13:45:00-04:00'
+  dataset: physicscourt.edited_real.processed
+  split_note: Processed version of the first edited-real validation pair for model evaluation.
+  width: 512
+  height: 288
+  fps: 12
+  num_frames: 72
+  calibration_normals: 0
+  source_manifest: data/manifests/edited_real_manifest.yaml
+  processing: Raw 1080x608 30 fps clips were resized to 512x288 and sampled to 72 frames at 12 fps.
+records:
+- clip_id: edited_real_object_permanence_000_possible
+  pair_id: edited_real_object_permanence_000
+  source: edited_real_processed
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: true
+  violation_kind: object_permanence
+  violation_frame: null
+  video_path: data/edited_real/processed/object_permanence/pair000/possible.mp4
+  width: 512
+  height: 288
+  fps: 12
+  num_frames: 72
+  prompt_box_xywh:
+  - 459
+  - 198
+  - 35
+  - 28
+  prompt_point_xy:
+  - 475
+  - 211
+  object_color_rgb:
+  - 231
+  - 39
+  - 110
+  background_variant: real_static_processed
+  background_source: user_provided_real_video
+  photorealism_gap_control: false
+  seed: 0
+  notes: Processed from raw pair000 possible.mov; ball reappears after occlusion.
+- clip_id: edited_real_object_permanence_000_impossible
+  pair_id: edited_real_object_permanence_000
+  source: edited_real_processed
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: false
+  violation_kind: object_permanence
+  violation_frame: 32
+  video_path: data/edited_real/processed/object_permanence/pair000/impossible.mp4
+  width: 512
+  height: 288
+  fps: 12
+  num_frames: 72
+  prompt_box_xywh:
+  - 459
+  - 198
+  - 35
+  - 28
+  prompt_point_xy:
+  - 475
+  - 211
+  object_color_rgb:
+  - 231
+  - 39
+  - 110
+  background_variant: real_static_processed
+  background_source: user_provided_real_video
+  photorealism_gap_control: false
+  seed: 0
+  notes: Processed edited twin; ball does not reappear after occlusion; t*=32.

@@ -286,6 +286,38 @@ around `t*`, and score overlays for V-JEPA 2, DINO, and SSRD.
 - `results/figures/visual_audit/spontaneous_vanishing_contact_sheet.png`
 - `results/figures/visual_audit/spontaneous_vanishing_score_overlay.png`
 
+## Phase 4 Edited-Real Starter Pair
+
+Phase 4 has one edited-real object-permanence starter pair so far. This is not
+enough to claim edited-real generalization, but it is a useful first check
+outside the synthetic generator.
+
+The raw clips are 1080x608, 30 fps, 180 frames. For model scoring, the same
+pair is processed to 512x288, 12 fps, 72 frames, matching the practical runtime
+regime used elsewhere in the benchmark. The raw violation onset is frame `80`;
+the processed violation onset is frame `32`.
+
+Pair result with frozen synthetic calibration and no edited-real refit:
+
+| Detector | Pair result | Possible score | Impossible score | Margin | Argmax frame | Notes |
+| --- | --- | ---: | ---: | ---: | ---: | --- |
+| V-JEPA 2 0.3B | wrong | -2.115 | -2.497 | -0.381 | 18 | ranks the possible clip as more anomalous |
+| DINOv2-small | wrong | -1.014 | -1.016 | -0.002 | 15 | essentially tied, slight possible-higher ranking |
+| SSRD | correct | 37.151 | 55.505 | 18.354 | 59 | top rule is `permanence_absence_run` |
+
+SSRD separates this edited-real pair, while V-JEPA 2 and DINOv2 do not. The
+SSRD peak is late (`argmax=59` vs. `t*=32`), which matches the sustained
+absence behavior seen in the synthetic object-permanence clips: the detector
+notices the missing object, but the peak score lands near the end of the
+absence rather than at the onset.
+
+Artifacts:
+
+- `results/phase4_edited_real_report.json`
+- `results/figures/phase4_edited_real/vjepa2_edited_real_object_permanence_000_score_overlay.png`
+- `results/figures/phase4_edited_real/dino_latent_edited_real_object_permanence_000_score_overlay.png`
+- `results/figures/phase4_edited_real/li_state_rules_edited_real_object_permanence_000_score_overlay.png`
+
 ## Limitations
 
 The largest limitation is that the benchmark is still synthetic-only. The

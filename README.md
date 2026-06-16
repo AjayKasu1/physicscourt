@@ -187,12 +187,24 @@ Generation is bit-reproducible from the manifest seed policy: the dataset root s
 
 Phase 4 has started with one user-provided edited-real object-permanence pair:
 
-- Manifest: `data/manifests/edited_real_manifest.yaml`
-- Videos: `data/edited_real/raw/object_permanence/pair000/`
+- Raw manifest: `data/manifests/edited_real_manifest.yaml`
+- Scoring manifest: `data/manifests/edited_real_processed_manifest.yaml`
+- Raw videos: `data/edited_real/raw/object_permanence/pair000/`
+- Processed videos: `data/edited_real/processed/object_permanence/pair000/`
 - Possible clip: the ball rolls behind a box and reappears
 - Impossible clip: the edited twin where the ball never reappears
-- Estimated violation onset: frame `80`
+- Estimated raw violation onset: frame `80`
+- Processed violation onset used for scoring: frame `32`
 
 This pair is not enough to make a Phase 4 claim. It is the first validation
 example and a scaffold for adding more edited-real pairs across the six
 PhysicsCourt categories.
+
+Initial frozen-detector result on this pair:
+
+- V-JEPA 2 0.3B: wrong, it ranks the possible clip as more anomalous.
+- DINOv2-small: wrong, nearly tied but still ranks the possible clip higher.
+- SSRD: correct, driven by the `permanence_absence_run` rule.
+
+See `results/phase4_edited_real_report.json` and the overlays under
+`results/figures/phase4_edited_real/`.
