@@ -11,6 +11,7 @@ results_l4_download/
 !results/l4_fp32_reports/**
 !results/environment_report.json
 !results/phase4_edited_real_report.json
+!results/phase4_edited_real_l4_fp32_report.json
 !results/weights_report.json
 !results/summary_table.md
 !results/calibration_report.json
@@ -19,6 +20,8 @@ results_l4_download/
 results/figures/*
 !results/figures/phase4_edited_real/
 !results/figures/phase4_edited_real/*.png
+!results/figures/phase4_edited_real_l4_fp32/
+!results/figures/phase4_edited_real_l4_fp32/*.png
 
 __pycache__/
 *.py[cod]

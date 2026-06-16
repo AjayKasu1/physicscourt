@@ -1,7 +1,7 @@
 PYTHON ?= /Library/Frameworks/Python.framework/Versions/3.11/bin/python3
 export PYTHONPATH := $(CURDIR)/src
 
-.PHONY: phase0 smoke smoke-vjepa-offline smoke-cotracker-offline download-weights download-cotracker phase1-smoke generate-synthetic phase2-vjepa-first5 phase2-vjepa phase2-dino phase2-cache-detector-a phase2-evaluate vjepa2-fairness vjepa2-fairness-cached vjepa2-fairness-live vjepa2-fairness-live-mps start-vjepa2-fairness-live phase3-b-first5 phase3-b-evaluate compare-detectors detector-b-ablation statistical-audit motion-correlation visual-audit phase4-a phase4-b phase4-evaluate phase4-edited-real final-results clean-cache test
+.PHONY: phase0 smoke smoke-vjepa-offline smoke-cotracker-offline download-weights download-cotracker phase1-smoke generate-synthetic phase2-vjepa-first5 phase2-vjepa phase2-dino phase2-cache-detector-a phase2-evaluate vjepa2-fairness vjepa2-fairness-cached vjepa2-fairness-live vjepa2-fairness-live-mps start-vjepa2-fairness-live phase3-b-first5 phase3-b-evaluate compare-detectors detector-b-ablation statistical-audit motion-correlation visual-audit phase4-a phase4-b phase4-evaluate phase4-edited-real phase4-a-l4-fp32 phase4-b-l4-fp32 phase4-evaluate-l4-fp32 phase4-edited-real-l4-fp32 final-results clean-cache test
 
 phase0: smoke
 
@@ -91,6 +91,21 @@ phase4-evaluate:
 	$(PYTHON) scripts/evaluate_phase4_edited_real.py
 
 phase4-edited-real: phase4-a phase4-b phase4-evaluate
+
+phase4-a-l4-fp32:
+	HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 $(PYTHON) scripts/run_detector_a.py --detector vjepa2 --manifest data/manifests/edited_real_processed_manifest.yaml --features-dir results/features_phase4_l4_fp32 --timing-report results/phase4_l4_fp32_vjepa2_timing.json --device cuda --continue-on-error
+	HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 $(PYTHON) scripts/run_detector_a.py --detector dino_latent --manifest data/manifests/edited_real_processed_manifest.yaml --features-dir results/features_phase4_l4_fp32 --timing-report results/phase4_l4_fp32_dino_timing.json --device cuda --continue-on-error
+
+phase4-b-l4-fp32:
+	HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 $(PYTHON) scripts/run_detector_b.py --stage li_cotracker --manifest data/manifests/edited_real_processed_manifest.yaml --features-dir results/features_phase4_l4_fp32 --timing-report results/phase4_l4_fp32_li_cotracker_timing.json --device cuda --continue-on-error --clip-timeout-seconds 300
+	HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 $(PYTHON) scripts/run_detector_b.py --stage li_sam2 --manifest data/manifests/edited_real_processed_manifest.yaml --features-dir results/features_phase4_l4_fp32 --timing-report results/phase4_l4_fp32_li_sam2_timing.json --device cuda --continue-on-error --clip-timeout-seconds 120
+	HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 $(PYTHON) scripts/run_detector_b.py --stage li_depth --manifest data/manifests/edited_real_processed_manifest.yaml --features-dir results/features_phase4_l4_fp32 --timing-report results/phase4_l4_fp32_li_depth_timing.json --device cuda --continue-on-error --clip-timeout-seconds 90
+	HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 $(PYTHON) scripts/run_detector_b.py --stage li_state_rules --manifest data/manifests/edited_real_processed_manifest.yaml --features-dir results/features_phase4_l4_fp32 --timing-report results/phase4_l4_fp32_li_state_rules_timing.json --device cuda --continue-on-error --clip-timeout-seconds 60
+
+phase4-evaluate-l4-fp32:
+	$(PYTHON) scripts/evaluate_phase4_edited_real.py --features-dir results/features_phase4_l4_fp32 --report results/phase4_edited_real_l4_fp32_report.json --figures-dir results/figures/phase4_edited_real_l4_fp32
+
+phase4-edited-real-l4-fp32: phase4-a-l4-fp32 phase4-b-l4-fp32 phase4-evaluate-l4-fp32
 
 final-results: phase2-evaluate phase3-b-evaluate compare-detectors detector-b-ablation statistical-audit motion-correlation visual-audit
 
