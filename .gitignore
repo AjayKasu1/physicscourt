@@ -15,6 +15,7 @@ results_l4_download/
 !results/weights_report.json
 !results/summary_table.md
 !results/calibration_report.json
+!results/detector_b_calibration_report.json
 !results/CHANGELOG.md
 !results/figures/
 results/figures/*
