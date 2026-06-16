@@ -1,0 +1,15 @@
+seed: 1729
+fps: 24
+smooth_window_frames: 5
+localization_tolerance_frames: 12
+bootstrap_resamples: 1000
+calibration:
+  split: "calibration"
+  normal_only: true
+metrics:
+  - roc_auc
+  - average_precision
+  - paired_accuracy
+  - localization_error_frames
+  - confound_false_positive_rate
+

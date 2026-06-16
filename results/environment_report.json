@@ -1,0 +1,287 @@
+{
+  "created_at": "2026-06-12T22:03:25.106756+00:00",
+  "phase": "phase0",
+  "hardware_policy": {
+    "machine": "MacBook Pro 13-inch M2 2022",
+    "unified_memory_gb": 8,
+    "max_short_side_px": 384,
+    "synthetic_frame_size_px": 512,
+    "one_model_at_a_time": true,
+    "prefer_mps": true,
+    "fp16_on_mps_when_safe": true,
+    "repo_cache_limit_gb": 25
+  },
+  "system": {
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "python": "3.11.4",
+    "processor": "arm",
+    "torch": "2.9.1",
+    "mps_built": true,
+    "mps_available": true,
+    "ram_total_gb": 8.0,
+    "ram_available_gb": 1.35
+  },
+  "models": [
+    {
+      "name": "dino_latent",
+      "status": "ok",
+      "attempts": [
+        {
+          "device": "mps",
+          "dtype": "float16",
+          "status": "ok",
+          "timing": {
+            "start": {
+              "rss_mb": 192.296875,
+              "mps_allocated_mb": 0.0,
+              "mps_driver_allocated_mb": 0.375
+            },
+            "end": {
+              "rss_mb": 372.09375,
+              "mps_allocated_mb": 0.0,
+              "mps_driver_allocated_mb": 60.65625
+            },
+            "delta": {
+              "seconds": 8.509337000003143,
+              "rss_delta_mb": 179.796875,
+              "rss_peak_estimate_mb": 372.09375,
+              "mps_allocated_delta_mb": 0.0,
+              "mps_driver_allocated_delta_mb": 60.28125
+            }
+          },
+          "output": {
+            "embedding_shape": [
+              1,
+              384
+            ],
+            "embedding_norm": 43.646995544433594
+          },
+          "model_id": "facebook/dinov2-small",
+          "cache_path": "/Users/ajaykasu/.cache/huggingface/hub/models--facebook--dinov2-small",
+          "cache_exists": true,
+          "cache_size_bytes": 176501926,
+          "cache_size": "168.33 MB"
+        }
+      ],
+      "model_id": "facebook/dinov2-small",
+      "cache_path": "/Users/ajaykasu/.cache/huggingface/hub/models--facebook--dinov2-small",
+      "cache_exists": true,
+      "cache_size_bytes": 176501926,
+      "cache_size": "168.33 MB"
+    },
+    {
+      "name": "depth_anything_v2",
+      "status": "ok",
+      "attempts": [
+        {
+          "device": "mps",
+          "dtype": "float16",
+          "status": "ok",
+          "timing": {
+            "start": {
+              "rss_mb": 197.53125,
+              "mps_allocated_mb": 0.0,
+              "mps_driver_allocated_mb": 0.375
+            },
+            "end": {
+              "rss_mb": 180.53125,
+              "mps_allocated_mb": 0.0,
+              "mps_driver_allocated_mb": 1242.6875
+            },
+            "delta": {
+              "seconds": 4.085556874997565,
+              "rss_delta_mb": -17.0,
+              "rss_peak_estimate_mb": 197.53125,
+              "mps_allocated_delta_mb": 0.0,
+              "mps_driver_allocated_delta_mb": 1242.3125
+            }
+          },
+          "output": {
+            "depth_shape": [
+              1,
+              518,
+              518
+            ],
+            "depth_min": 1.494140625,
+            "depth_max": 3.3984375
+          },
+          "model_id": "depth-anything/Depth-Anything-V2-Small-hf",
+          "cache_path": "/Users/ajaykasu/.cache/huggingface/hub/models--depth-anything--Depth-Anything-V2-Small-hf",
+          "cache_exists": true,
+          "cache_size_bytes": 198350810,
+          "cache_size": "189.16 MB"
+        }
+      ],
+      "model_id": "depth-anything/Depth-Anything-V2-Small-hf",
+      "cache_path": "/Users/ajaykasu/.cache/huggingface/hub/models--depth-anything--Depth-Anything-V2-Small-hf",
+      "cache_exists": true,
+      "cache_size_bytes": 198350810,
+      "cache_size": "189.16 MB"
+    },
+    {
+      "name": "sam2",
+      "status": "ok",
+      "attempts": [
+        {
+          "device": "mps",
+          "dtype": "float16",
+          "status": "ok",
+          "timing": {
+            "start": {
+              "rss_mb": 198.4375,
+              "mps_allocated_mb": 0.0,
+              "mps_driver_allocated_mb": 0.375
+            },
+            "end": {
+              "rss_mb": 134.59375,
+              "mps_allocated_mb": 32.0,
+              "mps_driver_allocated_mb": 1683.953125
+            },
+            "delta": {
+              "seconds": 5.114208665996557,
+              "rss_delta_mb": -63.84375,
+              "rss_peak_estimate_mb": 198.4375,
+              "mps_allocated_delta_mb": 32.0,
+              "mps_driver_allocated_delta_mb": 1683.578125
+            }
+          },
+          "output": {
+            "mask_shape": [
+              1,
+              1,
+              384,
+              384
+            ],
+            "mask_mean": 0.012715657241642475
+          },
+          "model_id": "facebook/sam2.1-hiera-tiny",
+          "cache_path": "/Users/ajaykasu/.cache/huggingface/hub/models--facebook--sam2.1-hiera-tiny",
+          "cache_exists": true,
+          "cache_size_bytes": 311829114,
+          "cache_size": "297.38 MB"
+        }
+      ],
+      "model_id": "facebook/sam2.1-hiera-tiny",
+      "cache_path": "/Users/ajaykasu/.cache/huggingface/hub/models--facebook--sam2.1-hiera-tiny",
+      "cache_exists": true,
+      "cache_size_bytes": 311829114,
+      "cache_size": "297.38 MB"
+    },
+    {
+      "name": "vjepa2",
+      "status": "ok",
+      "attempts": [
+        {
+          "device": "mps",
+          "dtype": "float16",
+          "status": "ok",
+          "timing": {
+            "start": {
+              "rss_mb": 197.6875,
+              "mps_allocated_mb": 0.0,
+              "mps_driver_allocated_mb": 0.375
+            },
+            "end": {
+              "rss_mb": 72.25,
+              "mps_allocated_mb": 0.0,
+              "mps_driver_allocated_mb": 2252.734375
+            },
+            "delta": {
+              "seconds": 10.79966433300433,
+              "rss_delta_mb": -125.4375,
+              "rss_peak_estimate_mb": 197.6875,
+              "mps_allocated_delta_mb": 0.0,
+              "mps_driver_allocated_delta_mb": 2252.359375
+            }
+          },
+          "output": {
+            "vision_feature_shape": [
+              1,
+              2048,
+              1024
+            ]
+          },
+          "model_id": "facebook/vjepa2-vitl-fpc64-256",
+          "cache_path": "/Users/ajaykasu/.cache/huggingface/hub/models--facebook--vjepa2-vitl-fpc64-256",
+          "cache_exists": true,
+          "cache_size_bytes": 2609007556,
+          "cache_size": "2.43 GB"
+        }
+      ],
+      "model_id": "facebook/vjepa2-vitl-fpc64-256",
+      "cache_path": "/Users/ajaykasu/.cache/huggingface/hub/models--facebook--vjepa2-vitl-fpc64-256",
+      "cache_exists": true,
+      "cache_size_bytes": 2609007556,
+      "cache_size": "2.43 GB"
+    },
+    {
+      "name": "cotracker",
+      "status": "ok",
+      "attempts": [
+        {
+          "device": "mps",
+          "dtype": "float16",
+          "status": "failed",
+          "error_type": "RuntimeError",
+          "error": "expected input and grid to have the same type, but got Half and Float",
+          "traceback_tail": "Traceback (most recent call last):\n  File \"/Users/ajaykasu/Documents/EmbodiedAI/physicscourt/scripts/smoke_models.py\", line 94, in _attempt_worker\n    output = fn(model_id, device, dtype)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/ajaykasu/Documents/EmbodiedAI/physicscourt/scripts/smoke_models.py\", line 315, in smoke_cotracker\n    tracks, visibility = model(video, queries=queries)\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1775, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1786, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/torch/utils/_contextlib.py\", line 120, in decorate_context\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/cotracker/predictor.py\", line 58, in forward\n    tracks, visibilities = self._compute_sparse_tracks(\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/cotracker/predictor.py\", line 157, in _compute_sparse_tracks\n    tracks, visibilities, *_ = self.model.forward(\n                               ^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/cotracker/models/core/cotracker/cotracker3_offline.py\", line 120, in forward\n    track_feat, track_feat_support = self.get_track_feat(\n                                     ^^^^^^^^^^^^^^^^^^^^\nRuntimeError: expected input and grid to have the same type, but got Half and Float\n"
+        },
+        {
+          "device": "mps",
+          "dtype": "float32",
+          "status": "ok",
+          "timing": {
+            "start": {
+              "rss_mb": 197.828125,
+              "mps_allocated_mb": 0.0,
+              "mps_driver_allocated_mb": 0.375
+            },
+            "end": {
+              "rss_mb": 236.46875,
+              "mps_allocated_mb": 0.0,
+              "mps_driver_allocated_mb": 1186.8125
+            },
+            "delta": {
+              "seconds": 1.3268615839988342,
+              "rss_delta_mb": 38.640625,
+              "rss_peak_estimate_mb": 236.46875,
+              "mps_allocated_delta_mb": 0.0,
+              "mps_driver_allocated_delta_mb": 1186.4375
+            }
+          },
+          "output": {
+            "checkpoint": "/Users/ajaykasu/.cache/huggingface/hub/models--facebook--cotracker3/snapshots/bf55ea50d4390e1820a267f131cd6587240fb2c5/scaled_offline.pth",
+            "tracks_shape": [
+              1,
+              8,
+              3,
+              2
+            ],
+            "visibility_shape": [
+              1,
+              8,
+              3
+            ],
+            "first_track_xy": [
+              28.0,
+              52.0
+            ]
+          },
+          "model_id": "facebook/cotracker3",
+          "cache_path": "/Users/ajaykasu/.cache/huggingface/hub/models--facebook--cotracker3",
+          "cache_exists": true,
+          "cache_size_bytes": 203781916,
+          "cache_size": "194.34 MB"
+        }
+      ],
+      "model_id": "facebook/cotracker3",
+      "cache_path": "/Users/ajaykasu/.cache/huggingface/hub/models--facebook--cotracker3",
+      "cache_exists": true,
+      "cache_size_bytes": 203781916,
+      "cache_size": "194.34 MB"
+    }
+  ],
+  "fallbacks": [],
+  "blocking": [],
+  "completed": true
+}

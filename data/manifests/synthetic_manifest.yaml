@@ -1,0 +1,7827 @@
+version: 1
+metadata:
+  created_at: '2026-06-12T21:55:48.737776+00:00'
+  generator: physicscourt.synthetic.generator
+  seed: 1729
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  pairs_per_category: 10
+  calibration_normals_per_category: 2
+  photo_controls: true
+  photo_control_note: Procedural photo-like backgrounds are used for license-clean
+    automation.
+records:
+- clip_id: test_object_permanence_000_possible
+  pair_id: test_object_permanence_000
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: true
+  violation_kind: object_permanence
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_000_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 254
+  - 54
+  - 54
+  prompt_point_xy:
+  - 97
+  - 281
+  object_color_rgb:
+  - 75
+  - 132
+  - 99
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 1729
+  notes: ''
+- clip_id: test_object_permanence_000_impossible
+  pair_id: test_object_permanence_000
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: false
+  violation_kind: object_permanence
+  violation_frame: 42
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_000_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 254
+  - 54
+  - 54
+  prompt_point_xy:
+  - 97
+  - 281
+  object_color_rgb:
+  - 75
+  - 132
+  - 99
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 1729
+  notes: ''
+- clip_id: test_object_permanence_000_photo_possible
+  pair_id: test_object_permanence_000_photo
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: true
+  violation_kind: object_permanence
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_000_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 254
+  - 54
+  - 54
+  prompt_point_xy:
+  - 97
+  - 281
+  object_color_rgb:
+  - 75
+  - 132
+  - 99
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 1729
+  notes: ''
+- clip_id: test_object_permanence_000_photo_impossible
+  pair_id: test_object_permanence_000_photo
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: false
+  violation_kind: object_permanence
+  violation_frame: 42
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_000_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 254
+  - 54
+  - 54
+  prompt_point_xy:
+  - 97
+  - 281
+  object_color_rgb:
+  - 75
+  - 132
+  - 99
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 1729
+  notes: ''
+- clip_id: test_object_permanence_001_possible
+  pair_id: test_object_permanence_001
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: true
+  violation_kind: object_permanence
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_001_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 263
+  - 36
+  - 36
+  prompt_point_xy:
+  - 88
+  - 281
+  object_color_rgb:
+  - 196
+  - 221
+  - 105
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 1830
+  notes: ''
+- clip_id: test_object_permanence_001_impossible
+  pair_id: test_object_permanence_001
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: false
+  violation_kind: object_permanence
+  violation_frame: 42
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_001_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 263
+  - 36
+  - 36
+  prompt_point_xy:
+  - 88
+  - 281
+  object_color_rgb:
+  - 196
+  - 221
+  - 105
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 1830
+  notes: ''
+- clip_id: test_object_permanence_001_photo_possible
+  pair_id: test_object_permanence_001_photo
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: true
+  violation_kind: object_permanence
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_001_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 263
+  - 36
+  - 36
+  prompt_point_xy:
+  - 88
+  - 281
+  object_color_rgb:
+  - 196
+  - 221
+  - 105
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 1830
+  notes: ''
+- clip_id: test_object_permanence_001_photo_impossible
+  pair_id: test_object_permanence_001_photo
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: false
+  violation_kind: object_permanence
+  violation_frame: 42
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_001_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 263
+  - 36
+  - 36
+  prompt_point_xy:
+  - 88
+  - 281
+  object_color_rgb:
+  - 196
+  - 221
+  - 105
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 1830
+  notes: ''
+- clip_id: test_object_permanence_002_possible
+  pair_id: test_object_permanence_002
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: true
+  violation_kind: object_permanence
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_002_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 251
+  - 60
+  - 60
+  prompt_point_xy:
+  - 100
+  - 281
+  object_color_rgb:
+  - 196
+  - 230
+  - 136
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 1931
+  notes: ''
+- clip_id: test_object_permanence_002_impossible
+  pair_id: test_object_permanence_002
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: false
+  violation_kind: object_permanence
+  violation_frame: 42
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_002_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 251
+  - 60
+  - 60
+  prompt_point_xy:
+  - 100
+  - 281
+  object_color_rgb:
+  - 196
+  - 230
+  - 136
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 1931
+  notes: ''
+- clip_id: test_object_permanence_002_photo_possible
+  pair_id: test_object_permanence_002_photo
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: true
+  violation_kind: object_permanence
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_002_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 251
+  - 60
+  - 60
+  prompt_point_xy:
+  - 100
+  - 281
+  object_color_rgb:
+  - 196
+  - 230
+  - 136
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 1931
+  notes: ''
+- clip_id: test_object_permanence_002_photo_impossible
+  pair_id: test_object_permanence_002_photo
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: false
+  violation_kind: object_permanence
+  violation_frame: 42
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_002_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 251
+  - 60
+  - 60
+  prompt_point_xy:
+  - 100
+  - 281
+  object_color_rgb:
+  - 196
+  - 230
+  - 136
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 1931
+  notes: ''
+- clip_id: test_object_permanence_003_possible
+  pair_id: test_object_permanence_003
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: true
+  violation_kind: object_permanence
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_003_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 259
+  - 44
+  - 44
+  prompt_point_xy:
+  - 92
+  - 281
+  object_color_rgb:
+  - 160
+  - 240
+  - 177
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 2032
+  notes: ''
+- clip_id: test_object_permanence_003_impossible
+  pair_id: test_object_permanence_003
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: false
+  violation_kind: object_permanence
+  violation_frame: 42
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_003_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 259
+  - 44
+  - 44
+  prompt_point_xy:
+  - 92
+  - 281
+  object_color_rgb:
+  - 160
+  - 240
+  - 177
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 2032
+  notes: ''
+- clip_id: test_object_permanence_003_photo_possible
+  pair_id: test_object_permanence_003_photo
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: true
+  violation_kind: object_permanence
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_003_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 259
+  - 44
+  - 44
+  prompt_point_xy:
+  - 92
+  - 281
+  object_color_rgb:
+  - 160
+  - 240
+  - 177
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 2032
+  notes: ''
+- clip_id: test_object_permanence_003_photo_impossible
+  pair_id: test_object_permanence_003_photo
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: false
+  violation_kind: object_permanence
+  violation_frame: 42
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_003_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 259
+  - 44
+  - 44
+  prompt_point_xy:
+  - 92
+  - 281
+  object_color_rgb:
+  - 160
+  - 240
+  - 177
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 2032
+  notes: ''
+- clip_id: test_object_permanence_004_possible
+  pair_id: test_object_permanence_004
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: true
+  violation_kind: object_permanence
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_004_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 253
+  - 56
+  - 56
+  prompt_point_xy:
+  - 98
+  - 281
+  object_color_rgb:
+  - 113
+  - 191
+  - 111
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 2133
+  notes: ''
+- clip_id: test_object_permanence_004_impossible
+  pair_id: test_object_permanence_004
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: false
+  violation_kind: object_permanence
+  violation_frame: 42
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_004_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 253
+  - 56
+  - 56
+  prompt_point_xy:
+  - 98
+  - 281
+  object_color_rgb:
+  - 113
+  - 191
+  - 111
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 2133
+  notes: ''
+- clip_id: test_object_permanence_004_photo_possible
+  pair_id: test_object_permanence_004_photo
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: true
+  violation_kind: object_permanence
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_004_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 253
+  - 56
+  - 56
+  prompt_point_xy:
+  - 98
+  - 281
+  object_color_rgb:
+  - 113
+  - 191
+  - 111
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 2133
+  notes: ''
+- clip_id: test_object_permanence_004_photo_impossible
+  pair_id: test_object_permanence_004_photo
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: false
+  violation_kind: object_permanence
+  violation_frame: 42
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_004_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 253
+  - 56
+  - 56
+  prompt_point_xy:
+  - 98
+  - 281
+  object_color_rgb:
+  - 113
+  - 191
+  - 111
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 2133
+  notes: ''
+- clip_id: test_object_permanence_005_possible
+  pair_id: test_object_permanence_005
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: true
+  violation_kind: object_permanence
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_005_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 260
+  - 42
+  - 42
+  prompt_point_xy:
+  - 91
+  - 281
+  object_color_rgb:
+  - 133
+  - 133
+  - 184
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 2234
+  notes: ''
+- clip_id: test_object_permanence_005_impossible
+  pair_id: test_object_permanence_005
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: false
+  violation_kind: object_permanence
+  violation_frame: 42
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_005_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 260
+  - 42
+  - 42
+  prompt_point_xy:
+  - 91
+  - 281
+  object_color_rgb:
+  - 133
+  - 133
+  - 184
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 2234
+  notes: ''
+- clip_id: test_object_permanence_005_photo_possible
+  pair_id: test_object_permanence_005_photo
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: true
+  violation_kind: object_permanence
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_005_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 260
+  - 42
+  - 42
+  prompt_point_xy:
+  - 91
+  - 281
+  object_color_rgb:
+  - 133
+  - 133
+  - 184
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 2234
+  notes: ''
+- clip_id: test_object_permanence_005_photo_impossible
+  pair_id: test_object_permanence_005_photo
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: false
+  violation_kind: object_permanence
+  violation_frame: 42
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_005_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 260
+  - 42
+  - 42
+  prompt_point_xy:
+  - 91
+  - 281
+  object_color_rgb:
+  - 133
+  - 133
+  - 184
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 2234
+  notes: ''
+- clip_id: test_object_permanence_006_possible
+  pair_id: test_object_permanence_006
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: true
+  violation_kind: object_permanence
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_006_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 263
+  - 36
+  - 36
+  prompt_point_xy:
+  - 88
+  - 281
+  object_color_rgb:
+  - 204
+  - 137
+  - 81
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 2335
+  notes: ''
+- clip_id: test_object_permanence_006_impossible
+  pair_id: test_object_permanence_006
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: false
+  violation_kind: object_permanence
+  violation_frame: 42
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_006_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 263
+  - 36
+  - 36
+  prompt_point_xy:
+  - 88
+  - 281
+  object_color_rgb:
+  - 204
+  - 137
+  - 81
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 2335
+  notes: ''
+- clip_id: test_object_permanence_006_photo_possible
+  pair_id: test_object_permanence_006_photo
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: true
+  violation_kind: object_permanence
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_006_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 263
+  - 36
+  - 36
+  prompt_point_xy:
+  - 88
+  - 281
+  object_color_rgb:
+  - 204
+  - 137
+  - 81
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 2335
+  notes: ''
+- clip_id: test_object_permanence_006_photo_impossible
+  pair_id: test_object_permanence_006_photo
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: false
+  violation_kind: object_permanence
+  violation_frame: 42
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_006_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 263
+  - 36
+  - 36
+  prompt_point_xy:
+  - 88
+  - 281
+  object_color_rgb:
+  - 204
+  - 137
+  - 81
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 2335
+  notes: ''
+- clip_id: test_object_permanence_007_possible
+  pair_id: test_object_permanence_007
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: true
+  violation_kind: object_permanence
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_007_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 253
+  - 56
+  - 56
+  prompt_point_xy:
+  - 98
+  - 281
+  object_color_rgb:
+  - 140
+  - 232
+  - 182
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 2436
+  notes: ''
+- clip_id: test_object_permanence_007_impossible
+  pair_id: test_object_permanence_007
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: false
+  violation_kind: object_permanence
+  violation_frame: 42
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_007_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 253
+  - 56
+  - 56
+  prompt_point_xy:
+  - 98
+  - 281
+  object_color_rgb:
+  - 140
+  - 232
+  - 182
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 2436
+  notes: ''
+- clip_id: test_object_permanence_007_photo_possible
+  pair_id: test_object_permanence_007_photo
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: true
+  violation_kind: object_permanence
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_007_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 253
+  - 56
+  - 56
+  prompt_point_xy:
+  - 98
+  - 281
+  object_color_rgb:
+  - 140
+  - 232
+  - 182
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 2436
+  notes: ''
+- clip_id: test_object_permanence_007_photo_impossible
+  pair_id: test_object_permanence_007_photo
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: false
+  violation_kind: object_permanence
+  violation_frame: 42
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_007_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 253
+  - 56
+  - 56
+  prompt_point_xy:
+  - 98
+  - 281
+  object_color_rgb:
+  - 140
+  - 232
+  - 182
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 2436
+  notes: ''
+- clip_id: test_object_permanence_008_possible
+  pair_id: test_object_permanence_008
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: true
+  violation_kind: object_permanence
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_008_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 258
+  - 46
+  - 46
+  prompt_point_xy:
+  - 93
+  - 281
+  object_color_rgb:
+  - 104
+  - 171
+  - 70
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 2537
+  notes: ''
+- clip_id: test_object_permanence_008_impossible
+  pair_id: test_object_permanence_008
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: false
+  violation_kind: object_permanence
+  violation_frame: 42
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_008_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 258
+  - 46
+  - 46
+  prompt_point_xy:
+  - 93
+  - 281
+  object_color_rgb:
+  - 104
+  - 171
+  - 70
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 2537
+  notes: ''
+- clip_id: test_object_permanence_008_photo_possible
+  pair_id: test_object_permanence_008_photo
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: true
+  violation_kind: object_permanence
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_008_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 258
+  - 46
+  - 46
+  prompt_point_xy:
+  - 93
+  - 281
+  object_color_rgb:
+  - 104
+  - 171
+  - 70
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 2537
+  notes: ''
+- clip_id: test_object_permanence_008_photo_impossible
+  pair_id: test_object_permanence_008_photo
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: false
+  violation_kind: object_permanence
+  violation_frame: 42
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_008_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 258
+  - 46
+  - 46
+  prompt_point_xy:
+  - 93
+  - 281
+  object_color_rgb:
+  - 104
+  - 171
+  - 70
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 2537
+  notes: ''
+- clip_id: test_object_permanence_009_possible
+  pair_id: test_object_permanence_009
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: true
+  violation_kind: object_permanence
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_009_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 257
+  - 48
+  - 48
+  prompt_point_xy:
+  - 94
+  - 281
+  object_color_rgb:
+  - 140
+  - 153
+  - 208
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 2638
+  notes: ''
+- clip_id: test_object_permanence_009_impossible
+  pair_id: test_object_permanence_009
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: false
+  violation_kind: object_permanence
+  violation_frame: 42
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_009_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 257
+  - 48
+  - 48
+  prompt_point_xy:
+  - 94
+  - 281
+  object_color_rgb:
+  - 140
+  - 153
+  - 208
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 2638
+  notes: ''
+- clip_id: test_object_permanence_009_photo_possible
+  pair_id: test_object_permanence_009_photo
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: true
+  violation_kind: object_permanence
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_009_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 257
+  - 48
+  - 48
+  prompt_point_xy:
+  - 94
+  - 281
+  object_color_rgb:
+  - 140
+  - 153
+  - 208
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 2638
+  notes: ''
+- clip_id: test_object_permanence_009_photo_impossible
+  pair_id: test_object_permanence_009_photo
+  source: synthetic
+  split: test
+  category: object_permanence
+  infant_construct: object permanence
+  possible: false
+  violation_kind: object_permanence
+  violation_frame: 42
+  video_path: data/synthetic_generator/generated/test/object_permanence/test_object_permanence_009_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 257
+  - 48
+  - 48
+  prompt_point_xy:
+  - 94
+  - 281
+  object_color_rgb:
+  - 140
+  - 153
+  - 208
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 2638
+  notes: ''
+- clip_id: test_solidity_000_possible
+  pair_id: test_solidity_000
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: true
+  violation_kind: solidity
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_000_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 264
+  - 44
+  - 44
+  prompt_point_xy:
+  - 92
+  - 286
+  object_color_rgb:
+  - 147
+  - 227
+  - 243
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 11729
+  notes: ''
+- clip_id: test_solidity_000_impossible
+  pair_id: test_solidity_000
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: false
+  violation_kind: solidity
+  violation_frame: 34
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_000_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 264
+  - 44
+  - 44
+  prompt_point_xy:
+  - 92
+  - 286
+  object_color_rgb:
+  - 147
+  - 227
+  - 243
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 11729
+  notes: ''
+- clip_id: test_solidity_000_photo_possible
+  pair_id: test_solidity_000_photo
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: true
+  violation_kind: solidity
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_000_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 264
+  - 44
+  - 44
+  prompt_point_xy:
+  - 92
+  - 286
+  object_color_rgb:
+  - 147
+  - 227
+  - 243
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 11729
+  notes: ''
+- clip_id: test_solidity_000_photo_impossible
+  pair_id: test_solidity_000_photo
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: false
+  violation_kind: solidity
+  violation_frame: 34
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_000_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 264
+  - 44
+  - 44
+  prompt_point_xy:
+  - 92
+  - 286
+  object_color_rgb:
+  - 147
+  - 227
+  - 243
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 11729
+  notes: ''
+- clip_id: test_solidity_001_possible
+  pair_id: test_solidity_001
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: true
+  violation_kind: solidity
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_001_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 256
+  - 60
+  - 60
+  prompt_point_xy:
+  - 100
+  - 286
+  object_color_rgb:
+  - 101
+  - 193
+  - 124
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 11830
+  notes: ''
+- clip_id: test_solidity_001_impossible
+  pair_id: test_solidity_001
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: false
+  violation_kind: solidity
+  violation_frame: 34
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_001_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 256
+  - 60
+  - 60
+  prompt_point_xy:
+  - 100
+  - 286
+  object_color_rgb:
+  - 101
+  - 193
+  - 124
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 11830
+  notes: ''
+- clip_id: test_solidity_001_photo_possible
+  pair_id: test_solidity_001_photo
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: true
+  violation_kind: solidity
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_001_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 256
+  - 60
+  - 60
+  prompt_point_xy:
+  - 100
+  - 286
+  object_color_rgb:
+  - 101
+  - 193
+  - 124
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 11830
+  notes: ''
+- clip_id: test_solidity_001_photo_impossible
+  pair_id: test_solidity_001_photo
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: false
+  violation_kind: solidity
+  violation_frame: 34
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_001_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 256
+  - 60
+  - 60
+  prompt_point_xy:
+  - 100
+  - 286
+  object_color_rgb:
+  - 101
+  - 193
+  - 124
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 11830
+  notes: ''
+- clip_id: test_solidity_002_possible
+  pair_id: test_solidity_002
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: true
+  violation_kind: solidity
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_002_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 264
+  - 44
+  - 44
+  prompt_point_xy:
+  - 92
+  - 286
+  object_color_rgb:
+  - 103
+  - 221
+  - 75
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 11931
+  notes: ''
+- clip_id: test_solidity_002_impossible
+  pair_id: test_solidity_002
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: false
+  violation_kind: solidity
+  violation_frame: 34
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_002_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 264
+  - 44
+  - 44
+  prompt_point_xy:
+  - 92
+  - 286
+  object_color_rgb:
+  - 103
+  - 221
+  - 75
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 11931
+  notes: ''
+- clip_id: test_solidity_002_photo_possible
+  pair_id: test_solidity_002_photo
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: true
+  violation_kind: solidity
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_002_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 264
+  - 44
+  - 44
+  prompt_point_xy:
+  - 92
+  - 286
+  object_color_rgb:
+  - 103
+  - 221
+  - 75
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 11931
+  notes: ''
+- clip_id: test_solidity_002_photo_impossible
+  pair_id: test_solidity_002_photo
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: false
+  violation_kind: solidity
+  violation_frame: 34
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_002_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 264
+  - 44
+  - 44
+  prompt_point_xy:
+  - 92
+  - 286
+  object_color_rgb:
+  - 103
+  - 221
+  - 75
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 11931
+  notes: ''
+- clip_id: test_solidity_003_possible
+  pair_id: test_solidity_003
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: true
+  violation_kind: solidity
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_003_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 263
+  - 46
+  - 46
+  prompt_point_xy:
+  - 93
+  - 286
+  object_color_rgb:
+  - 207
+  - 234
+  - 117
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 12032
+  notes: ''
+- clip_id: test_solidity_003_impossible
+  pair_id: test_solidity_003
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: false
+  violation_kind: solidity
+  violation_frame: 34
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_003_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 263
+  - 46
+  - 46
+  prompt_point_xy:
+  - 93
+  - 286
+  object_color_rgb:
+  - 207
+  - 234
+  - 117
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 12032
+  notes: ''
+- clip_id: test_solidity_003_photo_possible
+  pair_id: test_solidity_003_photo
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: true
+  violation_kind: solidity
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_003_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 263
+  - 46
+  - 46
+  prompt_point_xy:
+  - 93
+  - 286
+  object_color_rgb:
+  - 207
+  - 234
+  - 117
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 12032
+  notes: ''
+- clip_id: test_solidity_003_photo_impossible
+  pair_id: test_solidity_003_photo
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: false
+  violation_kind: solidity
+  violation_frame: 34
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_003_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 263
+  - 46
+  - 46
+  prompt_point_xy:
+  - 93
+  - 286
+  object_color_rgb:
+  - 207
+  - 234
+  - 117
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 12032
+  notes: ''
+- clip_id: test_solidity_004_possible
+  pair_id: test_solidity_004
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: true
+  violation_kind: solidity
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_004_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 260
+  - 52
+  - 52
+  prompt_point_xy:
+  - 96
+  - 286
+  object_color_rgb:
+  - 172
+  - 146
+  - 136
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 12133
+  notes: ''
+- clip_id: test_solidity_004_impossible
+  pair_id: test_solidity_004
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: false
+  violation_kind: solidity
+  violation_frame: 34
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_004_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 260
+  - 52
+  - 52
+  prompt_point_xy:
+  - 96
+  - 286
+  object_color_rgb:
+  - 172
+  - 146
+  - 136
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 12133
+  notes: ''
+- clip_id: test_solidity_004_photo_possible
+  pair_id: test_solidity_004_photo
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: true
+  violation_kind: solidity
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_004_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 260
+  - 52
+  - 52
+  prompt_point_xy:
+  - 96
+  - 286
+  object_color_rgb:
+  - 172
+  - 146
+  - 136
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 12133
+  notes: ''
+- clip_id: test_solidity_004_photo_impossible
+  pair_id: test_solidity_004_photo
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: false
+  violation_kind: solidity
+  violation_frame: 34
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_004_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 260
+  - 52
+  - 52
+  prompt_point_xy:
+  - 96
+  - 286
+  object_color_rgb:
+  - 172
+  - 146
+  - 136
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 12133
+  notes: ''
+- clip_id: test_solidity_005_possible
+  pair_id: test_solidity_005
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: true
+  violation_kind: solidity
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_005_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 268
+  - 36
+  - 36
+  prompt_point_xy:
+  - 88
+  - 286
+  object_color_rgb:
+  - 74
+  - 138
+  - 78
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 12234
+  notes: ''
+- clip_id: test_solidity_005_impossible
+  pair_id: test_solidity_005
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: false
+  violation_kind: solidity
+  violation_frame: 34
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_005_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 268
+  - 36
+  - 36
+  prompt_point_xy:
+  - 88
+  - 286
+  object_color_rgb:
+  - 74
+  - 138
+  - 78
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 12234
+  notes: ''
+- clip_id: test_solidity_005_photo_possible
+  pair_id: test_solidity_005_photo
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: true
+  violation_kind: solidity
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_005_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 268
+  - 36
+  - 36
+  prompt_point_xy:
+  - 88
+  - 286
+  object_color_rgb:
+  - 74
+  - 138
+  - 78
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 12234
+  notes: ''
+- clip_id: test_solidity_005_photo_impossible
+  pair_id: test_solidity_005_photo
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: false
+  violation_kind: solidity
+  violation_frame: 34
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_005_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 268
+  - 36
+  - 36
+  prompt_point_xy:
+  - 88
+  - 286
+  object_color_rgb:
+  - 74
+  - 138
+  - 78
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 12234
+  notes: ''
+- clip_id: test_solidity_006_possible
+  pair_id: test_solidity_006
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: true
+  violation_kind: solidity
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_006_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 268
+  - 36
+  - 36
+  prompt_point_xy:
+  - 88
+  - 286
+  object_color_rgb:
+  - 165
+  - 240
+  - 123
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 12335
+  notes: ''
+- clip_id: test_solidity_006_impossible
+  pair_id: test_solidity_006
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: false
+  violation_kind: solidity
+  violation_frame: 34
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_006_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 268
+  - 36
+  - 36
+  prompt_point_xy:
+  - 88
+  - 286
+  object_color_rgb:
+  - 165
+  - 240
+  - 123
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 12335
+  notes: ''
+- clip_id: test_solidity_006_photo_possible
+  pair_id: test_solidity_006_photo
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: true
+  violation_kind: solidity
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_006_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 268
+  - 36
+  - 36
+  prompt_point_xy:
+  - 88
+  - 286
+  object_color_rgb:
+  - 165
+  - 240
+  - 123
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 12335
+  notes: ''
+- clip_id: test_solidity_006_photo_impossible
+  pair_id: test_solidity_006_photo
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: false
+  violation_kind: solidity
+  violation_frame: 34
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_006_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 268
+  - 36
+  - 36
+  prompt_point_xy:
+  - 88
+  - 286
+  object_color_rgb:
+  - 165
+  - 240
+  - 123
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 12335
+  notes: ''
+- clip_id: test_solidity_007_possible
+  pair_id: test_solidity_007
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: true
+  violation_kind: solidity
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_007_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 258
+  - 56
+  - 56
+  prompt_point_xy:
+  - 98
+  - 286
+  object_color_rgb:
+  - 183
+  - 71
+  - 202
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 12436
+  notes: ''
+- clip_id: test_solidity_007_impossible
+  pair_id: test_solidity_007
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: false
+  violation_kind: solidity
+  violation_frame: 34
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_007_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 258
+  - 56
+  - 56
+  prompt_point_xy:
+  - 98
+  - 286
+  object_color_rgb:
+  - 183
+  - 71
+  - 202
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 12436
+  notes: ''
+- clip_id: test_solidity_007_photo_possible
+  pair_id: test_solidity_007_photo
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: true
+  violation_kind: solidity
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_007_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 258
+  - 56
+  - 56
+  prompt_point_xy:
+  - 98
+  - 286
+  object_color_rgb:
+  - 183
+  - 71
+  - 202
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 12436
+  notes: ''
+- clip_id: test_solidity_007_photo_impossible
+  pair_id: test_solidity_007_photo
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: false
+  violation_kind: solidity
+  violation_frame: 34
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_007_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 258
+  - 56
+  - 56
+  prompt_point_xy:
+  - 98
+  - 286
+  object_color_rgb:
+  - 183
+  - 71
+  - 202
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 12436
+  notes: ''
+- clip_id: test_solidity_008_possible
+  pair_id: test_solidity_008
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: true
+  violation_kind: solidity
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_008_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 259
+  - 54
+  - 54
+  prompt_point_xy:
+  - 97
+  - 286
+  object_color_rgb:
+  - 166
+  - 111
+  - 204
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 12537
+  notes: ''
+- clip_id: test_solidity_008_impossible
+  pair_id: test_solidity_008
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: false
+  violation_kind: solidity
+  violation_frame: 34
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_008_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 259
+  - 54
+  - 54
+  prompt_point_xy:
+  - 97
+  - 286
+  object_color_rgb:
+  - 166
+  - 111
+  - 204
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 12537
+  notes: ''
+- clip_id: test_solidity_008_photo_possible
+  pair_id: test_solidity_008_photo
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: true
+  violation_kind: solidity
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_008_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 259
+  - 54
+  - 54
+  prompt_point_xy:
+  - 97
+  - 286
+  object_color_rgb:
+  - 166
+  - 111
+  - 204
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 12537
+  notes: ''
+- clip_id: test_solidity_008_photo_impossible
+  pair_id: test_solidity_008_photo
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: false
+  violation_kind: solidity
+  violation_frame: 34
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_008_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 259
+  - 54
+  - 54
+  prompt_point_xy:
+  - 97
+  - 286
+  object_color_rgb:
+  - 166
+  - 111
+  - 204
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 12537
+  notes: ''
+- clip_id: test_solidity_009_possible
+  pair_id: test_solidity_009
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: true
+  violation_kind: solidity
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_009_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 261
+  - 50
+  - 50
+  prompt_point_xy:
+  - 95
+  - 286
+  object_color_rgb:
+  - 83
+  - 171
+  - 190
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 12638
+  notes: ''
+- clip_id: test_solidity_009_impossible
+  pair_id: test_solidity_009
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: false
+  violation_kind: solidity
+  violation_frame: 34
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_009_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 261
+  - 50
+  - 50
+  prompt_point_xy:
+  - 95
+  - 286
+  object_color_rgb:
+  - 83
+  - 171
+  - 190
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 12638
+  notes: ''
+- clip_id: test_solidity_009_photo_possible
+  pair_id: test_solidity_009_photo
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: true
+  violation_kind: solidity
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_009_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 261
+  - 50
+  - 50
+  prompt_point_xy:
+  - 95
+  - 286
+  object_color_rgb:
+  - 83
+  - 171
+  - 190
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 12638
+  notes: ''
+- clip_id: test_solidity_009_photo_impossible
+  pair_id: test_solidity_009_photo
+  source: synthetic
+  split: test
+  category: solidity
+  infant_construct: solidity
+  possible: false
+  violation_kind: solidity
+  violation_frame: 34
+  video_path: data/synthetic_generator/generated/test/solidity/test_solidity_009_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 261
+  - 50
+  - 50
+  prompt_point_xy:
+  - 95
+  - 286
+  object_color_rgb:
+  - 83
+  - 171
+  - 190
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 12638
+  notes: ''
+- clip_id: test_continuity_teleportation_000_possible
+  pair_id: test_continuity_teleportation_000
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: true
+  violation_kind: continuity_teleportation
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_000_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 236
+  - 40
+  - 40
+  prompt_point_xy:
+  - 90
+  - 256
+  object_color_rgb:
+  - 125
+  - 75
+  - 218
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 21729
+  notes: ''
+- clip_id: test_continuity_teleportation_000_impossible
+  pair_id: test_continuity_teleportation_000
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: false
+  violation_kind: continuity_teleportation
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_000_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 236
+  - 40
+  - 40
+  prompt_point_xy:
+  - 90
+  - 256
+  object_color_rgb:
+  - 125
+  - 75
+  - 218
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 21729
+  notes: ''
+- clip_id: test_continuity_teleportation_000_photo_possible
+  pair_id: test_continuity_teleportation_000_photo
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: true
+  violation_kind: continuity_teleportation
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_000_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 236
+  - 40
+  - 40
+  prompt_point_xy:
+  - 90
+  - 256
+  object_color_rgb:
+  - 125
+  - 75
+  - 218
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 21729
+  notes: ''
+- clip_id: test_continuity_teleportation_000_photo_impossible
+  pair_id: test_continuity_teleportation_000_photo
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: false
+  violation_kind: continuity_teleportation
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_000_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 236
+  - 40
+  - 40
+  prompt_point_xy:
+  - 90
+  - 256
+  object_color_rgb:
+  - 125
+  - 75
+  - 218
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 21729
+  notes: ''
+- clip_id: test_continuity_teleportation_001_possible
+  pair_id: test_continuity_teleportation_001
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: true
+  violation_kind: continuity_teleportation
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_001_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 228
+  - 56
+  - 56
+  prompt_point_xy:
+  - 98
+  - 256
+  object_color_rgb:
+  - 187
+  - 171
+  - 132
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 21830
+  notes: ''
+- clip_id: test_continuity_teleportation_001_impossible
+  pair_id: test_continuity_teleportation_001
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: false
+  violation_kind: continuity_teleportation
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_001_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 228
+  - 56
+  - 56
+  prompt_point_xy:
+  - 98
+  - 256
+  object_color_rgb:
+  - 187
+  - 171
+  - 132
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 21830
+  notes: ''
+- clip_id: test_continuity_teleportation_001_photo_possible
+  pair_id: test_continuity_teleportation_001_photo
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: true
+  violation_kind: continuity_teleportation
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_001_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 228
+  - 56
+  - 56
+  prompt_point_xy:
+  - 98
+  - 256
+  object_color_rgb:
+  - 187
+  - 171
+  - 132
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 21830
+  notes: ''
+- clip_id: test_continuity_teleportation_001_photo_impossible
+  pair_id: test_continuity_teleportation_001_photo
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: false
+  violation_kind: continuity_teleportation
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_001_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 228
+  - 56
+  - 56
+  prompt_point_xy:
+  - 98
+  - 256
+  object_color_rgb:
+  - 187
+  - 171
+  - 132
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 21830
+  notes: ''
+- clip_id: test_continuity_teleportation_002_possible
+  pair_id: test_continuity_teleportation_002
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: true
+  violation_kind: continuity_teleportation
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_002_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 227
+  - 58
+  - 58
+  prompt_point_xy:
+  - 99
+  - 256
+  object_color_rgb:
+  - 103
+  - 220
+  - 85
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 21931
+  notes: ''
+- clip_id: test_continuity_teleportation_002_impossible
+  pair_id: test_continuity_teleportation_002
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: false
+  violation_kind: continuity_teleportation
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_002_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 227
+  - 58
+  - 58
+  prompt_point_xy:
+  - 99
+  - 256
+  object_color_rgb:
+  - 103
+  - 220
+  - 85
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 21931
+  notes: ''
+- clip_id: test_continuity_teleportation_002_photo_possible
+  pair_id: test_continuity_teleportation_002_photo
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: true
+  violation_kind: continuity_teleportation
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_002_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 227
+  - 58
+  - 58
+  prompt_point_xy:
+  - 99
+  - 256
+  object_color_rgb:
+  - 103
+  - 220
+  - 85
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 21931
+  notes: ''
+- clip_id: test_continuity_teleportation_002_photo_impossible
+  pair_id: test_continuity_teleportation_002_photo
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: false
+  violation_kind: continuity_teleportation
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_002_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 227
+  - 58
+  - 58
+  prompt_point_xy:
+  - 99
+  - 256
+  object_color_rgb:
+  - 103
+  - 220
+  - 85
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 21931
+  notes: ''
+- clip_id: test_continuity_teleportation_003_possible
+  pair_id: test_continuity_teleportation_003
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: true
+  violation_kind: continuity_teleportation
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_003_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 235
+  - 42
+  - 42
+  prompt_point_xy:
+  - 91
+  - 256
+  object_color_rgb:
+  - 142
+  - 206
+  - 117
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 22032
+  notes: ''
+- clip_id: test_continuity_teleportation_003_impossible
+  pair_id: test_continuity_teleportation_003
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: false
+  violation_kind: continuity_teleportation
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_003_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 235
+  - 42
+  - 42
+  prompt_point_xy:
+  - 91
+  - 256
+  object_color_rgb:
+  - 142
+  - 206
+  - 117
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 22032
+  notes: ''
+- clip_id: test_continuity_teleportation_003_photo_possible
+  pair_id: test_continuity_teleportation_003_photo
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: true
+  violation_kind: continuity_teleportation
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_003_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 235
+  - 42
+  - 42
+  prompt_point_xy:
+  - 91
+  - 256
+  object_color_rgb:
+  - 142
+  - 206
+  - 117
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 22032
+  notes: ''
+- clip_id: test_continuity_teleportation_003_photo_impossible
+  pair_id: test_continuity_teleportation_003_photo
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: false
+  violation_kind: continuity_teleportation
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_003_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 235
+  - 42
+  - 42
+  prompt_point_xy:
+  - 91
+  - 256
+  object_color_rgb:
+  - 142
+  - 206
+  - 117
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 22032
+  notes: ''
+- clip_id: test_continuity_teleportation_004_possible
+  pair_id: test_continuity_teleportation_004
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: true
+  violation_kind: continuity_teleportation
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_004_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 234
+  - 44
+  - 44
+  prompt_point_xy:
+  - 92
+  - 256
+  object_color_rgb:
+  - 151
+  - 99
+  - 185
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 22133
+  notes: ''
+- clip_id: test_continuity_teleportation_004_impossible
+  pair_id: test_continuity_teleportation_004
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: false
+  violation_kind: continuity_teleportation
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_004_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 234
+  - 44
+  - 44
+  prompt_point_xy:
+  - 92
+  - 256
+  object_color_rgb:
+  - 151
+  - 99
+  - 185
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 22133
+  notes: ''
+- clip_id: test_continuity_teleportation_004_photo_possible
+  pair_id: test_continuity_teleportation_004_photo
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: true
+  violation_kind: continuity_teleportation
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_004_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 234
+  - 44
+  - 44
+  prompt_point_xy:
+  - 92
+  - 256
+  object_color_rgb:
+  - 151
+  - 99
+  - 185
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 22133
+  notes: ''
+- clip_id: test_continuity_teleportation_004_photo_impossible
+  pair_id: test_continuity_teleportation_004_photo
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: false
+  violation_kind: continuity_teleportation
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_004_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 234
+  - 44
+  - 44
+  prompt_point_xy:
+  - 92
+  - 256
+  object_color_rgb:
+  - 151
+  - 99
+  - 185
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 22133
+  notes: ''
+- clip_id: test_continuity_teleportation_005_possible
+  pair_id: test_continuity_teleportation_005
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: true
+  violation_kind: continuity_teleportation
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_005_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 227
+  - 58
+  - 58
+  prompt_point_xy:
+  - 99
+  - 256
+  object_color_rgb:
+  - 213
+  - 184
+  - 223
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 22234
+  notes: ''
+- clip_id: test_continuity_teleportation_005_impossible
+  pair_id: test_continuity_teleportation_005
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: false
+  violation_kind: continuity_teleportation
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_005_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 227
+  - 58
+  - 58
+  prompt_point_xy:
+  - 99
+  - 256
+  object_color_rgb:
+  - 213
+  - 184
+  - 223
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 22234
+  notes: ''
+- clip_id: test_continuity_teleportation_005_photo_possible
+  pair_id: test_continuity_teleportation_005_photo
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: true
+  violation_kind: continuity_teleportation
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_005_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 227
+  - 58
+  - 58
+  prompt_point_xy:
+  - 99
+  - 256
+  object_color_rgb:
+  - 213
+  - 184
+  - 223
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 22234
+  notes: ''
+- clip_id: test_continuity_teleportation_005_photo_impossible
+  pair_id: test_continuity_teleportation_005_photo
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: false
+  violation_kind: continuity_teleportation
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_005_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 227
+  - 58
+  - 58
+  prompt_point_xy:
+  - 99
+  - 256
+  object_color_rgb:
+  - 213
+  - 184
+  - 223
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 22234
+  notes: ''
+- clip_id: test_continuity_teleportation_006_possible
+  pair_id: test_continuity_teleportation_006
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: true
+  violation_kind: continuity_teleportation
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_006_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 233
+  - 46
+  - 46
+  prompt_point_xy:
+  - 93
+  - 256
+  object_color_rgb:
+  - 82
+  - 110
+  - 198
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 22335
+  notes: ''
+- clip_id: test_continuity_teleportation_006_impossible
+  pair_id: test_continuity_teleportation_006
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: false
+  violation_kind: continuity_teleportation
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_006_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 233
+  - 46
+  - 46
+  prompt_point_xy:
+  - 93
+  - 256
+  object_color_rgb:
+  - 82
+  - 110
+  - 198
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 22335
+  notes: ''
+- clip_id: test_continuity_teleportation_006_photo_possible
+  pair_id: test_continuity_teleportation_006_photo
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: true
+  violation_kind: continuity_teleportation
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_006_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 233
+  - 46
+  - 46
+  prompt_point_xy:
+  - 93
+  - 256
+  object_color_rgb:
+  - 82
+  - 110
+  - 198
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 22335
+  notes: ''
+- clip_id: test_continuity_teleportation_006_photo_impossible
+  pair_id: test_continuity_teleportation_006_photo
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: false
+  violation_kind: continuity_teleportation
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_006_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 233
+  - 46
+  - 46
+  prompt_point_xy:
+  - 93
+  - 256
+  object_color_rgb:
+  - 82
+  - 110
+  - 198
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 22335
+  notes: ''
+- clip_id: test_continuity_teleportation_007_possible
+  pair_id: test_continuity_teleportation_007
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: true
+  violation_kind: continuity_teleportation
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_007_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 234
+  - 44
+  - 44
+  prompt_point_xy:
+  - 92
+  - 256
+  object_color_rgb:
+  - 168
+  - 143
+  - 147
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 22436
+  notes: ''
+- clip_id: test_continuity_teleportation_007_impossible
+  pair_id: test_continuity_teleportation_007
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: false
+  violation_kind: continuity_teleportation
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_007_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 234
+  - 44
+  - 44
+  prompt_point_xy:
+  - 92
+  - 256
+  object_color_rgb:
+  - 168
+  - 143
+  - 147
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 22436
+  notes: ''
+- clip_id: test_continuity_teleportation_007_photo_possible
+  pair_id: test_continuity_teleportation_007_photo
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: true
+  violation_kind: continuity_teleportation
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_007_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 234
+  - 44
+  - 44
+  prompt_point_xy:
+  - 92
+  - 256
+  object_color_rgb:
+  - 168
+  - 143
+  - 147
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 22436
+  notes: ''
+- clip_id: test_continuity_teleportation_007_photo_impossible
+  pair_id: test_continuity_teleportation_007_photo
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: false
+  violation_kind: continuity_teleportation
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_007_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 234
+  - 44
+  - 44
+  prompt_point_xy:
+  - 92
+  - 256
+  object_color_rgb:
+  - 168
+  - 143
+  - 147
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 22436
+  notes: ''
+- clip_id: test_continuity_teleportation_008_possible
+  pair_id: test_continuity_teleportation_008
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: true
+  violation_kind: continuity_teleportation
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_008_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 237
+  - 38
+  - 38
+  prompt_point_xy:
+  - 89
+  - 256
+  object_color_rgb:
+  - 77
+  - 124
+  - 127
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 22537
+  notes: ''
+- clip_id: test_continuity_teleportation_008_impossible
+  pair_id: test_continuity_teleportation_008
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: false
+  violation_kind: continuity_teleportation
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_008_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 237
+  - 38
+  - 38
+  prompt_point_xy:
+  - 89
+  - 256
+  object_color_rgb:
+  - 77
+  - 124
+  - 127
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 22537
+  notes: ''
+- clip_id: test_continuity_teleportation_008_photo_possible
+  pair_id: test_continuity_teleportation_008_photo
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: true
+  violation_kind: continuity_teleportation
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_008_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 237
+  - 38
+  - 38
+  prompt_point_xy:
+  - 89
+  - 256
+  object_color_rgb:
+  - 77
+  - 124
+  - 127
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 22537
+  notes: ''
+- clip_id: test_continuity_teleportation_008_photo_impossible
+  pair_id: test_continuity_teleportation_008_photo
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: false
+  violation_kind: continuity_teleportation
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_008_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 237
+  - 38
+  - 38
+  prompt_point_xy:
+  - 89
+  - 256
+  object_color_rgb:
+  - 77
+  - 124
+  - 127
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 22537
+  notes: ''
+- clip_id: test_continuity_teleportation_009_possible
+  pair_id: test_continuity_teleportation_009
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: true
+  violation_kind: continuity_teleportation
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_009_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 232
+  - 48
+  - 48
+  prompt_point_xy:
+  - 94
+  - 256
+  object_color_rgb:
+  - 192
+  - 242
+  - 173
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 22638
+  notes: ''
+- clip_id: test_continuity_teleportation_009_impossible
+  pair_id: test_continuity_teleportation_009
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: false
+  violation_kind: continuity_teleportation
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_009_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 232
+  - 48
+  - 48
+  prompt_point_xy:
+  - 94
+  - 256
+  object_color_rgb:
+  - 192
+  - 242
+  - 173
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 22638
+  notes: ''
+- clip_id: test_continuity_teleportation_009_photo_possible
+  pair_id: test_continuity_teleportation_009_photo
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: true
+  violation_kind: continuity_teleportation
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_009_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 232
+  - 48
+  - 48
+  prompt_point_xy:
+  - 94
+  - 256
+  object_color_rgb:
+  - 192
+  - 242
+  - 173
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 22638
+  notes: ''
+- clip_id: test_continuity_teleportation_009_photo_impossible
+  pair_id: test_continuity_teleportation_009_photo
+  source: synthetic
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: false
+  violation_kind: continuity_teleportation
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/continuity_teleportation/test_continuity_teleportation_009_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 232
+  - 48
+  - 48
+  prompt_point_xy:
+  - 94
+  - 256
+  object_color_rgb:
+  - 192
+  - 242
+  - 173
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 22638
+  notes: ''
+- clip_id: test_gravity_support_000_possible
+  pair_id: test_gravity_support_000
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: true
+  violation_kind: gravity_support
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_000_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 194
+  - 42
+  - 42
+  prompt_point_xy:
+  - 131
+  - 215
+  object_color_rgb:
+  - 186
+  - 108
+  - 101
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 31729
+  notes: ''
+- clip_id: test_gravity_support_000_impossible
+  pair_id: test_gravity_support_000
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: false
+  violation_kind: gravity_support
+  violation_frame: 38
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_000_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 194
+  - 42
+  - 42
+  prompt_point_xy:
+  - 131
+  - 215
+  object_color_rgb:
+  - 186
+  - 108
+  - 101
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 31729
+  notes: ''
+- clip_id: test_gravity_support_000_photo_possible
+  pair_id: test_gravity_support_000_photo
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: true
+  violation_kind: gravity_support
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_000_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 194
+  - 42
+  - 42
+  prompt_point_xy:
+  - 131
+  - 215
+  object_color_rgb:
+  - 186
+  - 108
+  - 101
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 31729
+  notes: ''
+- clip_id: test_gravity_support_000_photo_impossible
+  pair_id: test_gravity_support_000_photo
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: false
+  violation_kind: gravity_support
+  violation_frame: 38
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_000_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 194
+  - 42
+  - 42
+  prompt_point_xy:
+  - 131
+  - 215
+  object_color_rgb:
+  - 186
+  - 108
+  - 101
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 31729
+  notes: ''
+- clip_id: test_gravity_support_001_possible
+  pair_id: test_gravity_support_001
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: true
+  violation_kind: gravity_support
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_001_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 194
+  - 42
+  - 42
+  prompt_point_xy:
+  - 131
+  - 215
+  object_color_rgb:
+  - 112
+  - 103
+  - 130
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 31830
+  notes: ''
+- clip_id: test_gravity_support_001_impossible
+  pair_id: test_gravity_support_001
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: false
+  violation_kind: gravity_support
+  violation_frame: 38
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_001_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 194
+  - 42
+  - 42
+  prompt_point_xy:
+  - 131
+  - 215
+  object_color_rgb:
+  - 112
+  - 103
+  - 130
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 31830
+  notes: ''
+- clip_id: test_gravity_support_001_photo_possible
+  pair_id: test_gravity_support_001_photo
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: true
+  violation_kind: gravity_support
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_001_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 194
+  - 42
+  - 42
+  prompt_point_xy:
+  - 131
+  - 215
+  object_color_rgb:
+  - 112
+  - 103
+  - 130
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 31830
+  notes: ''
+- clip_id: test_gravity_support_001_photo_impossible
+  pair_id: test_gravity_support_001_photo
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: false
+  violation_kind: gravity_support
+  violation_frame: 38
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_001_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 194
+  - 42
+  - 42
+  prompt_point_xy:
+  - 131
+  - 215
+  object_color_rgb:
+  - 112
+  - 103
+  - 130
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 31830
+  notes: ''
+- clip_id: test_gravity_support_002_possible
+  pair_id: test_gravity_support_002
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: true
+  violation_kind: gravity_support
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_002_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 189
+  - 52
+  - 52
+  prompt_point_xy:
+  - 136
+  - 215
+  object_color_rgb:
+  - 127
+  - 138
+  - 178
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 31931
+  notes: ''
+- clip_id: test_gravity_support_002_impossible
+  pair_id: test_gravity_support_002
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: false
+  violation_kind: gravity_support
+  violation_frame: 38
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_002_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 189
+  - 52
+  - 52
+  prompt_point_xy:
+  - 136
+  - 215
+  object_color_rgb:
+  - 127
+  - 138
+  - 178
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 31931
+  notes: ''
+- clip_id: test_gravity_support_002_photo_possible
+  pair_id: test_gravity_support_002_photo
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: true
+  violation_kind: gravity_support
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_002_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 189
+  - 52
+  - 52
+  prompt_point_xy:
+  - 136
+  - 215
+  object_color_rgb:
+  - 127
+  - 138
+  - 178
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 31931
+  notes: ''
+- clip_id: test_gravity_support_002_photo_impossible
+  pair_id: test_gravity_support_002_photo
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: false
+  violation_kind: gravity_support
+  violation_frame: 38
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_002_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 189
+  - 52
+  - 52
+  prompt_point_xy:
+  - 136
+  - 215
+  object_color_rgb:
+  - 127
+  - 138
+  - 178
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 31931
+  notes: ''
+- clip_id: test_gravity_support_003_possible
+  pair_id: test_gravity_support_003
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: true
+  violation_kind: gravity_support
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_003_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 195
+  - 40
+  - 40
+  prompt_point_xy:
+  - 130
+  - 215
+  object_color_rgb:
+  - 113
+  - 96
+  - 196
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 32032
+  notes: ''
+- clip_id: test_gravity_support_003_impossible
+  pair_id: test_gravity_support_003
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: false
+  violation_kind: gravity_support
+  violation_frame: 38
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_003_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 195
+  - 40
+  - 40
+  prompt_point_xy:
+  - 130
+  - 215
+  object_color_rgb:
+  - 113
+  - 96
+  - 196
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 32032
+  notes: ''
+- clip_id: test_gravity_support_003_photo_possible
+  pair_id: test_gravity_support_003_photo
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: true
+  violation_kind: gravity_support
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_003_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 195
+  - 40
+  - 40
+  prompt_point_xy:
+  - 130
+  - 215
+  object_color_rgb:
+  - 113
+  - 96
+  - 196
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 32032
+  notes: ''
+- clip_id: test_gravity_support_003_photo_impossible
+  pair_id: test_gravity_support_003_photo
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: false
+  violation_kind: gravity_support
+  violation_frame: 38
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_003_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 195
+  - 40
+  - 40
+  prompt_point_xy:
+  - 130
+  - 215
+  object_color_rgb:
+  - 113
+  - 96
+  - 196
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 32032
+  notes: ''
+- clip_id: test_gravity_support_004_possible
+  pair_id: test_gravity_support_004
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: true
+  violation_kind: gravity_support
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_004_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 194
+  - 42
+  - 42
+  prompt_point_xy:
+  - 131
+  - 215
+  object_color_rgb:
+  - 182
+  - 79
+  - 244
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 32133
+  notes: ''
+- clip_id: test_gravity_support_004_impossible
+  pair_id: test_gravity_support_004
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: false
+  violation_kind: gravity_support
+  violation_frame: 38
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_004_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 194
+  - 42
+  - 42
+  prompt_point_xy:
+  - 131
+  - 215
+  object_color_rgb:
+  - 182
+  - 79
+  - 244
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 32133
+  notes: ''
+- clip_id: test_gravity_support_004_photo_possible
+  pair_id: test_gravity_support_004_photo
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: true
+  violation_kind: gravity_support
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_004_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 194
+  - 42
+  - 42
+  prompt_point_xy:
+  - 131
+  - 215
+  object_color_rgb:
+  - 182
+  - 79
+  - 244
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 32133
+  notes: ''
+- clip_id: test_gravity_support_004_photo_impossible
+  pair_id: test_gravity_support_004_photo
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: false
+  violation_kind: gravity_support
+  violation_frame: 38
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_004_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 194
+  - 42
+  - 42
+  prompt_point_xy:
+  - 131
+  - 215
+  object_color_rgb:
+  - 182
+  - 79
+  - 244
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 32133
+  notes: ''
+- clip_id: test_gravity_support_005_possible
+  pair_id: test_gravity_support_005
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: true
+  violation_kind: gravity_support
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_005_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 187
+  - 56
+  - 56
+  prompt_point_xy:
+  - 138
+  - 215
+  object_color_rgb:
+  - 146
+  - 211
+  - 230
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 32234
+  notes: ''
+- clip_id: test_gravity_support_005_impossible
+  pair_id: test_gravity_support_005
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: false
+  violation_kind: gravity_support
+  violation_frame: 38
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_005_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 187
+  - 56
+  - 56
+  prompt_point_xy:
+  - 138
+  - 215
+  object_color_rgb:
+  - 146
+  - 211
+  - 230
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 32234
+  notes: ''
+- clip_id: test_gravity_support_005_photo_possible
+  pair_id: test_gravity_support_005_photo
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: true
+  violation_kind: gravity_support
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_005_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 187
+  - 56
+  - 56
+  prompt_point_xy:
+  - 138
+  - 215
+  object_color_rgb:
+  - 146
+  - 211
+  - 230
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 32234
+  notes: ''
+- clip_id: test_gravity_support_005_photo_impossible
+  pair_id: test_gravity_support_005_photo
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: false
+  violation_kind: gravity_support
+  violation_frame: 38
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_005_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 187
+  - 56
+  - 56
+  prompt_point_xy:
+  - 138
+  - 215
+  object_color_rgb:
+  - 146
+  - 211
+  - 230
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 32234
+  notes: ''
+- clip_id: test_gravity_support_006_possible
+  pair_id: test_gravity_support_006
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: true
+  violation_kind: gravity_support
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_006_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 190
+  - 50
+  - 50
+  prompt_point_xy:
+  - 135
+  - 215
+  object_color_rgb:
+  - 224
+  - 196
+  - 224
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 32335
+  notes: ''
+- clip_id: test_gravity_support_006_impossible
+  pair_id: test_gravity_support_006
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: false
+  violation_kind: gravity_support
+  violation_frame: 38
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_006_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 190
+  - 50
+  - 50
+  prompt_point_xy:
+  - 135
+  - 215
+  object_color_rgb:
+  - 224
+  - 196
+  - 224
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 32335
+  notes: ''
+- clip_id: test_gravity_support_006_photo_possible
+  pair_id: test_gravity_support_006_photo
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: true
+  violation_kind: gravity_support
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_006_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 190
+  - 50
+  - 50
+  prompt_point_xy:
+  - 135
+  - 215
+  object_color_rgb:
+  - 224
+  - 196
+  - 224
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 32335
+  notes: ''
+- clip_id: test_gravity_support_006_photo_impossible
+  pair_id: test_gravity_support_006_photo
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: false
+  violation_kind: gravity_support
+  violation_frame: 38
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_006_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 190
+  - 50
+  - 50
+  prompt_point_xy:
+  - 135
+  - 215
+  object_color_rgb:
+  - 224
+  - 196
+  - 224
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 32335
+  notes: ''
+- clip_id: test_gravity_support_007_possible
+  pair_id: test_gravity_support_007
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: true
+  violation_kind: gravity_support
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_007_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 193
+  - 44
+  - 44
+  prompt_point_xy:
+  - 132
+  - 215
+  object_color_rgb:
+  - 133
+  - 86
+  - 226
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 32436
+  notes: ''
+- clip_id: test_gravity_support_007_impossible
+  pair_id: test_gravity_support_007
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: false
+  violation_kind: gravity_support
+  violation_frame: 38
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_007_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 193
+  - 44
+  - 44
+  prompt_point_xy:
+  - 132
+  - 215
+  object_color_rgb:
+  - 133
+  - 86
+  - 226
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 32436
+  notes: ''
+- clip_id: test_gravity_support_007_photo_possible
+  pair_id: test_gravity_support_007_photo
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: true
+  violation_kind: gravity_support
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_007_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 193
+  - 44
+  - 44
+  prompt_point_xy:
+  - 132
+  - 215
+  object_color_rgb:
+  - 133
+  - 86
+  - 226
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 32436
+  notes: ''
+- clip_id: test_gravity_support_007_photo_impossible
+  pair_id: test_gravity_support_007_photo
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: false
+  violation_kind: gravity_support
+  violation_frame: 38
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_007_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 193
+  - 44
+  - 44
+  prompt_point_xy:
+  - 132
+  - 215
+  object_color_rgb:
+  - 133
+  - 86
+  - 226
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 32436
+  notes: ''
+- clip_id: test_gravity_support_008_possible
+  pair_id: test_gravity_support_008
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: true
+  violation_kind: gravity_support
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_008_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 185
+  - 60
+  - 60
+  prompt_point_xy:
+  - 140
+  - 215
+  object_color_rgb:
+  - 212
+  - 89
+  - 197
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 32537
+  notes: ''
+- clip_id: test_gravity_support_008_impossible
+  pair_id: test_gravity_support_008
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: false
+  violation_kind: gravity_support
+  violation_frame: 38
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_008_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 185
+  - 60
+  - 60
+  prompt_point_xy:
+  - 140
+  - 215
+  object_color_rgb:
+  - 212
+  - 89
+  - 197
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 32537
+  notes: ''
+- clip_id: test_gravity_support_008_photo_possible
+  pair_id: test_gravity_support_008_photo
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: true
+  violation_kind: gravity_support
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_008_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 185
+  - 60
+  - 60
+  prompt_point_xy:
+  - 140
+  - 215
+  object_color_rgb:
+  - 212
+  - 89
+  - 197
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 32537
+  notes: ''
+- clip_id: test_gravity_support_008_photo_impossible
+  pair_id: test_gravity_support_008_photo
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: false
+  violation_kind: gravity_support
+  violation_frame: 38
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_008_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 185
+  - 60
+  - 60
+  prompt_point_xy:
+  - 140
+  - 215
+  object_color_rgb:
+  - 212
+  - 89
+  - 197
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 32537
+  notes: ''
+- clip_id: test_gravity_support_009_possible
+  pair_id: test_gravity_support_009
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: true
+  violation_kind: gravity_support
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_009_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 186
+  - 58
+  - 58
+  prompt_point_xy:
+  - 139
+  - 215
+  object_color_rgb:
+  - 157
+  - 71
+  - 237
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 32638
+  notes: ''
+- clip_id: test_gravity_support_009_impossible
+  pair_id: test_gravity_support_009
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: false
+  violation_kind: gravity_support
+  violation_frame: 38
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_009_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 186
+  - 58
+  - 58
+  prompt_point_xy:
+  - 139
+  - 215
+  object_color_rgb:
+  - 157
+  - 71
+  - 237
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 32638
+  notes: ''
+- clip_id: test_gravity_support_009_photo_possible
+  pair_id: test_gravity_support_009_photo
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: true
+  violation_kind: gravity_support
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_009_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 186
+  - 58
+  - 58
+  prompt_point_xy:
+  - 139
+  - 215
+  object_color_rgb:
+  - 157
+  - 71
+  - 237
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 32638
+  notes: ''
+- clip_id: test_gravity_support_009_photo_impossible
+  pair_id: test_gravity_support_009_photo
+  source: synthetic
+  split: test
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: false
+  violation_kind: gravity_support
+  violation_frame: 38
+  video_path: data/synthetic_generator/generated/test/gravity_support/test_gravity_support_009_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 186
+  - 58
+  - 58
+  prompt_point_xy:
+  - 139
+  - 215
+  object_color_rgb:
+  - 157
+  - 71
+  - 237
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 32638
+  notes: ''
+- clip_id: test_spontaneous_vanishing_000_possible
+  pair_id: test_spontaneous_vanishing_000
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: true
+  violation_kind: spontaneous_vanishing
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_000_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 248
+  - 36
+  - 36
+  prompt_point_xy:
+  - 98
+  - 266
+  object_color_rgb:
+  - 79
+  - 159
+  - 209
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 41729
+  notes: ''
+- clip_id: test_spontaneous_vanishing_000_impossible
+  pair_id: test_spontaneous_vanishing_000
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: false
+  violation_kind: spontaneous_vanishing
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_000_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 248
+  - 36
+  - 36
+  prompt_point_xy:
+  - 98
+  - 266
+  object_color_rgb:
+  - 79
+  - 159
+  - 209
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 41729
+  notes: ''
+- clip_id: test_spontaneous_vanishing_000_photo_possible
+  pair_id: test_spontaneous_vanishing_000_photo
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: true
+  violation_kind: spontaneous_vanishing
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_000_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 248
+  - 36
+  - 36
+  prompt_point_xy:
+  - 98
+  - 266
+  object_color_rgb:
+  - 79
+  - 159
+  - 209
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 41729
+  notes: ''
+- clip_id: test_spontaneous_vanishing_000_photo_impossible
+  pair_id: test_spontaneous_vanishing_000_photo
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: false
+  violation_kind: spontaneous_vanishing
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_000_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 248
+  - 36
+  - 36
+  prompt_point_xy:
+  - 98
+  - 266
+  object_color_rgb:
+  - 79
+  - 159
+  - 209
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 41729
+  notes: ''
+- clip_id: test_spontaneous_vanishing_001_possible
+  pair_id: test_spontaneous_vanishing_001
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: true
+  violation_kind: spontaneous_vanishing
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_001_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 240
+  - 52
+  - 52
+  prompt_point_xy:
+  - 106
+  - 266
+  object_color_rgb:
+  - 165
+  - 84
+  - 113
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 41830
+  notes: ''
+- clip_id: test_spontaneous_vanishing_001_impossible
+  pair_id: test_spontaneous_vanishing_001
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: false
+  violation_kind: spontaneous_vanishing
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_001_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 240
+  - 52
+  - 52
+  prompt_point_xy:
+  - 106
+  - 266
+  object_color_rgb:
+  - 165
+  - 84
+  - 113
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 41830
+  notes: ''
+- clip_id: test_spontaneous_vanishing_001_photo_possible
+  pair_id: test_spontaneous_vanishing_001_photo
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: true
+  violation_kind: spontaneous_vanishing
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_001_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 240
+  - 52
+  - 52
+  prompt_point_xy:
+  - 106
+  - 266
+  object_color_rgb:
+  - 165
+  - 84
+  - 113
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 41830
+  notes: ''
+- clip_id: test_spontaneous_vanishing_001_photo_impossible
+  pair_id: test_spontaneous_vanishing_001_photo
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: false
+  violation_kind: spontaneous_vanishing
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_001_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 240
+  - 52
+  - 52
+  prompt_point_xy:
+  - 106
+  - 266
+  object_color_rgb:
+  - 165
+  - 84
+  - 113
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 41830
+  notes: ''
+- clip_id: test_spontaneous_vanishing_002_possible
+  pair_id: test_spontaneous_vanishing_002
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: true
+  violation_kind: spontaneous_vanishing
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_002_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 240
+  - 52
+  - 52
+  prompt_point_xy:
+  - 106
+  - 266
+  object_color_rgb:
+  - 98
+  - 119
+  - 117
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 41931
+  notes: ''
+- clip_id: test_spontaneous_vanishing_002_impossible
+  pair_id: test_spontaneous_vanishing_002
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: false
+  violation_kind: spontaneous_vanishing
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_002_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 240
+  - 52
+  - 52
+  prompt_point_xy:
+  - 106
+  - 266
+  object_color_rgb:
+  - 98
+  - 119
+  - 117
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 41931
+  notes: ''
+- clip_id: test_spontaneous_vanishing_002_photo_possible
+  pair_id: test_spontaneous_vanishing_002_photo
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: true
+  violation_kind: spontaneous_vanishing
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_002_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 240
+  - 52
+  - 52
+  prompt_point_xy:
+  - 106
+  - 266
+  object_color_rgb:
+  - 98
+  - 119
+  - 117
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 41931
+  notes: ''
+- clip_id: test_spontaneous_vanishing_002_photo_impossible
+  pair_id: test_spontaneous_vanishing_002_photo
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: false
+  violation_kind: spontaneous_vanishing
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_002_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 240
+  - 52
+  - 52
+  prompt_point_xy:
+  - 106
+  - 266
+  object_color_rgb:
+  - 98
+  - 119
+  - 117
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 41931
+  notes: ''
+- clip_id: test_spontaneous_vanishing_003_possible
+  pair_id: test_spontaneous_vanishing_003
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: true
+  violation_kind: spontaneous_vanishing
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_003_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 243
+  - 46
+  - 46
+  prompt_point_xy:
+  - 103
+  - 266
+  object_color_rgb:
+  - 235
+  - 94
+  - 190
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 42032
+  notes: ''
+- clip_id: test_spontaneous_vanishing_003_impossible
+  pair_id: test_spontaneous_vanishing_003
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: false
+  violation_kind: spontaneous_vanishing
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_003_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 243
+  - 46
+  - 46
+  prompt_point_xy:
+  - 103
+  - 266
+  object_color_rgb:
+  - 235
+  - 94
+  - 190
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 42032
+  notes: ''
+- clip_id: test_spontaneous_vanishing_003_photo_possible
+  pair_id: test_spontaneous_vanishing_003_photo
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: true
+  violation_kind: spontaneous_vanishing
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_003_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 243
+  - 46
+  - 46
+  prompt_point_xy:
+  - 103
+  - 266
+  object_color_rgb:
+  - 235
+  - 94
+  - 190
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 42032
+  notes: ''
+- clip_id: test_spontaneous_vanishing_003_photo_impossible
+  pair_id: test_spontaneous_vanishing_003_photo
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: false
+  violation_kind: spontaneous_vanishing
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_003_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 243
+  - 46
+  - 46
+  prompt_point_xy:
+  - 103
+  - 266
+  object_color_rgb:
+  - 235
+  - 94
+  - 190
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 42032
+  notes: ''
+- clip_id: test_spontaneous_vanishing_004_possible
+  pair_id: test_spontaneous_vanishing_004
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: true
+  violation_kind: spontaneous_vanishing
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_004_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 237
+  - 58
+  - 58
+  prompt_point_xy:
+  - 109
+  - 266
+  object_color_rgb:
+  - 155
+  - 106
+  - 158
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 42133
+  notes: ''
+- clip_id: test_spontaneous_vanishing_004_impossible
+  pair_id: test_spontaneous_vanishing_004
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: false
+  violation_kind: spontaneous_vanishing
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_004_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 237
+  - 58
+  - 58
+  prompt_point_xy:
+  - 109
+  - 266
+  object_color_rgb:
+  - 155
+  - 106
+  - 158
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 42133
+  notes: ''
+- clip_id: test_spontaneous_vanishing_004_photo_possible
+  pair_id: test_spontaneous_vanishing_004_photo
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: true
+  violation_kind: spontaneous_vanishing
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_004_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 237
+  - 58
+  - 58
+  prompt_point_xy:
+  - 109
+  - 266
+  object_color_rgb:
+  - 155
+  - 106
+  - 158
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 42133
+  notes: ''
+- clip_id: test_spontaneous_vanishing_004_photo_impossible
+  pair_id: test_spontaneous_vanishing_004_photo
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: false
+  violation_kind: spontaneous_vanishing
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_004_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 237
+  - 58
+  - 58
+  prompt_point_xy:
+  - 109
+  - 266
+  object_color_rgb:
+  - 155
+  - 106
+  - 158
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 42133
+  notes: ''
+- clip_id: test_spontaneous_vanishing_005_possible
+  pair_id: test_spontaneous_vanishing_005
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: true
+  violation_kind: spontaneous_vanishing
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_005_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 248
+  - 36
+  - 36
+  prompt_point_xy:
+  - 98
+  - 266
+  object_color_rgb:
+  - 240
+  - 229
+  - 133
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 42234
+  notes: ''
+- clip_id: test_spontaneous_vanishing_005_impossible
+  pair_id: test_spontaneous_vanishing_005
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: false
+  violation_kind: spontaneous_vanishing
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_005_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 248
+  - 36
+  - 36
+  prompt_point_xy:
+  - 98
+  - 266
+  object_color_rgb:
+  - 240
+  - 229
+  - 133
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 42234
+  notes: ''
+- clip_id: test_spontaneous_vanishing_005_photo_possible
+  pair_id: test_spontaneous_vanishing_005_photo
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: true
+  violation_kind: spontaneous_vanishing
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_005_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 248
+  - 36
+  - 36
+  prompt_point_xy:
+  - 98
+  - 266
+  object_color_rgb:
+  - 240
+  - 229
+  - 133
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 42234
+  notes: ''
+- clip_id: test_spontaneous_vanishing_005_photo_impossible
+  pair_id: test_spontaneous_vanishing_005_photo
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: false
+  violation_kind: spontaneous_vanishing
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_005_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 248
+  - 36
+  - 36
+  prompt_point_xy:
+  - 98
+  - 266
+  object_color_rgb:
+  - 240
+  - 229
+  - 133
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 42234
+  notes: ''
+- clip_id: test_spontaneous_vanishing_006_possible
+  pair_id: test_spontaneous_vanishing_006
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: true
+  violation_kind: spontaneous_vanishing
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_006_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 248
+  - 36
+  - 36
+  prompt_point_xy:
+  - 98
+  - 266
+  object_color_rgb:
+  - 163
+  - 181
+  - 199
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 42335
+  notes: ''
+- clip_id: test_spontaneous_vanishing_006_impossible
+  pair_id: test_spontaneous_vanishing_006
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: false
+  violation_kind: spontaneous_vanishing
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_006_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 248
+  - 36
+  - 36
+  prompt_point_xy:
+  - 98
+  - 266
+  object_color_rgb:
+  - 163
+  - 181
+  - 199
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 42335
+  notes: ''
+- clip_id: test_spontaneous_vanishing_006_photo_possible
+  pair_id: test_spontaneous_vanishing_006_photo
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: true
+  violation_kind: spontaneous_vanishing
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_006_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 248
+  - 36
+  - 36
+  prompt_point_xy:
+  - 98
+  - 266
+  object_color_rgb:
+  - 163
+  - 181
+  - 199
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 42335
+  notes: ''
+- clip_id: test_spontaneous_vanishing_006_photo_impossible
+  pair_id: test_spontaneous_vanishing_006_photo
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: false
+  violation_kind: spontaneous_vanishing
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_006_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 248
+  - 36
+  - 36
+  prompt_point_xy:
+  - 98
+  - 266
+  object_color_rgb:
+  - 163
+  - 181
+  - 199
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 42335
+  notes: ''
+- clip_id: test_spontaneous_vanishing_007_possible
+  pair_id: test_spontaneous_vanishing_007
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: true
+  violation_kind: spontaneous_vanishing
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_007_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 238
+  - 56
+  - 56
+  prompt_point_xy:
+  - 108
+  - 266
+  object_color_rgb:
+  - 148
+  - 197
+  - 136
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 42436
+  notes: ''
+- clip_id: test_spontaneous_vanishing_007_impossible
+  pair_id: test_spontaneous_vanishing_007
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: false
+  violation_kind: spontaneous_vanishing
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_007_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 238
+  - 56
+  - 56
+  prompt_point_xy:
+  - 108
+  - 266
+  object_color_rgb:
+  - 148
+  - 197
+  - 136
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 42436
+  notes: ''
+- clip_id: test_spontaneous_vanishing_007_photo_possible
+  pair_id: test_spontaneous_vanishing_007_photo
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: true
+  violation_kind: spontaneous_vanishing
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_007_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 238
+  - 56
+  - 56
+  prompt_point_xy:
+  - 108
+  - 266
+  object_color_rgb:
+  - 148
+  - 197
+  - 136
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 42436
+  notes: ''
+- clip_id: test_spontaneous_vanishing_007_photo_impossible
+  pair_id: test_spontaneous_vanishing_007_photo
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: false
+  violation_kind: spontaneous_vanishing
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_007_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 238
+  - 56
+  - 56
+  prompt_point_xy:
+  - 108
+  - 266
+  object_color_rgb:
+  - 148
+  - 197
+  - 136
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 42436
+  notes: ''
+- clip_id: test_spontaneous_vanishing_008_possible
+  pair_id: test_spontaneous_vanishing_008
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: true
+  violation_kind: spontaneous_vanishing
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_008_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 246
+  - 40
+  - 40
+  prompt_point_xy:
+  - 100
+  - 266
+  object_color_rgb:
+  - 91
+  - 187
+  - 176
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 42537
+  notes: ''
+- clip_id: test_spontaneous_vanishing_008_impossible
+  pair_id: test_spontaneous_vanishing_008
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: false
+  violation_kind: spontaneous_vanishing
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_008_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 246
+  - 40
+  - 40
+  prompt_point_xy:
+  - 100
+  - 266
+  object_color_rgb:
+  - 91
+  - 187
+  - 176
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 42537
+  notes: ''
+- clip_id: test_spontaneous_vanishing_008_photo_possible
+  pair_id: test_spontaneous_vanishing_008_photo
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: true
+  violation_kind: spontaneous_vanishing
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_008_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 246
+  - 40
+  - 40
+  prompt_point_xy:
+  - 100
+  - 266
+  object_color_rgb:
+  - 91
+  - 187
+  - 176
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 42537
+  notes: ''
+- clip_id: test_spontaneous_vanishing_008_photo_impossible
+  pair_id: test_spontaneous_vanishing_008_photo
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: false
+  violation_kind: spontaneous_vanishing
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_008_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 246
+  - 40
+  - 40
+  prompt_point_xy:
+  - 100
+  - 266
+  object_color_rgb:
+  - 91
+  - 187
+  - 176
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 42537
+  notes: ''
+- clip_id: test_spontaneous_vanishing_009_possible
+  pair_id: test_spontaneous_vanishing_009
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: true
+  violation_kind: spontaneous_vanishing
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_009_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 237
+  - 58
+  - 58
+  prompt_point_xy:
+  - 109
+  - 266
+  object_color_rgb:
+  - 211
+  - 202
+  - 80
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 42638
+  notes: ''
+- clip_id: test_spontaneous_vanishing_009_impossible
+  pair_id: test_spontaneous_vanishing_009
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: false
+  violation_kind: spontaneous_vanishing
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_009_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 237
+  - 58
+  - 58
+  prompt_point_xy:
+  - 109
+  - 266
+  object_color_rgb:
+  - 211
+  - 202
+  - 80
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 42638
+  notes: ''
+- clip_id: test_spontaneous_vanishing_009_photo_possible
+  pair_id: test_spontaneous_vanishing_009_photo
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: true
+  violation_kind: spontaneous_vanishing
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_009_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 237
+  - 58
+  - 58
+  prompt_point_xy:
+  - 109
+  - 266
+  object_color_rgb:
+  - 211
+  - 202
+  - 80
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 42638
+  notes: ''
+- clip_id: test_spontaneous_vanishing_009_photo_impossible
+  pair_id: test_spontaneous_vanishing_009_photo
+  source: synthetic
+  split: test
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: false
+  violation_kind: spontaneous_vanishing
+  violation_frame: 36
+  video_path: data/synthetic_generator/generated/test/spontaneous_vanishing/test_spontaneous_vanishing_009_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 237
+  - 58
+  - 58
+  prompt_point_xy:
+  - 109
+  - 266
+  object_color_rgb:
+  - 211
+  - 202
+  - 80
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 42638
+  notes: ''
+- clip_id: test_momentum_causality_000_possible
+  pair_id: test_momentum_causality_000
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: true
+  violation_kind: momentum_causality
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_000_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 266
+  - 60
+  - 60
+  prompt_point_xy:
+  - 110
+  - 296
+  object_color_rgb:
+  - 193
+  - 226
+  - 122
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 51729
+  notes: ''
+- clip_id: test_momentum_causality_000_impossible
+  pair_id: test_momentum_causality_000
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: false
+  violation_kind: momentum_causality
+  violation_frame: 32
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_000_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 266
+  - 60
+  - 60
+  prompt_point_xy:
+  - 110
+  - 296
+  object_color_rgb:
+  - 193
+  - 226
+  - 122
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 51729
+  notes: ''
+- clip_id: test_momentum_causality_000_photo_possible
+  pair_id: test_momentum_causality_000_photo
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: true
+  violation_kind: momentum_causality
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_000_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 266
+  - 60
+  - 60
+  prompt_point_xy:
+  - 110
+  - 296
+  object_color_rgb:
+  - 193
+  - 226
+  - 122
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 51729
+  notes: ''
+- clip_id: test_momentum_causality_000_photo_impossible
+  pair_id: test_momentum_causality_000_photo
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: false
+  violation_kind: momentum_causality
+  violation_frame: 32
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_000_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 266
+  - 60
+  - 60
+  prompt_point_xy:
+  - 110
+  - 296
+  object_color_rgb:
+  - 193
+  - 226
+  - 122
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 51729
+  notes: ''
+- clip_id: test_momentum_causality_001_possible
+  pair_id: test_momentum_causality_001
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: true
+  violation_kind: momentum_causality
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_001_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 270
+  - 52
+  - 52
+  prompt_point_xy:
+  - 106
+  - 296
+  object_color_rgb:
+  - 123
+  - 71
+  - 165
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 51830
+  notes: ''
+- clip_id: test_momentum_causality_001_impossible
+  pair_id: test_momentum_causality_001
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: false
+  violation_kind: momentum_causality
+  violation_frame: 32
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_001_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 270
+  - 52
+  - 52
+  prompt_point_xy:
+  - 106
+  - 296
+  object_color_rgb:
+  - 123
+  - 71
+  - 165
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 51830
+  notes: ''
+- clip_id: test_momentum_causality_001_photo_possible
+  pair_id: test_momentum_causality_001_photo
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: true
+  violation_kind: momentum_causality
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_001_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 270
+  - 52
+  - 52
+  prompt_point_xy:
+  - 106
+  - 296
+  object_color_rgb:
+  - 123
+  - 71
+  - 165
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 51830
+  notes: ''
+- clip_id: test_momentum_causality_001_photo_impossible
+  pair_id: test_momentum_causality_001_photo
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: false
+  violation_kind: momentum_causality
+  violation_frame: 32
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_001_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 270
+  - 52
+  - 52
+  prompt_point_xy:
+  - 106
+  - 296
+  object_color_rgb:
+  - 123
+  - 71
+  - 165
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 51830
+  notes: ''
+- clip_id: test_momentum_causality_002_possible
+  pair_id: test_momentum_causality_002
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: true
+  violation_kind: momentum_causality
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_002_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 268
+  - 56
+  - 56
+  prompt_point_xy:
+  - 108
+  - 296
+  object_color_rgb:
+  - 138
+  - 113
+  - 189
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 51931
+  notes: ''
+- clip_id: test_momentum_causality_002_impossible
+  pair_id: test_momentum_causality_002
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: false
+  violation_kind: momentum_causality
+  violation_frame: 32
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_002_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 268
+  - 56
+  - 56
+  prompt_point_xy:
+  - 108
+  - 296
+  object_color_rgb:
+  - 138
+  - 113
+  - 189
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 51931
+  notes: ''
+- clip_id: test_momentum_causality_002_photo_possible
+  pair_id: test_momentum_causality_002_photo
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: true
+  violation_kind: momentum_causality
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_002_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 268
+  - 56
+  - 56
+  prompt_point_xy:
+  - 108
+  - 296
+  object_color_rgb:
+  - 138
+  - 113
+  - 189
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 51931
+  notes: ''
+- clip_id: test_momentum_causality_002_photo_impossible
+  pair_id: test_momentum_causality_002_photo
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: false
+  violation_kind: momentum_causality
+  violation_frame: 32
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_002_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 268
+  - 56
+  - 56
+  prompt_point_xy:
+  - 108
+  - 296
+  object_color_rgb:
+  - 138
+  - 113
+  - 189
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 51931
+  notes: ''
+- clip_id: test_momentum_causality_003_possible
+  pair_id: test_momentum_causality_003
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: true
+  violation_kind: momentum_causality
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_003_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 270
+  - 52
+  - 52
+  prompt_point_xy:
+  - 106
+  - 296
+  object_color_rgb:
+  - 118
+  - 219
+  - 166
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 52032
+  notes: ''
+- clip_id: test_momentum_causality_003_impossible
+  pair_id: test_momentum_causality_003
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: false
+  violation_kind: momentum_causality
+  violation_frame: 32
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_003_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 270
+  - 52
+  - 52
+  prompt_point_xy:
+  - 106
+  - 296
+  object_color_rgb:
+  - 118
+  - 219
+  - 166
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 52032
+  notes: ''
+- clip_id: test_momentum_causality_003_photo_possible
+  pair_id: test_momentum_causality_003_photo
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: true
+  violation_kind: momentum_causality
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_003_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 270
+  - 52
+  - 52
+  prompt_point_xy:
+  - 106
+  - 296
+  object_color_rgb:
+  - 118
+  - 219
+  - 166
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 52032
+  notes: ''
+- clip_id: test_momentum_causality_003_photo_impossible
+  pair_id: test_momentum_causality_003_photo
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: false
+  violation_kind: momentum_causality
+  violation_frame: 32
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_003_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 270
+  - 52
+  - 52
+  prompt_point_xy:
+  - 106
+  - 296
+  object_color_rgb:
+  - 118
+  - 219
+  - 166
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 52032
+  notes: ''
+- clip_id: test_momentum_causality_004_possible
+  pair_id: test_momentum_causality_004
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: true
+  violation_kind: momentum_causality
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_004_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 276
+  - 40
+  - 40
+  prompt_point_xy:
+  - 100
+  - 296
+  object_color_rgb:
+  - 183
+  - 226
+  - 107
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 52133
+  notes: ''
+- clip_id: test_momentum_causality_004_impossible
+  pair_id: test_momentum_causality_004
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: false
+  violation_kind: momentum_causality
+  violation_frame: 32
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_004_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 276
+  - 40
+  - 40
+  prompt_point_xy:
+  - 100
+  - 296
+  object_color_rgb:
+  - 183
+  - 226
+  - 107
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 52133
+  notes: ''
+- clip_id: test_momentum_causality_004_photo_possible
+  pair_id: test_momentum_causality_004_photo
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: true
+  violation_kind: momentum_causality
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_004_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 276
+  - 40
+  - 40
+  prompt_point_xy:
+  - 100
+  - 296
+  object_color_rgb:
+  - 183
+  - 226
+  - 107
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 52133
+  notes: ''
+- clip_id: test_momentum_causality_004_photo_impossible
+  pair_id: test_momentum_causality_004_photo
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: false
+  violation_kind: momentum_causality
+  violation_frame: 32
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_004_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 276
+  - 40
+  - 40
+  prompt_point_xy:
+  - 100
+  - 296
+  object_color_rgb:
+  - 183
+  - 226
+  - 107
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 52133
+  notes: ''
+- clip_id: test_momentum_causality_005_possible
+  pair_id: test_momentum_causality_005
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: true
+  violation_kind: momentum_causality
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_005_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 266
+  - 60
+  - 60
+  prompt_point_xy:
+  - 110
+  - 296
+  object_color_rgb:
+  - 136
+  - 209
+  - 120
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 52234
+  notes: ''
+- clip_id: test_momentum_causality_005_impossible
+  pair_id: test_momentum_causality_005
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: false
+  violation_kind: momentum_causality
+  violation_frame: 32
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_005_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 266
+  - 60
+  - 60
+  prompt_point_xy:
+  - 110
+  - 296
+  object_color_rgb:
+  - 136
+  - 209
+  - 120
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 52234
+  notes: ''
+- clip_id: test_momentum_causality_005_photo_possible
+  pair_id: test_momentum_causality_005_photo
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: true
+  violation_kind: momentum_causality
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_005_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 266
+  - 60
+  - 60
+  prompt_point_xy:
+  - 110
+  - 296
+  object_color_rgb:
+  - 136
+  - 209
+  - 120
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 52234
+  notes: ''
+- clip_id: test_momentum_causality_005_photo_impossible
+  pair_id: test_momentum_causality_005_photo
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: false
+  violation_kind: momentum_causality
+  violation_frame: 32
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_005_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 266
+  - 60
+  - 60
+  prompt_point_xy:
+  - 110
+  - 296
+  object_color_rgb:
+  - 136
+  - 209
+  - 120
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 52234
+  notes: ''
+- clip_id: test_momentum_causality_006_possible
+  pair_id: test_momentum_causality_006
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: true
+  violation_kind: momentum_causality
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_006_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 275
+  - 42
+  - 42
+  prompt_point_xy:
+  - 101
+  - 296
+  object_color_rgb:
+  - 117
+  - 104
+  - 103
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 52335
+  notes: ''
+- clip_id: test_momentum_causality_006_impossible
+  pair_id: test_momentum_causality_006
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: false
+  violation_kind: momentum_causality
+  violation_frame: 32
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_006_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 275
+  - 42
+  - 42
+  prompt_point_xy:
+  - 101
+  - 296
+  object_color_rgb:
+  - 117
+  - 104
+  - 103
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 52335
+  notes: ''
+- clip_id: test_momentum_causality_006_photo_possible
+  pair_id: test_momentum_causality_006_photo
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: true
+  violation_kind: momentum_causality
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_006_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 275
+  - 42
+  - 42
+  prompt_point_xy:
+  - 101
+  - 296
+  object_color_rgb:
+  - 117
+  - 104
+  - 103
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 52335
+  notes: ''
+- clip_id: test_momentum_causality_006_photo_impossible
+  pair_id: test_momentum_causality_006_photo
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: false
+  violation_kind: momentum_causality
+  violation_frame: 32
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_006_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 275
+  - 42
+  - 42
+  prompt_point_xy:
+  - 101
+  - 296
+  object_color_rgb:
+  - 117
+  - 104
+  - 103
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 52335
+  notes: ''
+- clip_id: test_momentum_causality_007_possible
+  pair_id: test_momentum_causality_007
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: true
+  violation_kind: momentum_causality
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_007_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 271
+  - 50
+  - 50
+  prompt_point_xy:
+  - 105
+  - 296
+  object_color_rgb:
+  - 139
+  - 195
+  - 81
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 52436
+  notes: ''
+- clip_id: test_momentum_causality_007_impossible
+  pair_id: test_momentum_causality_007
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: false
+  violation_kind: momentum_causality
+  violation_frame: 32
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_007_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 271
+  - 50
+  - 50
+  prompt_point_xy:
+  - 105
+  - 296
+  object_color_rgb:
+  - 139
+  - 195
+  - 81
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 52436
+  notes: ''
+- clip_id: test_momentum_causality_007_photo_possible
+  pair_id: test_momentum_causality_007_photo
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: true
+  violation_kind: momentum_causality
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_007_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 271
+  - 50
+  - 50
+  prompt_point_xy:
+  - 105
+  - 296
+  object_color_rgb:
+  - 139
+  - 195
+  - 81
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 52436
+  notes: ''
+- clip_id: test_momentum_causality_007_photo_impossible
+  pair_id: test_momentum_causality_007_photo
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: false
+  violation_kind: momentum_causality
+  violation_frame: 32
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_007_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 271
+  - 50
+  - 50
+  prompt_point_xy:
+  - 105
+  - 296
+  object_color_rgb:
+  - 139
+  - 195
+  - 81
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 52436
+  notes: ''
+- clip_id: test_momentum_causality_008_possible
+  pair_id: test_momentum_causality_008
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: true
+  violation_kind: momentum_causality
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_008_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 272
+  - 48
+  - 48
+  prompt_point_xy:
+  - 104
+  - 296
+  object_color_rgb:
+  - 201
+  - 94
+  - 228
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 52537
+  notes: ''
+- clip_id: test_momentum_causality_008_impossible
+  pair_id: test_momentum_causality_008
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: false
+  violation_kind: momentum_causality
+  violation_frame: 32
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_008_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 272
+  - 48
+  - 48
+  prompt_point_xy:
+  - 104
+  - 296
+  object_color_rgb:
+  - 201
+  - 94
+  - 228
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 52537
+  notes: ''
+- clip_id: test_momentum_causality_008_photo_possible
+  pair_id: test_momentum_causality_008_photo
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: true
+  violation_kind: momentum_causality
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_008_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 272
+  - 48
+  - 48
+  prompt_point_xy:
+  - 104
+  - 296
+  object_color_rgb:
+  - 201
+  - 94
+  - 228
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 52537
+  notes: ''
+- clip_id: test_momentum_causality_008_photo_impossible
+  pair_id: test_momentum_causality_008_photo
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: false
+  violation_kind: momentum_causality
+  violation_frame: 32
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_008_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 272
+  - 48
+  - 48
+  prompt_point_xy:
+  - 104
+  - 296
+  object_color_rgb:
+  - 201
+  - 94
+  - 228
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 52537
+  notes: ''
+- clip_id: test_momentum_causality_009_possible
+  pair_id: test_momentum_causality_009
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: true
+  violation_kind: momentum_causality
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_009_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 275
+  - 42
+  - 42
+  prompt_point_xy:
+  - 101
+  - 296
+  object_color_rgb:
+  - 195
+  - 142
+  - 122
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 52638
+  notes: ''
+- clip_id: test_momentum_causality_009_impossible
+  pair_id: test_momentum_causality_009
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: false
+  violation_kind: momentum_causality
+  violation_frame: 32
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_009_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 275
+  - 42
+  - 42
+  prompt_point_xy:
+  - 101
+  - 296
+  object_color_rgb:
+  - 195
+  - 142
+  - 122
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 52638
+  notes: ''
+- clip_id: test_momentum_causality_009_photo_possible
+  pair_id: test_momentum_causality_009_photo
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: true
+  violation_kind: momentum_causality
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_009_photo_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 275
+  - 42
+  - 42
+  prompt_point_xy:
+  - 101
+  - 296
+  object_color_rgb:
+  - 195
+  - 142
+  - 122
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 52638
+  notes: ''
+- clip_id: test_momentum_causality_009_photo_impossible
+  pair_id: test_momentum_causality_009_photo
+  source: synthetic
+  split: test
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: false
+  violation_kind: momentum_causality
+  violation_frame: 32
+  video_path: data/synthetic_generator/generated/test/momentum_causality/test_momentum_causality_009_photo_impossible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 275
+  - 42
+  - 42
+  prompt_point_xy:
+  - 101
+  - 296
+  object_color_rgb:
+  - 195
+  - 142
+  - 122
+  background_variant: photo_like
+  background_source: procedural_photo_like
+  photorealism_gap_control: true
+  seed: 52638
+  notes: ''
+- clip_id: calibration_object_permanence_000_possible
+  pair_id: calibration_object_permanence_000
+  source: synthetic
+  split: calibration
+  category: object_permanence
+  infant_construct: object permanence
+  possible: true
+  violation_kind: object_permanence
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/calibration/object_permanence/calibration_object_permanence_000_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 257
+  - 48
+  - 48
+  prompt_point_xy:
+  - 94
+  - 281
+  object_color_rgb:
+  - 75
+  - 114
+  - 89
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 501729
+  notes: ''
+- clip_id: calibration_object_permanence_001_possible
+  pair_id: calibration_object_permanence_001
+  source: synthetic
+  split: calibration
+  category: object_permanence
+  infant_construct: object permanence
+  possible: true
+  violation_kind: object_permanence
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/calibration/object_permanence/calibration_object_permanence_001_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 259
+  - 44
+  - 44
+  prompt_point_xy:
+  - 92
+  - 281
+  object_color_rgb:
+  - 195
+  - 182
+  - 85
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 501830
+  notes: ''
+- clip_id: calibration_solidity_000_possible
+  pair_id: calibration_solidity_000
+  source: synthetic
+  split: calibration
+  category: solidity
+  infant_construct: solidity
+  possible: true
+  violation_kind: solidity
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/calibration/solidity/calibration_solidity_000_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 263
+  - 46
+  - 46
+  prompt_point_xy:
+  - 93
+  - 286
+  object_color_rgb:
+  - 182
+  - 77
+  - 97
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 511729
+  notes: ''
+- clip_id: calibration_solidity_001_possible
+  pair_id: calibration_solidity_001
+  source: synthetic
+  split: calibration
+  category: solidity
+  infant_construct: solidity
+  possible: true
+  violation_kind: solidity
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/calibration/solidity/calibration_solidity_001_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 266
+  - 40
+  - 40
+  prompt_point_xy:
+  - 90
+  - 286
+  object_color_rgb:
+  - 136
+  - 141
+  - 169
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 511830
+  notes: ''
+- clip_id: calibration_continuity_teleportation_000_possible
+  pair_id: calibration_continuity_teleportation_000
+  source: synthetic
+  split: calibration
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: true
+  violation_kind: continuity_teleportation
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/calibration/continuity_teleportation/calibration_continuity_teleportation_000_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 234
+  - 44
+  - 44
+  prompt_point_xy:
+  - 92
+  - 256
+  object_color_rgb:
+  - 74
+  - 182
+  - 103
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 521729
+  notes: ''
+- clip_id: calibration_continuity_teleportation_001_possible
+  pair_id: calibration_continuity_teleportation_001
+  source: synthetic
+  split: calibration
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: true
+  violation_kind: continuity_teleportation
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/calibration/continuity_teleportation/calibration_continuity_teleportation_001_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 70
+  - 234
+  - 44
+  - 44
+  prompt_point_xy:
+  - 92
+  - 256
+  object_color_rgb:
+  - 162
+  - 221
+  - 149
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 521830
+  notes: ''
+- clip_id: calibration_gravity_support_000_possible
+  pair_id: calibration_gravity_support_000
+  source: synthetic
+  split: calibration
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: true
+  violation_kind: gravity_support
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/calibration/gravity_support/calibration_gravity_support_000_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 186
+  - 58
+  - 58
+  prompt_point_xy:
+  - 139
+  - 215
+  object_color_rgb:
+  - 165
+  - 121
+  - 88
+  background_variant: textured_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 531729
+  notes: ''
+- clip_id: calibration_gravity_support_001_possible
+  pair_id: calibration_gravity_support_001
+  source: synthetic
+  split: calibration
+  category: gravity_support
+  infant_construct: gravity and support
+  possible: true
+  violation_kind: gravity_support
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/calibration/gravity_support/calibration_gravity_support_001_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 110
+  - 187
+  - 56
+  - 56
+  prompt_point_xy:
+  - 138
+  - 215
+  object_color_rgb:
+  - 107
+  - 133
+  - 90
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 531830
+  notes: ''
+- clip_id: calibration_spontaneous_vanishing_000_possible
+  pair_id: calibration_spontaneous_vanishing_000
+  source: synthetic
+  split: calibration
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: true
+  violation_kind: spontaneous_vanishing
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/calibration/spontaneous_vanishing/calibration_spontaneous_vanishing_000_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 242
+  - 48
+  - 48
+  prompt_point_xy:
+  - 104
+  - 266
+  object_color_rgb:
+  - 146
+  - 144
+  - 175
+  background_variant: plain
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 541729
+  notes: ''
+- clip_id: calibration_spontaneous_vanishing_001_possible
+  pair_id: calibration_spontaneous_vanishing_001
+  source: synthetic
+  split: calibration
+  category: spontaneous_vanishing
+  infant_construct: spontaneous appearance or vanishing
+  possible: true
+  violation_kind: spontaneous_vanishing
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/calibration/spontaneous_vanishing/calibration_spontaneous_vanishing_001_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 239
+  - 54
+  - 54
+  prompt_point_xy:
+  - 107
+  - 266
+  object_color_rgb:
+  - 133
+  - 228
+  - 217
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 541830
+  notes: ''
+- clip_id: calibration_momentum_causality_000_possible
+  pair_id: calibration_momentum_causality_000
+  source: synthetic
+  split: calibration
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: true
+  violation_kind: momentum_causality
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/calibration/momentum_causality/calibration_momentum_causality_000_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 275
+  - 42
+  - 42
+  prompt_point_xy:
+  - 101
+  - 296
+  object_color_rgb:
+  - 158
+  - 160
+  - 192
+  background_variant: textured
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 551729
+  notes: ''
+- clip_id: calibration_momentum_causality_001_possible
+  pair_id: calibration_momentum_causality_001
+  source: synthetic
+  split: calibration
+  category: momentum_causality
+  infant_construct: momentum and causality
+  possible: true
+  violation_kind: momentum_causality
+  violation_frame: null
+  video_path: data/synthetic_generator/generated/calibration/momentum_causality/calibration_momentum_causality_001_possible.mp4
+  width: 512
+  height: 512
+  fps: 24
+  num_frames: 72
+  prompt_box_xywh:
+  - 80
+  - 273
+  - 46
+  - 46
+  prompt_point_xy:
+  - 103
+  - 296
+  object_color_rgb:
+  - 208
+  - 103
+  - 74
+  background_variant: plain_shake
+  background_source: procedural
+  photorealism_gap_control: false
+  seed: 551830
+  notes: ''

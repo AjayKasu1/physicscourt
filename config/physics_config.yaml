@@ -1,0 +1,21 @@
+# Phase 3 will tune these only on calibration clips. They live here now so that
+# Detector B has one auditable place for physical-rule assumptions.
+continuity:
+  velocity_percentile: 95
+  max_jump_multiplier: 3.0
+
+permanence:
+  min_visible_area_ratio: 0.08
+  occlusion_exit_tolerance_frames: 12
+
+solidity:
+  depth_edge_percentile: 90
+  required_velocity_change_ratio: 0.25
+
+gravity:
+  unsupported_tolerance_frames: 6
+  min_downward_accel_px_per_frame2: 0.05
+
+mass_conservation:
+  max_area_change_ratio_per_frame: 0.35
+

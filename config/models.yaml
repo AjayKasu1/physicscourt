@@ -1,0 +1,49 @@
+hardware:
+  machine: "MacBook Pro 13-inch M2 2022"
+  unified_memory_gb: 8
+  max_short_side_px: 384
+  synthetic_frame_size_px: 512
+  one_model_at_a_time: true
+  prefer_mps: true
+  fp16_on_mps_when_safe: true
+  repo_cache_limit_gb: 25
+
+models:
+  dino_latent:
+    role: "Detector A primary on 8 GB if V-JEPA is not viable"
+    model_id: "facebook/dinov2-small"
+    fallback_model_id: "facebook/dinov2-base"
+    loader: "transformers.AutoImageProcessor+AutoModel"
+    default_primary_for_8gb: true
+    smoke_timeout_seconds: 180
+
+  vjepa2:
+    role: "Detector A full video-latent attempt"
+    model_id: "facebook/vjepa2-vitl-fpc64-256"
+    loader: "transformers.AutoVideoProcessor+VJEPA2Model"
+    max_smoke_frames: 16
+    smoke_timeout_seconds: 240
+    stop_after_timeout: true
+    expected_risk: "0.3B parameters; may not fit in 8 GB even as a standalone model"
+
+  depth_anything_v2:
+    role: "Detector B depth"
+    model_id: "depth-anything/Depth-Anything-V2-Small-hf"
+    loader: "transformers.AutoImageProcessor+AutoModelForDepthEstimation"
+    smoke_timeout_seconds: 180
+
+  sam2:
+    role: "Detector B mask prompt"
+    model_id: "facebook/sam2.1-hiera-tiny"
+    loader: "transformers.Sam2Processor+Sam2Model"
+    smoke_timeout_seconds: 240
+
+  cotracker:
+    role: "Detector B point tracking"
+    model_id: "facebook/cotracker3"
+    checkpoint_file: "scaled_offline.pth"
+    package: "git+https://github.com/facebookresearch/co-tracker.git@82e02e8029753ad4ef13cf06be7f4fc5facdda4d"
+    loader: "cotracker.predictor.CoTrackerPredictor"
+    smoke_timeout_seconds: 300
+    no_stub: true
+    stop_if_unavailable: true

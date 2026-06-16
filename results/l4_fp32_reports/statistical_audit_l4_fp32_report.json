@@ -1,0 +1,1107 @@
+{
+  "created_at": "2026-06-16T07:22:45.058550+00:00",
+  "seed": 20260615,
+  "n_bootstrap": 5000,
+  "detectors": {
+    "vjepa2": "V-JEPA 2 latent-prediction detector",
+    "dino_latent": "DINOv2 latent-extrapolation baseline",
+    "li_state_rules": "SSRD: Spatial-State Rule Detector"
+  },
+  "notes": {
+    "bootstrap": "AUC confidence intervals resample possible/impossible pairs with replacement within each category.",
+    "complementarity": "A pair is correct when the impossible clip outscores its possible twin.",
+    "mcnemar": "Exact two-sided McNemar test uses pair-level discordant correctness counts.",
+    "oracle": "The oracle ensemble is a label-aware upper bound, not a deployable method; it measures whether the two detectors carry complementary signal."
+  },
+  "auc_ci95_by_detector_category": {
+    "vjepa2": {
+      "continuity_teleportation": {
+        "observed": 0.49375,
+        "ci95_low": 0.4675,
+        "ci95_high": 0.4987499999999999,
+        "n_bootstrap": 5000,
+        "bootstrap_unit": "possible/impossible pair",
+        "num_pairs": 20,
+        "num_clips": 40
+      },
+      "gravity_support": {
+        "observed": 0.49999999999999994,
+        "ci95_low": 0.49999999999999994,
+        "ci95_high": 0.5,
+        "n_bootstrap": 5000,
+        "bootstrap_unit": "possible/impossible pair",
+        "num_pairs": 20,
+        "num_clips": 40
+      },
+      "momentum_causality": {
+        "observed": 0.4975,
+        "ci95_low": 0.47375,
+        "ci95_high": 0.5137499999999999,
+        "n_bootstrap": 5000,
+        "bootstrap_unit": "possible/impossible pair",
+        "num_pairs": 20,
+        "num_clips": 40
+      },
+      "object_permanence": {
+        "observed": 0.7775000000000001,
+        "ci95_low": 0.675,
+        "ci95_high": 0.9012812499999997,
+        "n_bootstrap": 5000,
+        "bootstrap_unit": "possible/impossible pair",
+        "num_pairs": 20,
+        "num_clips": 40
+      },
+      "solidity": {
+        "observed": 0.46625,
+        "ci95_low": 0.40374999999999994,
+        "ci95_high": 0.49625,
+        "n_bootstrap": 5000,
+        "bootstrap_unit": "possible/impossible pair",
+        "num_pairs": 20,
+        "num_clips": 40
+      },
+      "spontaneous_vanishing": {
+        "observed": 0.5762499999999999,
+        "ci95_low": 0.51375,
+        "ci95_high": 0.6637500000000001,
+        "n_bootstrap": 5000,
+        "bootstrap_unit": "possible/impossible pair",
+        "num_pairs": 20,
+        "num_clips": 40
+      }
+    },
+    "dino_latent": {
+      "continuity_teleportation": {
+        "observed": 0.7262500000000001,
+        "ci95_low": 0.65125,
+        "ci95_high": 0.8175312499999997,
+        "n_bootstrap": 5000,
+        "bootstrap_unit": "possible/impossible pair",
+        "num_pairs": 20,
+        "num_clips": 40
+      },
+      "gravity_support": {
+        "observed": 0.23125,
+        "ci95_low": 0.1362187500000001,
+        "ci95_high": 0.31875000000000003,
+        "n_bootstrap": 5000,
+        "bootstrap_unit": "possible/impossible pair",
+        "num_pairs": 20,
+        "num_clips": 40
+      },
+      "momentum_causality": {
+        "observed": 0.49750000000000005,
+        "ci95_low": 0.4175,
+        "ci95_high": 0.5600312499999996,
+        "n_bootstrap": 5000,
+        "bootstrap_unit": "possible/impossible pair",
+        "num_pairs": 20,
+        "num_clips": 40
+      },
+      "object_permanence": {
+        "observed": 0.35624999999999996,
+        "ci95_low": 0.28500000000000003,
+        "ci95_high": 0.41125,
+        "n_bootstrap": 5000,
+        "bootstrap_unit": "possible/impossible pair",
+        "num_pairs": 20,
+        "num_clips": 40
+      },
+      "solidity": {
+        "observed": 0.5662499999999999,
+        "ci95_low": 0.46625000000000005,
+        "ci95_high": 0.675,
+        "n_bootstrap": 5000,
+        "bootstrap_unit": "possible/impossible pair",
+        "num_pairs": 20,
+        "num_clips": 40
+      },
+      "spontaneous_vanishing": {
+        "observed": 0.31500000000000006,
+        "ci95_low": 0.185,
+        "ci95_high": 0.45000000000000007,
+        "n_bootstrap": 5000,
+        "bootstrap_unit": "possible/impossible pair",
+        "num_pairs": 20,
+        "num_clips": 40
+      }
+    },
+    "li_state_rules": {
+      "continuity_teleportation": {
+        "observed": 0.9412499999999999,
+        "ci95_low": 0.84625,
+        "ci95_high": 1.0,
+        "n_bootstrap": 5000,
+        "bootstrap_unit": "possible/impossible pair",
+        "num_pairs": 20,
+        "num_clips": 40
+      },
+      "gravity_support": {
+        "observed": 0.09250000000000004,
+        "ci95_low": 0.0,
+        "ci95_high": 0.20249999999999999,
+        "n_bootstrap": 5000,
+        "bootstrap_unit": "possible/impossible pair",
+        "num_pairs": 20,
+        "num_clips": 40
+      },
+      "momentum_causality": {
+        "observed": 0.475,
+        "ci95_low": 0.38499999999999995,
+        "ci95_high": 0.565,
+        "n_bootstrap": 5000,
+        "bootstrap_unit": "possible/impossible pair",
+        "num_pairs": 20,
+        "num_clips": 40
+      },
+      "object_permanence": {
+        "observed": 1.0,
+        "ci95_low": 1.0,
+        "ci95_high": 1.0,
+        "n_bootstrap": 5000,
+        "bootstrap_unit": "possible/impossible pair",
+        "num_pairs": 20,
+        "num_clips": 40
+      },
+      "solidity": {
+        "observed": 0.95,
+        "ci95_low": 0.8499999999999999,
+        "ci95_high": 1.0,
+        "n_bootstrap": 5000,
+        "bootstrap_unit": "possible/impossible pair",
+        "num_pairs": 20,
+        "num_clips": 40
+      },
+      "spontaneous_vanishing": {
+        "observed": 0.9025000000000001,
+        "ci95_low": 0.7625000000000001,
+        "ci95_high": 1.0,
+        "n_bootstrap": 5000,
+        "bootstrap_unit": "possible/impossible pair",
+        "num_pairs": 20,
+        "num_clips": 40
+      }
+    }
+  },
+  "complementarity_by_category": {
+    "continuity_teleportation": {
+      "vjepa2_vs_ssrd": {
+        "comparison": "vjepa2_vs_ssrd",
+        "unit": "possible/impossible pair",
+        "counts": {
+          "both_correct": 0,
+          "vjepa2_only": 0,
+          "ssrd_only": 19,
+          "neither_correct": 1
+        },
+        "rates": {
+          "both_correct": 0.0,
+          "vjepa2_only": 0.0,
+          "ssrd_only": 0.95,
+          "neither_correct": 0.05
+        },
+        "margin_sign_counts": {
+          "vjepa2": {
+            "impossible_higher": 0,
+            "possible_higher": 5,
+            "tied": 15
+          },
+          "ssrd": {
+            "impossible_higher": 19,
+            "possible_higher": 0,
+            "tied": 1
+          }
+        },
+        "num_pairs": 20,
+        "mcnemar": {
+          "a_only": 0,
+          "b_only": 19,
+          "discordant": 19,
+          "exact_two_sided_p": 3.814697265625e-06,
+          "null": "Both detectors have equal pair-level error rate on the shared pairs."
+        },
+        "pair_accuracy": {
+          "vjepa2": 0.0,
+          "ssrd": 0.95,
+          "vjepa2_tie_half": 0.375,
+          "ssrd_tie_half": 0.975,
+          "label_aware_oracle": 0.95
+        },
+        "example_pair_ids": {
+          "both_correct": [],
+          "vjepa2_only": [],
+          "ssrd_only": [
+            "test_continuity_teleportation_000",
+            "test_continuity_teleportation_000_photo",
+            "test_continuity_teleportation_001",
+            "test_continuity_teleportation_001_photo",
+            "test_continuity_teleportation_002"
+          ],
+          "neither_correct": [
+            "test_continuity_teleportation_007"
+          ]
+        }
+      },
+      "dino_vs_ssrd": {
+        "comparison": "dino_vs_ssrd",
+        "unit": "possible/impossible pair",
+        "counts": {
+          "both_correct": 16,
+          "dino_only": 1,
+          "ssrd_only": 3,
+          "neither_correct": 0
+        },
+        "rates": {
+          "both_correct": 0.8,
+          "dino_only": 0.05,
+          "ssrd_only": 0.15,
+          "neither_correct": 0.0
+        },
+        "margin_sign_counts": {
+          "dino": {
+            "impossible_higher": 17,
+            "possible_higher": 2,
+            "tied": 1
+          },
+          "ssrd": {
+            "impossible_higher": 19,
+            "possible_higher": 0,
+            "tied": 1
+          }
+        },
+        "num_pairs": 20,
+        "mcnemar": {
+          "a_only": 1,
+          "b_only": 3,
+          "discordant": 4,
+          "exact_two_sided_p": 0.625,
+          "null": "Both detectors have equal pair-level error rate on the shared pairs."
+        },
+        "pair_accuracy": {
+          "dino": 0.85,
+          "ssrd": 0.95,
+          "dino_tie_half": 0.875,
+          "ssrd_tie_half": 0.975,
+          "label_aware_oracle": 1.0
+        },
+        "example_pair_ids": {
+          "both_correct": [
+            "test_continuity_teleportation_000_photo",
+            "test_continuity_teleportation_001_photo",
+            "test_continuity_teleportation_002_photo",
+            "test_continuity_teleportation_003",
+            "test_continuity_teleportation_003_photo"
+          ],
+          "dino_only": [
+            "test_continuity_teleportation_007"
+          ],
+          "ssrd_only": [
+            "test_continuity_teleportation_000",
+            "test_continuity_teleportation_001",
+            "test_continuity_teleportation_002"
+          ],
+          "neither_correct": []
+        }
+      },
+      "oracle_ensemble_auc": {
+        "roc_auc": 1.0,
+        "score_space": "within-category rank-normalized detector scores",
+        "oracle_definition": "Label-aware upper bound: impossible clips receive the max rank score across detectors, possible clips receive the min rank score. This is not a deployable detector."
+      }
+    },
+    "gravity_support": {
+      "vjepa2_vs_ssrd": {
+        "comparison": "vjepa2_vs_ssrd",
+        "unit": "possible/impossible pair",
+        "counts": {
+          "both_correct": 0,
+          "vjepa2_only": 0,
+          "ssrd_only": 0,
+          "neither_correct": 20
+        },
+        "rates": {
+          "both_correct": 0.0,
+          "vjepa2_only": 0.0,
+          "ssrd_only": 0.0,
+          "neither_correct": 1.0
+        },
+        "margin_sign_counts": {
+          "vjepa2": {
+            "impossible_higher": 0,
+            "possible_higher": 0,
+            "tied": 20
+          },
+          "ssrd": {
+            "impossible_higher": 0,
+            "possible_higher": 20,
+            "tied": 0
+          }
+        },
+        "num_pairs": 20,
+        "mcnemar": {
+          "a_only": 0,
+          "b_only": 0,
+          "discordant": 0,
+          "exact_two_sided_p": 1.0,
+          "null": "Both detectors have equal pair-level error rate on the shared pairs."
+        },
+        "pair_accuracy": {
+          "vjepa2": 0.0,
+          "ssrd": 0.0,
+          "vjepa2_tie_half": 0.5,
+          "ssrd_tie_half": 0.0,
+          "label_aware_oracle": 0.0
+        },
+        "example_pair_ids": {
+          "both_correct": [],
+          "vjepa2_only": [],
+          "ssrd_only": [],
+          "neither_correct": [
+            "test_gravity_support_000",
+            "test_gravity_support_000_photo",
+            "test_gravity_support_001",
+            "test_gravity_support_001_photo",
+            "test_gravity_support_002"
+          ]
+        }
+      },
+      "dino_vs_ssrd": {
+        "comparison": "dino_vs_ssrd",
+        "unit": "possible/impossible pair",
+        "counts": {
+          "both_correct": 0,
+          "dino_only": 2,
+          "ssrd_only": 0,
+          "neither_correct": 18
+        },
+        "rates": {
+          "both_correct": 0.0,
+          "dino_only": 0.1,
+          "ssrd_only": 0.0,
+          "neither_correct": 0.9
+        },
+        "margin_sign_counts": {
+          "dino": {
+            "impossible_higher": 2,
+            "possible_higher": 17,
+            "tied": 1
+          },
+          "ssrd": {
+            "impossible_higher": 0,
+            "possible_higher": 20,
+            "tied": 0
+          }
+        },
+        "num_pairs": 20,
+        "mcnemar": {
+          "a_only": 2,
+          "b_only": 0,
+          "discordant": 2,
+          "exact_two_sided_p": 0.5,
+          "null": "Both detectors have equal pair-level error rate on the shared pairs."
+        },
+        "pair_accuracy": {
+          "dino": 0.1,
+          "ssrd": 0.0,
+          "dino_tie_half": 0.125,
+          "ssrd_tie_half": 0.0,
+          "label_aware_oracle": 0.1
+        },
+        "example_pair_ids": {
+          "both_correct": [],
+          "dino_only": [
+            "test_gravity_support_002",
+            "test_gravity_support_003_photo"
+          ],
+          "ssrd_only": [],
+          "neither_correct": [
+            "test_gravity_support_000",
+            "test_gravity_support_000_photo",
+            "test_gravity_support_001",
+            "test_gravity_support_001_photo",
+            "test_gravity_support_002_photo"
+          ]
+        }
+      },
+      "oracle_ensemble_auc": {
+        "roc_auc": 0.65375,
+        "score_space": "within-category rank-normalized detector scores",
+        "oracle_definition": "Label-aware upper bound: impossible clips receive the max rank score across detectors, possible clips receive the min rank score. This is not a deployable detector."
+      }
+    },
+    "momentum_causality": {
+      "vjepa2_vs_ssrd": {
+        "comparison": "vjepa2_vs_ssrd",
+        "unit": "possible/impossible pair",
+        "counts": {
+          "both_correct": 1,
+          "vjepa2_only": 1,
+          "ssrd_only": 8,
+          "neither_correct": 10
+        },
+        "rates": {
+          "both_correct": 0.05,
+          "vjepa2_only": 0.05,
+          "ssrd_only": 0.4,
+          "neither_correct": 0.5
+        },
+        "margin_sign_counts": {
+          "vjepa2": {
+            "impossible_higher": 2,
+            "possible_higher": 4,
+            "tied": 14
+          },
+          "ssrd": {
+            "impossible_higher": 9,
+            "possible_higher": 11,
+            "tied": 0
+          }
+        },
+        "num_pairs": 20,
+        "mcnemar": {
+          "a_only": 1,
+          "b_only": 8,
+          "discordant": 9,
+          "exact_two_sided_p": 0.0390625,
+          "null": "Both detectors have equal pair-level error rate on the shared pairs."
+        },
+        "pair_accuracy": {
+          "vjepa2": 0.1,
+          "ssrd": 0.45,
+          "vjepa2_tie_half": 0.45,
+          "ssrd_tie_half": 0.45,
+          "label_aware_oracle": 0.5
+        },
+        "example_pair_ids": {
+          "both_correct": [
+            "test_momentum_causality_003"
+          ],
+          "vjepa2_only": [
+            "test_momentum_causality_002"
+          ],
+          "ssrd_only": [
+            "test_momentum_causality_000",
+            "test_momentum_causality_004",
+            "test_momentum_causality_004_photo",
+            "test_momentum_causality_006_photo",
+            "test_momentum_causality_008"
+          ],
+          "neither_correct": [
+            "test_momentum_causality_000_photo",
+            "test_momentum_causality_001",
+            "test_momentum_causality_001_photo",
+            "test_momentum_causality_002_photo",
+            "test_momentum_causality_003_photo"
+          ]
+        }
+      },
+      "dino_vs_ssrd": {
+        "comparison": "dino_vs_ssrd",
+        "unit": "possible/impossible pair",
+        "counts": {
+          "both_correct": 4,
+          "dino_only": 1,
+          "ssrd_only": 5,
+          "neither_correct": 10
+        },
+        "rates": {
+          "both_correct": 0.2,
+          "dino_only": 0.05,
+          "ssrd_only": 0.25,
+          "neither_correct": 0.5
+        },
+        "margin_sign_counts": {
+          "dino": {
+            "impossible_higher": 5,
+            "possible_higher": 11,
+            "tied": 4
+          },
+          "ssrd": {
+            "impossible_higher": 9,
+            "possible_higher": 11,
+            "tied": 0
+          }
+        },
+        "num_pairs": 20,
+        "mcnemar": {
+          "a_only": 1,
+          "b_only": 5,
+          "discordant": 6,
+          "exact_two_sided_p": 0.21875,
+          "null": "Both detectors have equal pair-level error rate on the shared pairs."
+        },
+        "pair_accuracy": {
+          "dino": 0.25,
+          "ssrd": 0.45,
+          "dino_tie_half": 0.35,
+          "ssrd_tie_half": 0.45,
+          "label_aware_oracle": 0.5
+        },
+        "example_pair_ids": {
+          "both_correct": [
+            "test_momentum_causality_004",
+            "test_momentum_causality_006_photo",
+            "test_momentum_causality_008_photo",
+            "test_momentum_causality_009"
+          ],
+          "dino_only": [
+            "test_momentum_causality_001"
+          ],
+          "ssrd_only": [
+            "test_momentum_causality_000",
+            "test_momentum_causality_003",
+            "test_momentum_causality_004_photo",
+            "test_momentum_causality_008",
+            "test_momentum_causality_009_photo"
+          ],
+          "neither_correct": [
+            "test_momentum_causality_000_photo",
+            "test_momentum_causality_001_photo",
+            "test_momentum_causality_002",
+            "test_momentum_causality_002_photo",
+            "test_momentum_causality_003_photo"
+          ]
+        }
+      },
+      "oracle_ensemble_auc": {
+        "roc_auc": 0.895,
+        "score_space": "within-category rank-normalized detector scores",
+        "oracle_definition": "Label-aware upper bound: impossible clips receive the max rank score across detectors, possible clips receive the min rank score. This is not a deployable detector."
+      }
+    },
+    "object_permanence": {
+      "vjepa2_vs_ssrd": {
+        "comparison": "vjepa2_vs_ssrd",
+        "unit": "possible/impossible pair",
+        "counts": {
+          "both_correct": 17,
+          "vjepa2_only": 0,
+          "ssrd_only": 3,
+          "neither_correct": 0
+        },
+        "rates": {
+          "both_correct": 0.85,
+          "vjepa2_only": 0.0,
+          "ssrd_only": 0.15,
+          "neither_correct": 0.0
+        },
+        "margin_sign_counts": {
+          "vjepa2": {
+            "impossible_higher": 17,
+            "possible_higher": 1,
+            "tied": 2
+          },
+          "ssrd": {
+            "impossible_higher": 20,
+            "possible_higher": 0,
+            "tied": 0
+          }
+        },
+        "num_pairs": 20,
+        "mcnemar": {
+          "a_only": 0,
+          "b_only": 3,
+          "discordant": 3,
+          "exact_two_sided_p": 0.25,
+          "null": "Both detectors have equal pair-level error rate on the shared pairs."
+        },
+        "pair_accuracy": {
+          "vjepa2": 0.85,
+          "ssrd": 1.0,
+          "vjepa2_tie_half": 0.9,
+          "ssrd_tie_half": 1.0,
+          "label_aware_oracle": 1.0
+        },
+        "example_pair_ids": {
+          "both_correct": [
+            "test_object_permanence_000",
+            "test_object_permanence_000_photo",
+            "test_object_permanence_001",
+            "test_object_permanence_001_photo",
+            "test_object_permanence_002_photo"
+          ],
+          "vjepa2_only": [],
+          "ssrd_only": [
+            "test_object_permanence_002",
+            "test_object_permanence_003",
+            "test_object_permanence_007"
+          ],
+          "neither_correct": []
+        }
+      },
+      "dino_vs_ssrd": {
+        "comparison": "dino_vs_ssrd",
+        "unit": "possible/impossible pair",
+        "counts": {
+          "both_correct": 0,
+          "dino_only": 0,
+          "ssrd_only": 20,
+          "neither_correct": 0
+        },
+        "rates": {
+          "both_correct": 0.0,
+          "dino_only": 0.0,
+          "ssrd_only": 1.0,
+          "neither_correct": 0.0
+        },
+        "margin_sign_counts": {
+          "dino": {
+            "impossible_higher": 0,
+            "possible_higher": 13,
+            "tied": 7
+          },
+          "ssrd": {
+            "impossible_higher": 20,
+            "possible_higher": 0,
+            "tied": 0
+          }
+        },
+        "num_pairs": 20,
+        "mcnemar": {
+          "a_only": 0,
+          "b_only": 20,
+          "discordant": 20,
+          "exact_two_sided_p": 1.9073486328125e-06,
+          "null": "Both detectors have equal pair-level error rate on the shared pairs."
+        },
+        "pair_accuracy": {
+          "dino": 0.0,
+          "ssrd": 1.0,
+          "dino_tie_half": 0.175,
+          "ssrd_tie_half": 1.0,
+          "label_aware_oracle": 1.0
+        },
+        "example_pair_ids": {
+          "both_correct": [],
+          "dino_only": [],
+          "ssrd_only": [
+            "test_object_permanence_000",
+            "test_object_permanence_000_photo",
+            "test_object_permanence_001",
+            "test_object_permanence_001_photo",
+            "test_object_permanence_002"
+          ],
+          "neither_correct": []
+        }
+      },
+      "oracle_ensemble_auc": {
+        "roc_auc": 1.0,
+        "score_space": "within-category rank-normalized detector scores",
+        "oracle_definition": "Label-aware upper bound: impossible clips receive the max rank score across detectors, possible clips receive the min rank score. This is not a deployable detector."
+      }
+    },
+    "solidity": {
+      "vjepa2_vs_ssrd": {
+        "comparison": "vjepa2_vs_ssrd",
+        "unit": "possible/impossible pair",
+        "counts": {
+          "both_correct": 1,
+          "vjepa2_only": 0,
+          "ssrd_only": 18,
+          "neither_correct": 1
+        },
+        "rates": {
+          "both_correct": 0.05,
+          "vjepa2_only": 0.0,
+          "ssrd_only": 0.9,
+          "neither_correct": 0.05
+        },
+        "margin_sign_counts": {
+          "vjepa2": {
+            "impossible_higher": 1,
+            "possible_higher": 8,
+            "tied": 11
+          },
+          "ssrd": {
+            "impossible_higher": 19,
+            "possible_higher": 1,
+            "tied": 0
+          }
+        },
+        "num_pairs": 20,
+        "mcnemar": {
+          "a_only": 0,
+          "b_only": 18,
+          "discordant": 18,
+          "exact_two_sided_p": 7.62939453125e-06,
+          "null": "Both detectors have equal pair-level error rate on the shared pairs."
+        },
+        "pair_accuracy": {
+          "vjepa2": 0.05,
+          "ssrd": 0.95,
+          "vjepa2_tie_half": 0.325,
+          "ssrd_tie_half": 0.95,
+          "label_aware_oracle": 0.95
+        },
+        "example_pair_ids": {
+          "both_correct": [
+            "test_solidity_007_photo"
+          ],
+          "vjepa2_only": [],
+          "ssrd_only": [
+            "test_solidity_000",
+            "test_solidity_000_photo",
+            "test_solidity_001",
+            "test_solidity_001_photo",
+            "test_solidity_002"
+          ],
+          "neither_correct": [
+            "test_solidity_004"
+          ]
+        }
+      },
+      "dino_vs_ssrd": {
+        "comparison": "dino_vs_ssrd",
+        "unit": "possible/impossible pair",
+        "counts": {
+          "both_correct": 13,
+          "dino_only": 1,
+          "ssrd_only": 6,
+          "neither_correct": 0
+        },
+        "rates": {
+          "both_correct": 0.65,
+          "dino_only": 0.05,
+          "ssrd_only": 0.3,
+          "neither_correct": 0.0
+        },
+        "margin_sign_counts": {
+          "dino": {
+            "impossible_higher": 14,
+            "possible_higher": 5,
+            "tied": 1
+          },
+          "ssrd": {
+            "impossible_higher": 19,
+            "possible_higher": 1,
+            "tied": 0
+          }
+        },
+        "num_pairs": 20,
+        "mcnemar": {
+          "a_only": 1,
+          "b_only": 6,
+          "discordant": 7,
+          "exact_two_sided_p": 0.125,
+          "null": "Both detectors have equal pair-level error rate on the shared pairs."
+        },
+        "pair_accuracy": {
+          "dino": 0.7,
+          "ssrd": 0.95,
+          "dino_tie_half": 0.725,
+          "ssrd_tie_half": 0.95,
+          "label_aware_oracle": 1.0
+        },
+        "example_pair_ids": {
+          "both_correct": [
+            "test_solidity_000",
+            "test_solidity_000_photo",
+            "test_solidity_001",
+            "test_solidity_001_photo",
+            "test_solidity_002_photo"
+          ],
+          "dino_only": [
+            "test_solidity_004"
+          ],
+          "ssrd_only": [
+            "test_solidity_002",
+            "test_solidity_003_photo",
+            "test_solidity_005_photo",
+            "test_solidity_006_photo",
+            "test_solidity_008"
+          ],
+          "neither_correct": []
+        }
+      },
+      "oracle_ensemble_auc": {
+        "roc_auc": 0.99125,
+        "score_space": "within-category rank-normalized detector scores",
+        "oracle_definition": "Label-aware upper bound: impossible clips receive the max rank score across detectors, possible clips receive the min rank score. This is not a deployable detector."
+      }
+    },
+    "spontaneous_vanishing": {
+      "vjepa2_vs_ssrd": {
+        "comparison": "vjepa2_vs_ssrd",
+        "unit": "possible/impossible pair",
+        "counts": {
+          "both_correct": 6,
+          "vjepa2_only": 0,
+          "ssrd_only": 12,
+          "neither_correct": 2
+        },
+        "rates": {
+          "both_correct": 0.3,
+          "vjepa2_only": 0.0,
+          "ssrd_only": 0.6,
+          "neither_correct": 0.1
+        },
+        "margin_sign_counts": {
+          "vjepa2": {
+            "impossible_higher": 6,
+            "possible_higher": 1,
+            "tied": 13
+          },
+          "ssrd": {
+            "impossible_higher": 18,
+            "possible_higher": 1,
+            "tied": 1
+          }
+        },
+        "num_pairs": 20,
+        "mcnemar": {
+          "a_only": 0,
+          "b_only": 12,
+          "discordant": 12,
+          "exact_two_sided_p": 0.00048828125,
+          "null": "Both detectors have equal pair-level error rate on the shared pairs."
+        },
+        "pair_accuracy": {
+          "vjepa2": 0.3,
+          "ssrd": 0.9,
+          "vjepa2_tie_half": 0.625,
+          "ssrd_tie_half": 0.925,
+          "label_aware_oracle": 0.9
+        },
+        "example_pair_ids": {
+          "both_correct": [
+            "test_spontaneous_vanishing_000",
+            "test_spontaneous_vanishing_000_photo",
+            "test_spontaneous_vanishing_002",
+            "test_spontaneous_vanishing_004",
+            "test_spontaneous_vanishing_006_photo"
+          ],
+          "vjepa2_only": [],
+          "ssrd_only": [
+            "test_spontaneous_vanishing_001",
+            "test_spontaneous_vanishing_001_photo",
+            "test_spontaneous_vanishing_003",
+            "test_spontaneous_vanishing_003_photo",
+            "test_spontaneous_vanishing_004_photo"
+          ],
+          "neither_correct": [
+            "test_spontaneous_vanishing_002_photo",
+            "test_spontaneous_vanishing_008_photo"
+          ]
+        }
+      },
+      "dino_vs_ssrd": {
+        "comparison": "dino_vs_ssrd",
+        "unit": "possible/impossible pair",
+        "counts": {
+          "both_correct": 5,
+          "dino_only": 0,
+          "ssrd_only": 13,
+          "neither_correct": 2
+        },
+        "rates": {
+          "both_correct": 0.25,
+          "dino_only": 0.0,
+          "ssrd_only": 0.65,
+          "neither_correct": 0.1
+        },
+        "margin_sign_counts": {
+          "dino": {
+            "impossible_higher": 5,
+            "possible_higher": 15,
+            "tied": 0
+          },
+          "ssrd": {
+            "impossible_higher": 18,
+            "possible_higher": 1,
+            "tied": 1
+          }
+        },
+        "num_pairs": 20,
+        "mcnemar": {
+          "a_only": 0,
+          "b_only": 13,
+          "discordant": 13,
+          "exact_two_sided_p": 0.000244140625,
+          "null": "Both detectors have equal pair-level error rate on the shared pairs."
+        },
+        "pair_accuracy": {
+          "dino": 0.25,
+          "ssrd": 0.9,
+          "dino_tie_half": 0.25,
+          "ssrd_tie_half": 0.925,
+          "label_aware_oracle": 0.9
+        },
+        "example_pair_ids": {
+          "both_correct": [
+            "test_spontaneous_vanishing_001",
+            "test_spontaneous_vanishing_004",
+            "test_spontaneous_vanishing_005",
+            "test_spontaneous_vanishing_007",
+            "test_spontaneous_vanishing_009"
+          ],
+          "dino_only": [],
+          "ssrd_only": [
+            "test_spontaneous_vanishing_000",
+            "test_spontaneous_vanishing_000_photo",
+            "test_spontaneous_vanishing_001_photo",
+            "test_spontaneous_vanishing_002",
+            "test_spontaneous_vanishing_003"
+          ],
+          "neither_correct": [
+            "test_spontaneous_vanishing_002_photo",
+            "test_spontaneous_vanishing_008_photo"
+          ]
+        }
+      },
+      "oracle_ensemble_auc": {
+        "roc_auc": 0.9962500000000001,
+        "score_space": "within-category rank-normalized detector scores",
+        "oracle_definition": "Label-aware upper bound: impossible clips receive the max rank score across detectors, possible clips receive the min rank score. This is not a deployable detector."
+      }
+    }
+  },
+  "overall_complementarity": {
+    "vjepa2_vs_ssrd": {
+      "comparison": "vjepa2_vs_ssrd",
+      "unit": "possible/impossible pair",
+      "counts": {
+        "both_correct": 25,
+        "vjepa2_only": 1,
+        "ssrd_only": 60,
+        "neither_correct": 34
+      },
+      "rates": {
+        "both_correct": 0.20833333333333334,
+        "vjepa2_only": 0.008333333333333333,
+        "ssrd_only": 0.5,
+        "neither_correct": 0.2833333333333333
+      },
+      "margin_sign_counts": {
+        "vjepa2": {
+          "impossible_higher": 26,
+          "possible_higher": 19,
+          "tied": 75
+        },
+        "ssrd": {
+          "impossible_higher": 85,
+          "possible_higher": 33,
+          "tied": 2
+        }
+      },
+      "num_pairs": 120,
+      "mcnemar": {
+        "a_only": 1,
+        "b_only": 60,
+        "discordant": 61,
+        "exact_two_sided_p": 5.377642775528102e-17,
+        "null": "Both detectors have equal pair-level error rate on the shared pairs."
+      },
+      "pair_accuracy": {
+        "vjepa2": 0.21666666666666667,
+        "ssrd": 0.7083333333333334,
+        "vjepa2_tie_half": 0.5291666666666667,
+        "ssrd_tie_half": 0.7166666666666667,
+        "label_aware_oracle": 0.7166666666666667
+      },
+      "example_pair_ids": {
+        "both_correct": [
+          "test_momentum_causality_003",
+          "test_object_permanence_000",
+          "test_object_permanence_000_photo",
+          "test_object_permanence_001",
+          "test_object_permanence_001_photo"
+        ],
+        "vjepa2_only": [
+          "test_momentum_causality_002"
+        ],
+        "ssrd_only": [
+          "test_continuity_teleportation_000",
+          "test_continuity_teleportation_000_photo",
+          "test_continuity_teleportation_001",
+          "test_continuity_teleportation_001_photo",
+          "test_continuity_teleportation_002"
+        ],
+        "neither_correct": [
+          "test_continuity_teleportation_007",
+          "test_gravity_support_000",
+          "test_gravity_support_000_photo",
+          "test_gravity_support_001",
+          "test_gravity_support_001_photo"
+        ]
+      }
+    },
+    "dino_vs_ssrd": {
+      "comparison": "dino_vs_ssrd",
+      "unit": "possible/impossible pair",
+      "counts": {
+        "both_correct": 38,
+        "dino_only": 5,
+        "ssrd_only": 47,
+        "neither_correct": 30
+      },
+      "rates": {
+        "both_correct": 0.31666666666666665,
+        "dino_only": 0.041666666666666664,
+        "ssrd_only": 0.39166666666666666,
+        "neither_correct": 0.25
+      },
+      "margin_sign_counts": {
+        "dino": {
+          "impossible_higher": 43,
+          "possible_higher": 63,
+          "tied": 14
+        },
+        "ssrd": {
+          "impossible_higher": 85,
+          "possible_higher": 33,
+          "tied": 2
+        }
+      },
+      "num_pairs": 120,
+      "mcnemar": {
+        "a_only": 5,
+        "b_only": 47,
+        "discordant": 52,
+        "exact_two_sided_p": 1.2848229147266466e-09,
+        "null": "Both detectors have equal pair-level error rate on the shared pairs."
+      },
+      "pair_accuracy": {
+        "dino": 0.35833333333333334,
+        "ssrd": 0.7083333333333334,
+        "dino_tie_half": 0.4166666666666667,
+        "ssrd_tie_half": 0.7166666666666667,
+        "label_aware_oracle": 0.75
+      },
+      "example_pair_ids": {
+        "both_correct": [
+          "test_continuity_teleportation_000_photo",
+          "test_continuity_teleportation_001_photo",
+          "test_continuity_teleportation_002_photo",
+          "test_continuity_teleportation_003",
+          "test_continuity_teleportation_003_photo"
+        ],
+        "dino_only": [
+          "test_continuity_teleportation_007",
+          "test_gravity_support_002",
+          "test_gravity_support_003_photo",
+          "test_momentum_causality_001",
+          "test_solidity_004"
+        ],
+        "ssrd_only": [
+          "test_continuity_teleportation_000",
+          "test_continuity_teleportation_001",
+          "test_continuity_teleportation_002",
+          "test_momentum_causality_000",
+          "test_momentum_causality_003"
+        ],
+        "neither_correct": [
+          "test_gravity_support_000",
+          "test_gravity_support_000_photo",
+          "test_gravity_support_001",
+          "test_gravity_support_001_photo",
+          "test_gravity_support_002_photo"
+        ]
+      }
+    },
+    "oracle_ensemble_auc": {
+      "roc_auc": 0.9319791666666667,
+      "score_space": "overall rank-normalized detector scores",
+      "oracle_definition": "Label-aware upper bound: impossible clips receive the max rank score across detectors, possible clips receive the min rank score. This is not a deployable detector."
+    }
+  }
+}

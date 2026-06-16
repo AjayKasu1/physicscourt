@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "physicscourt"
+version = "0.0.1"
+description = "Empirical tests of latent and explicit geometric world models for physical-impossibility detection."
+requires-python = ">=3.11,<3.12"
+readme = "README.md"
+
+[project.scripts]
+physicscourt = "physicscourt.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

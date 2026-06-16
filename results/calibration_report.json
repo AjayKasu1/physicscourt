@@ -1,0 +1,30 @@
+{
+  "created_at": "2026-06-15T17:29:56.422224+00:00",
+  "calibration_split": "calibration",
+  "normal_only": true,
+  "onset_threshold_z": 0.5,
+  "onset_consecutive_frames": 5,
+  "onset_prior_below_frames": 5,
+  "detectors": {
+    "vjepa2": {
+      "mean": 89.15077209472656,
+      "std": 2.003706216812134,
+      "num_values": 864,
+      "min": 84.63288879394531,
+      "max": 93.129638671875,
+      "split": "calibration",
+      "normal_clip_count": 12,
+      "smoothing_kernel": 5
+    },
+    "dino_latent": {
+      "mean": 10.424488067626953,
+      "std": 4.634545803070068,
+      "num_values": 864,
+      "min": 0.0,
+      "max": 30.8154354095459,
+      "split": "calibration",
+      "normal_clip_count": 12,
+      "smoothing_kernel": 5
+    }
+  }
+}

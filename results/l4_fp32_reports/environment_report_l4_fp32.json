@@ -1,0 +1,282 @@
+{
+  "created_at": "2026-06-16T04:20:39.674562+00:00",
+  "phase": "phase0",
+  "hardware_policy": {
+    "machine": "MacBook Pro 13-inch M2 2022",
+    "unified_memory_gb": 8,
+    "max_short_side_px": 384,
+    "synthetic_frame_size_px": 512,
+    "one_model_at_a_time": true,
+    "prefer_mps": true,
+    "fp16_on_mps_when_safe": true,
+    "repo_cache_limit_gb": 25
+  },
+  "system": {
+    "platform": "Linux-6.8.0-1060-gcp-x86_64-with-glibc2.35",
+    "python": "3.11.15",
+    "processor": "x86_64",
+    "torch": "2.9.1+cu128",
+    "cuda_available": true,
+    "cuda_device_count": 1,
+    "cuda_device_name": "NVIDIA L4",
+    "mps_built": false,
+    "mps_available": false,
+    "ram_total_gb": 31.34,
+    "ram_available_gb": 29.68
+  },
+  "models": [
+    {
+      "name": "dino_latent",
+      "status": "ok",
+      "attempts": [
+        {
+          "device": "cuda",
+          "dtype": "float32",
+          "status": "ok",
+          "timing": {
+            "start": {
+              "rss_mb": 513.984375,
+              "mps_allocated_mb": null,
+              "mps_driver_allocated_mb": null
+            },
+            "end": {
+              "rss_mb": 1152.953125,
+              "mps_allocated_mb": null,
+              "mps_driver_allocated_mb": null
+            },
+            "delta": {
+              "seconds": 3.8518346700000166,
+              "rss_delta_mb": 638.96875,
+              "rss_peak_estimate_mb": 1152.953125,
+              "mps_allocated_delta_mb": null,
+              "mps_driver_allocated_delta_mb": null
+            }
+          },
+          "output": {
+            "embedding_shape": [
+              1,
+              384
+            ],
+            "embedding_norm": 38.41877365112305
+          },
+          "model_id": "facebook/dinov2-small",
+          "cache_path": "/home/ajayyadav3826/.cache/huggingface/hub/models--facebook--dinov2-small",
+          "cache_exists": true,
+          "cache_size_bytes": 353105224,
+          "cache_size": "336.75 MB"
+        }
+      ],
+      "model_id": "facebook/dinov2-small",
+      "cache_path": "/home/ajayyadav3826/.cache/huggingface/hub/models--facebook--dinov2-small",
+      "cache_exists": true,
+      "cache_size_bytes": 353105224,
+      "cache_size": "336.75 MB"
+    },
+    {
+      "name": "depth_anything_v2",
+      "status": "ok",
+      "attempts": [
+        {
+          "device": "cuda",
+          "dtype": "float32",
+          "status": "ok",
+          "timing": {
+            "start": {
+              "rss_mb": 514.23828125,
+              "mps_allocated_mb": null,
+              "mps_driver_allocated_mb": null
+            },
+            "end": {
+              "rss_mb": 1331.7421875,
+              "mps_allocated_mb": null,
+              "mps_driver_allocated_mb": null
+            },
+            "delta": {
+              "seconds": 4.039846020999903,
+              "rss_delta_mb": 817.50390625,
+              "rss_peak_estimate_mb": 1331.7421875,
+              "mps_allocated_delta_mb": null,
+              "mps_driver_allocated_delta_mb": null
+            }
+          },
+          "output": {
+            "depth_shape": [
+              1,
+              518,
+              518
+            ],
+            "depth_min": 1.4936286211013794,
+            "depth_max": 3.3996670246124268
+          },
+          "model_id": "depth-anything/Depth-Anything-V2-Small-hf",
+          "cache_path": "/home/ajayyadav3826/.cache/huggingface/hub/models--depth-anything--Depth-Anything-V2-Small-hf",
+          "cache_exists": true,
+          "cache_size_bytes": 198362648,
+          "cache_size": "189.17 MB"
+        }
+      ],
+      "model_id": "depth-anything/Depth-Anything-V2-Small-hf",
+      "cache_path": "/home/ajayyadav3826/.cache/huggingface/hub/models--depth-anything--Depth-Anything-V2-Small-hf",
+      "cache_exists": true,
+      "cache_size_bytes": 198362648,
+      "cache_size": "189.17 MB"
+    },
+    {
+      "name": "sam2",
+      "status": "ok",
+      "attempts": [
+        {
+          "device": "cuda",
+          "dtype": "float32",
+          "status": "ok",
+          "timing": {
+            "start": {
+              "rss_mb": 514.125,
+              "mps_allocated_mb": null,
+              "mps_driver_allocated_mb": null
+            },
+            "end": {
+              "rss_mb": 1555.8828125,
+              "mps_allocated_mb": null,
+              "mps_driver_allocated_mb": null
+            },
+            "delta": {
+              "seconds": 4.272205665000001,
+              "rss_delta_mb": 1041.7578125,
+              "rss_peak_estimate_mb": 1555.8828125,
+              "mps_allocated_delta_mb": null,
+              "mps_driver_allocated_delta_mb": null
+            }
+          },
+          "output": {
+            "mask_shape": [
+              1,
+              1,
+              384,
+              384
+            ],
+            "mask_mean": 0.012729221023619175
+          },
+          "model_id": "facebook/sam2.1-hiera-tiny",
+          "cache_path": "/home/ajayyadav3826/.cache/huggingface/hub/models--facebook--sam2.1-hiera-tiny",
+          "cache_exists": true,
+          "cache_size_bytes": 623898134,
+          "cache_size": "595.00 MB"
+        }
+      ],
+      "model_id": "facebook/sam2.1-hiera-tiny",
+      "cache_path": "/home/ajayyadav3826/.cache/huggingface/hub/models--facebook--sam2.1-hiera-tiny",
+      "cache_exists": true,
+      "cache_size_bytes": 623898134,
+      "cache_size": "595.00 MB"
+    },
+    {
+      "name": "vjepa2",
+      "status": "ok",
+      "attempts": [
+        {
+          "device": "cuda",
+          "dtype": "float32",
+          "status": "ok",
+          "timing": {
+            "start": {
+              "rss_mb": 514.13671875,
+              "mps_allocated_mb": null,
+              "mps_driver_allocated_mb": null
+            },
+            "end": {
+              "rss_mb": 1309.08984375,
+              "mps_allocated_mb": null,
+              "mps_driver_allocated_mb": null
+            },
+            "delta": {
+              "seconds": 4.606485342000042,
+              "rss_delta_mb": 794.953125,
+              "rss_peak_estimate_mb": 1309.08984375,
+              "mps_allocated_delta_mb": null,
+              "mps_driver_allocated_delta_mb": null
+            }
+          },
+          "output": {
+            "vision_feature_shape": [
+              1,
+              2048,
+              1024
+            ]
+          },
+          "model_id": "facebook/vjepa2-vitl-fpc64-256",
+          "cache_path": "/home/ajayyadav3826/.cache/huggingface/hub/models--facebook--vjepa2-vitl-fpc64-256",
+          "cache_exists": true,
+          "cache_size_bytes": 2609007556,
+          "cache_size": "2.43 GB"
+        }
+      ],
+      "model_id": "facebook/vjepa2-vitl-fpc64-256",
+      "cache_path": "/home/ajayyadav3826/.cache/huggingface/hub/models--facebook--vjepa2-vitl-fpc64-256",
+      "cache_exists": true,
+      "cache_size_bytes": 2609007556,
+      "cache_size": "2.43 GB"
+    },
+    {
+      "name": "cotracker",
+      "status": "ok",
+      "attempts": [
+        {
+          "device": "cuda",
+          "dtype": "float32",
+          "status": "ok",
+          "timing": {
+            "start": {
+              "rss_mb": 514.23046875,
+              "mps_allocated_mb": null,
+              "mps_driver_allocated_mb": null
+            },
+            "end": {
+              "rss_mb": 1278.05859375,
+              "mps_allocated_mb": null,
+              "mps_driver_allocated_mb": null
+            },
+            "delta": {
+              "seconds": 1.3961556409999503,
+              "rss_delta_mb": 763.828125,
+              "rss_peak_estimate_mb": 1278.05859375,
+              "mps_allocated_delta_mb": null,
+              "mps_driver_allocated_delta_mb": null
+            }
+          },
+          "output": {
+            "checkpoint": "/home/ajayyadav3826/.cache/huggingface/hub/models--facebook--cotracker3/snapshots/bf55ea50d4390e1820a267f131cd6587240fb2c5/scaled_offline.pth",
+            "tracks_shape": [
+              1,
+              8,
+              3,
+              2
+            ],
+            "visibility_shape": [
+              1,
+              8,
+              3
+            ],
+            "first_track_xy": [
+              28.0,
+              52.0
+            ]
+          },
+          "model_id": "facebook/cotracker3",
+          "cache_path": "/home/ajayyadav3826/.cache/huggingface/hub/models--facebook--cotracker3",
+          "cache_exists": true,
+          "cache_size_bytes": 203781916,
+          "cache_size": "194.34 MB"
+        }
+      ],
+      "model_id": "facebook/cotracker3",
+      "cache_path": "/home/ajayyadav3826/.cache/huggingface/hub/models--facebook--cotracker3",
+      "cache_exists": true,
+      "cache_size_bytes": 203781916,
+      "cache_size": "194.34 MB"
+    }
+  ],
+  "fallbacks": [],
+  "blocking": [],
+  "completed": true
+}

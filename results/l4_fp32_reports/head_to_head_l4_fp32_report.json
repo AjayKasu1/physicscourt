@@ -1,0 +1,150 @@
+{
+  "created_at": "2026-06-16T07:20:31.711660+00:00",
+  "display_names": {
+    "vjepa2": "V-JEPA 2 (facebook/vjepa2-vitl-fpc64-256)",
+    "dino_latent": "DINOv2-small latent extrapolation baseline",
+    "li_state_rules": "SSRD: Spatial-State Rule Detector"
+  },
+  "framing_note": "SSRD is a project-built detector assembled from SAM 2, Depth Anything V2, CoTracker, and a hand-written calibrated physics-rule layer. It is not World Labs Marble and should not be attributed to Fei-Fei Li. Marble 1.1 / Marble 1.1 Plus is the public World Labs reference point for explicit 3D world generation.",
+  "fairness_disclosure": "The comparison is asymmetric: V-JEPA 2 is a frozen external model, while SSRD is a project-built detector with an explicit rule bank, calibration layer, and more design degrees of freedom. Both detectors are calibrated only on the normal calibration split; no test clip statistics or labels are used for fitting.",
+  "protocol_note": "Detector B scores are category-blind: all explicit rule families are run on every clip, each rule channel is z-scored using calibration-normal clips only, and clip-level score is the max across calibrated rule scores. Category labels are used only for reporting.",
+  "winner_counts_by_auc": {
+    "vjepa2": 1,
+    "dino_latent": 1,
+    "li_state_rules": 4
+  },
+  "rows": [
+    {
+      "category": "continuity_teleportation",
+      "winner_by_auc": "li_state_rules",
+      "vjepa2": {
+        "roc_auc": 0.49375,
+        "paired_accuracy": 0.0,
+        "preferred_localization_within_12": 0.45
+      },
+      "dino_latent": {
+        "roc_auc": 0.7262500000000001,
+        "paired_accuracy": 0.85,
+        "preferred_localization_within_12": 0.65
+      },
+      "li_state_rules": {
+        "roc_auc": 0.9412499999999999,
+        "paired_accuracy": 0.95,
+        "preferred_localization_within_12": 0.0,
+        "argmax_localization_within_12": 0.0,
+        "onset_localization_within_12": 0.9,
+        "onset_detected_rate": 0.95
+      }
+    },
+    {
+      "category": "gravity_support",
+      "winner_by_auc": "vjepa2",
+      "vjepa2": {
+        "roc_auc": 0.49999999999999994,
+        "paired_accuracy": 0.0,
+        "preferred_localization_within_12": 0.0
+      },
+      "dino_latent": {
+        "roc_auc": 0.23125,
+        "paired_accuracy": 0.1,
+        "preferred_localization_within_12": 0.1
+      },
+      "li_state_rules": {
+        "roc_auc": 0.09250000000000004,
+        "paired_accuracy": 0.0,
+        "preferred_localization_within_12": 0.95,
+        "argmax_localization_within_12": 0.0,
+        "onset_localization_within_12": 0.95,
+        "onset_detected_rate": 0.95
+      }
+    },
+    {
+      "category": "momentum_causality",
+      "winner_by_auc": "dino_latent",
+      "vjepa2": {
+        "roc_auc": 0.4975,
+        "paired_accuracy": 0.1,
+        "preferred_localization_within_12": 0.5
+      },
+      "dino_latent": {
+        "roc_auc": 0.49750000000000005,
+        "paired_accuracy": 0.25,
+        "preferred_localization_within_12": 0.3
+      },
+      "li_state_rules": {
+        "roc_auc": 0.475,
+        "paired_accuracy": 0.45,
+        "preferred_localization_within_12": 0.5,
+        "argmax_localization_within_12": 0.5,
+        "onset_localization_within_12": 0.9,
+        "onset_detected_rate": 0.95
+      }
+    },
+    {
+      "category": "object_permanence",
+      "winner_by_auc": "li_state_rules",
+      "vjepa2": {
+        "roc_auc": 0.7775000000000001,
+        "paired_accuracy": 0.85,
+        "preferred_localization_within_12": 0.3
+      },
+      "dino_latent": {
+        "roc_auc": 0.35624999999999996,
+        "paired_accuracy": 0.0,
+        "preferred_localization_within_12": 0.05
+      },
+      "li_state_rules": {
+        "roc_auc": 1.0,
+        "paired_accuracy": 1.0,
+        "preferred_localization_within_12": 0.0,
+        "argmax_localization_within_12": 0.0,
+        "onset_localization_within_12": 0.0,
+        "onset_detected_rate": 0.35
+      }
+    },
+    {
+      "category": "solidity",
+      "winner_by_auc": "li_state_rules",
+      "vjepa2": {
+        "roc_auc": 0.46625,
+        "paired_accuracy": 0.05,
+        "preferred_localization_within_12": 0.0
+      },
+      "dino_latent": {
+        "roc_auc": 0.5662499999999999,
+        "paired_accuracy": 0.7,
+        "preferred_localization_within_12": 0.3
+      },
+      "li_state_rules": {
+        "roc_auc": 0.95,
+        "paired_accuracy": 0.95,
+        "preferred_localization_within_12": 0.95,
+        "argmax_localization_within_12": 0.0,
+        "onset_localization_within_12": 0.95,
+        "onset_detected_rate": 0.95
+      }
+    },
+    {
+      "category": "spontaneous_vanishing",
+      "winner_by_auc": "li_state_rules",
+      "vjepa2": {
+        "roc_auc": 0.5762499999999999,
+        "paired_accuracy": 0.3,
+        "preferred_localization_within_12": 0.3
+      },
+      "dino_latent": {
+        "roc_auc": 0.31500000000000006,
+        "paired_accuracy": 0.25,
+        "preferred_localization_within_12": 0.85
+      },
+      "li_state_rules": {
+        "roc_auc": 0.9025000000000001,
+        "paired_accuracy": 0.9,
+        "preferred_localization_within_12": 0.0,
+        "argmax_localization_within_12": 0.0,
+        "onset_localization_within_12": 0.05,
+        "onset_detected_rate": 0.05
+      }
+    }
+  ]
+}
