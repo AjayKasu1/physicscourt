@@ -1,5 +1,5 @@
 {
-  "created_at": "2026-06-16T17:56:00.116527+00:00",
+  "created_at": "2026-06-16T19:49:23.150167+00:00",
   "phase": "phase4_edited_real_validation",
   "manifest": "/Users/ajaykasu/Documents/EmbodiedAI/physicscourt/data/manifests/edited_real_processed_manifest.yaml",
   "features_dir": "/Users/ajaykasu/Documents/EmbodiedAI/physicscourt/results/features_phase4_processed",
@@ -41,6 +41,36 @@
       "onset_detected": false
     },
     {
+      "clip_id": "edited_real_continuity_teleportation_000_possible",
+      "pair_id": "edited_real_continuity_teleportation_000",
+      "detector": "vjepa2",
+      "detector_label": "V-JEPA 2 0.3B",
+      "category": "continuity_teleportation",
+      "possible": true,
+      "violation_frame": null,
+      "raw_max": 85.56568908691406,
+      "calibrated_max": -1.7892258167266846,
+      "clip_level_score": -1.9009991884231567,
+      "argmax_frame": 21,
+      "onset_frame": null,
+      "onset_detected": false
+    },
+    {
+      "clip_id": "edited_real_continuity_teleportation_000_impossible",
+      "pair_id": "edited_real_continuity_teleportation_000",
+      "detector": "vjepa2",
+      "detector_label": "V-JEPA 2 0.3B",
+      "category": "continuity_teleportation",
+      "possible": false,
+      "violation_frame": 16,
+      "raw_max": 84.90660095214844,
+      "calibrated_max": -2.1181604862213135,
+      "clip_level_score": -2.1181604862213135,
+      "argmax_frame": 0,
+      "onset_frame": null,
+      "onset_detected": false
+    },
+    {
       "clip_id": "edited_real_object_permanence_000_possible",
       "pair_id": "edited_real_object_permanence_000",
       "detector": "dino_latent",
@@ -67,6 +97,36 @@
       "calibrated_max": -0.31396737694740295,
       "clip_level_score": -1.0159313678741455,
       "argmax_frame": 15,
+      "onset_frame": null,
+      "onset_detected": false
+    },
+    {
+      "clip_id": "edited_real_continuity_teleportation_000_possible",
+      "pair_id": "edited_real_continuity_teleportation_000",
+      "detector": "dino_latent",
+      "detector_label": "DINOv2-small baseline",
+      "category": "continuity_teleportation",
+      "possible": true,
+      "violation_frame": null,
+      "raw_max": 17.71754264831543,
+      "calibrated_max": 1.5736287832260132,
+      "clip_level_score": 0.10414012521505356,
+      "argmax_frame": 3,
+      "onset_frame": null,
+      "onset_detected": false
+    },
+    {
+      "clip_id": "edited_real_continuity_teleportation_000_impossible",
+      "pair_id": "edited_real_continuity_teleportation_000",
+      "detector": "dino_latent",
+      "detector_label": "DINOv2-small baseline",
+      "category": "continuity_teleportation",
+      "possible": false,
+      "violation_frame": 16,
+      "raw_max": 19.11759376525879,
+      "calibrated_max": 1.8757190704345703,
+      "clip_level_score": -0.19961854815483093,
+      "argmax_frame": 3,
       "onset_frame": null,
       "onset_detected": false
     },
@@ -101,9 +161,58 @@
       "onset_frame": null,
       "onset_detected": false,
       "top_rule_at_argmax": "permanence_absence_run"
+    },
+    {
+      "clip_id": "edited_real_continuity_teleportation_000_possible",
+      "pair_id": "edited_real_continuity_teleportation_000",
+      "detector": "li_state_rules",
+      "detector_label": "SSRD",
+      "category": "continuity_teleportation",
+      "possible": true,
+      "violation_frame": null,
+      "raw_max": 3.0,
+      "calibrated_max": 55.50537109375,
+      "clip_level_score": 55.50537109375,
+      "argmax_frame": 50,
+      "onset_frame": null,
+      "onset_detected": false,
+      "top_rule_at_argmax": "permanence_absence_run"
+    },
+    {
+      "clip_id": "edited_real_continuity_teleportation_000_impossible",
+      "pair_id": "edited_real_continuity_teleportation_000",
+      "detector": "li_state_rules",
+      "detector_label": "SSRD",
+      "category": "continuity_teleportation",
+      "possible": false,
+      "violation_frame": 16,
+      "raw_max": 3.0,
+      "calibrated_max": 55.50537109375,
+      "clip_level_score": 55.50537109375,
+      "argmax_frame": 46,
+      "onset_frame": null,
+      "onset_detected": false,
+      "top_rule_at_argmax": "permanence_absence_run"
     }
   ],
   "pair_results": [
+    {
+      "detector": "dino_latent",
+      "detector_label": "DINOv2-small baseline",
+      "pair_id": "edited_real_continuity_teleportation_000",
+      "category": "continuity_teleportation",
+      "possible_score": 0.10414012521505356,
+      "impossible_score": -0.19961854815483093,
+      "margin_impossible_minus_possible": -0.3037586733698845,
+      "pair_correct": false,
+      "pair_tied": false,
+      "violation_frame": 16,
+      "impossible_argmax_frame": 3,
+      "impossible_onset_frame": null,
+      "argmax_abs_error": 13,
+      "onset_abs_error": null,
+      "top_rule_at_argmax": null
+    },
     {
       "detector": "dino_latent",
       "detector_label": "DINOv2-small baseline",
@@ -120,6 +229,23 @@
       "argmax_abs_error": 17,
       "onset_abs_error": null,
       "top_rule_at_argmax": null
+    },
+    {
+      "detector": "li_state_rules",
+      "detector_label": "SSRD",
+      "pair_id": "edited_real_continuity_teleportation_000",
+      "category": "continuity_teleportation",
+      "possible_score": 55.50537109375,
+      "impossible_score": 55.50537109375,
+      "margin_impossible_minus_possible": 0.0,
+      "pair_correct": false,
+      "pair_tied": true,
+      "violation_frame": 16,
+      "impossible_argmax_frame": 46,
+      "impossible_onset_frame": null,
+      "argmax_abs_error": 30,
+      "onset_abs_error": null,
+      "top_rule_at_argmax": "permanence_absence_run"
     },
     {
       "detector": "li_state_rules",
@@ -141,6 +267,23 @@
     {
       "detector": "vjepa2",
       "detector_label": "V-JEPA 2 0.3B",
+      "pair_id": "edited_real_continuity_teleportation_000",
+      "category": "continuity_teleportation",
+      "possible_score": -1.9009991884231567,
+      "impossible_score": -2.1181604862213135,
+      "margin_impossible_minus_possible": -0.21716129779815674,
+      "pair_correct": false,
+      "pair_tied": false,
+      "violation_frame": 16,
+      "impossible_argmax_frame": 0,
+      "impossible_onset_frame": null,
+      "argmax_abs_error": 16,
+      "onset_abs_error": null,
+      "top_rule_at_argmax": null
+    },
+    {
+      "detector": "vjepa2",
+      "detector_label": "V-JEPA 2 0.3B",
       "pair_id": "edited_real_object_permanence_000",
       "category": "object_permanence",
       "possible_score": -2.1154608726501465,
@@ -157,8 +300,11 @@
     }
   ],
   "figures": [
+    "/Users/ajaykasu/Documents/EmbodiedAI/physicscourt/results/figures/phase4_edited_real/dino_latent_edited_real_continuity_teleportation_000_score_overlay.png",
     "/Users/ajaykasu/Documents/EmbodiedAI/physicscourt/results/figures/phase4_edited_real/dino_latent_edited_real_object_permanence_000_score_overlay.png",
+    "/Users/ajaykasu/Documents/EmbodiedAI/physicscourt/results/figures/phase4_edited_real/li_state_rules_edited_real_continuity_teleportation_000_score_overlay.png",
     "/Users/ajaykasu/Documents/EmbodiedAI/physicscourt/results/figures/phase4_edited_real/li_state_rules_edited_real_object_permanence_000_score_overlay.png",
+    "/Users/ajaykasu/Documents/EmbodiedAI/physicscourt/results/figures/phase4_edited_real/vjepa2_edited_real_continuity_teleportation_000_score_overlay.png",
     "/Users/ajaykasu/Documents/EmbodiedAI/physicscourt/results/figures/phase4_edited_real/vjepa2_edited_real_object_permanence_000_score_overlay.png"
   ]
 }

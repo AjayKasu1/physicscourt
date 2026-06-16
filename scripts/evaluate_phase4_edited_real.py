@@ -342,7 +342,7 @@ def main() -> None:
     for item in pairs:
         status = "correct" if item["pair_correct"] else "wrong"
         print(
-            f"{item['detector_label']}: {status}, "
+            f"{item['pair_id']} | {item['detector_label']}: {status}, "
             f"possible={item['possible_score']:.3f}, "
             f"impossible={item['impossible_score']:.3f}, "
             f"margin={item['margin_impossible_minus_possible']:.3f}, "

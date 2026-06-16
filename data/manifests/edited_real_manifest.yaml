@@ -2,13 +2,13 @@ version: 1
 metadata:
   created_at: '2026-06-16T13:20:00-04:00'
   dataset: physicscourt.edited_real
-  split_note: Initial hand-edited real-video validation pair.
+  split_note: Hand-edited real-video validation pairs.
   width: 1080
   height: 608
   fps: 30
   num_frames: 180
   calibration_normals: 0
-  notes: This manifest uses the same record schema as the synthetic benchmark.
+  notes: This manifest uses the same record schema as the synthetic benchmark. Record-level width, height, fps, and num_frames are authoritative.
 records:
 - clip_id: edited_real_object_permanence_000_possible
   pair_id: edited_real_object_permanence_000
@@ -72,3 +72,65 @@ records:
   photorealism_gap_control: false
   seed: 0
   notes: Edited twin where the ball does not reappear after occlusion; estimated t*=80.
+- clip_id: edited_real_continuity_teleportation_000_possible
+  pair_id: edited_real_continuity_teleportation_000
+  source: edited_real
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: true
+  violation_kind: continuity_teleportation
+  violation_frame: null
+  video_path: data/edited_real/raw/continuity_teleportation/pair000/possible.mp4
+  width: 1280
+  height: 720
+  fps: 30
+  num_frames: 180
+  prompt_box_xywh:
+  - 980
+  - 486
+  - 110
+  - 105
+  prompt_point_xy:
+  - 1035
+  - 536
+  object_color_rgb:
+  - 231
+  - 39
+  - 110
+  background_variant: real_static
+  background_source: user_provided_real_video
+  photorealism_gap_control: false
+  seed: 0
+  notes: Ball rolls smoothly left across the surface.
+- clip_id: edited_real_continuity_teleportation_000_impossible
+  pair_id: edited_real_continuity_teleportation_000
+  source: edited_real
+  split: test
+  category: continuity_teleportation
+  infant_construct: continuity
+  possible: false
+  violation_kind: continuity_teleportation
+  violation_frame: 65
+  video_path: data/edited_real/raw/continuity_teleportation/pair000/impossible.mp4
+  width: 1276
+  height: 718
+  fps: 30
+  num_frames: 182
+  prompt_box_xywh:
+  - 980
+  - 486
+  - 110
+  - 105
+  prompt_point_xy:
+  - 1035
+  - 536
+  object_color_rgb:
+  - 231
+  - 39
+  - 110
+  background_variant: real_static
+  background_source: user_provided_real_video
+  photorealism_gap_control: false
+  seed: 0
+  notes: Edited twin where the ball skips the middle trajectory and reappears left; estimated t*=65.

@@ -183,28 +183,24 @@ The generated MP4 set is about 18 MB. Each clip is 512x512, 24 fps, 72 frames. M
 
 Generation is bit-reproducible from the manifest seed policy: the dataset root seed is `1729`, category/pair seeds are deterministic offsets from that root, and calibration uses a fixed `+500000` offset. Re-running `make generate-synthetic` with the same code and OpenCV encoder rewrites the same scenarios, prompts, violation frames, and manifest records.
 
-## Phase 4 Edited-Real Starter Pair
+## Phase 4 Edited-Real Starter Pairs
 
-Phase 4 has started with one user-provided edited-real object-permanence pair:
+Phase 4 has started with two user-provided edited-real pairs:
 
 - Raw manifest: `data/manifests/edited_real_manifest.yaml`
 - Scoring manifest: `data/manifests/edited_real_processed_manifest.yaml`
-- Raw videos: `data/edited_real/raw/object_permanence/pair000/`
-- Processed videos: `data/edited_real/processed/object_permanence/pair000/`
-- Possible clip: the ball rolls behind a box and reappears
-- Impossible clip: the edited twin where the ball never reappears
-- Estimated raw violation onset: frame `80`
-- Processed violation onset used for scoring: frame `32`
+- Object permanence: a ball rolls behind a box and either reappears or never reappears.
+- Continuity/teleportation: a ball rolls smoothly left or skips the middle path and reappears left.
+- Processed scoring clips are 512x288, 72 frames, 12 fps.
 
-This pair is not enough to make a Phase 4 claim. It is the first validation
-example and a scaffold for adding more edited-real pairs across the six
+These pairs are not enough to make a Phase 4 claim. They are starter validation
+examples and a scaffold for adding more edited-real pairs across the six
 PhysicsCourt categories.
 
-Initial frozen-detector result on this pair:
+Initial frozen-detector result:
 
-- V-JEPA 2 0.3B: wrong, it ranks the possible clip as more anomalous.
-- DINOv2-small: wrong, nearly tied but still ranks the possible clip higher.
-- SSRD: correct, driven by the `permanence_absence_run` rule.
+- Object permanence: SSRD is correct; V-JEPA 2 0.3B and DINOv2-small are wrong.
+- Continuity/teleportation: no detector cleanly catches the edit. V-JEPA 2 and DINOv2 rank the possible clip as more anomalous; SSRD ties the pair because a late absence rule saturates both clips.
 
 See `results/phase4_edited_real_report.json` and the overlays under
 `results/figures/phase4_edited_real/`.

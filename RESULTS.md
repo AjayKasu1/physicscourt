@@ -286,45 +286,57 @@ around `t*`, and score overlays for V-JEPA 2, DINO, and SSRD.
 - `results/figures/visual_audit/spontaneous_vanishing_contact_sheet.png`
 - `results/figures/visual_audit/spontaneous_vanishing_score_overlay.png`
 
-## Phase 4 Edited-Real Starter Pair
+## Phase 4 Edited-Real Starter Pairs
 
-Phase 4 has one edited-real object-permanence starter pair so far. This is not
-enough to claim edited-real generalization, but it is a useful first check
-outside the synthetic generator.
+Phase 4 currently has two edited-real starter pairs. This is not enough to
+claim edited-real generalization, but it is a useful check outside the
+synthetic generator.
 
-The raw clips are 1080x608, 30 fps, 180 frames. For model scoring, the same
-pair is processed to 512x288, 12 fps, 72 frames, matching the practical runtime
-regime used elsewhere in the benchmark. The raw violation onset is frame `80`;
-the processed violation onset is frame `32`.
+Both pairs are scored with frozen synthetic calibration and no edited-real
+refit. The processed scoring clips are 512x288, 12 fps, 72 frames.
 
-Pair result with frozen synthetic calibration and no edited-real refit:
+Pair setup:
 
-| Detector | Pair result | Possible score | Impossible score | Margin | Argmax frame | Notes |
-| --- | --- | ---: | ---: | ---: | ---: | --- |
-| V-JEPA 2 0.3B | wrong | -2.115 | -2.497 | -0.381 | 18 | ranks the possible clip as more anomalous |
-| DINOv2-small | wrong | -1.014 | -1.016 | -0.002 | 15 | essentially tied, slight possible-higher ranking |
-| SSRD | correct | 37.151 | 55.505 | 18.354 | 59 | top rule is `permanence_absence_run` |
+| Pair | Raw input | Processed t* | Notes |
+| --- | --- | ---: | --- |
+| Object permanence | 1080x608, 30 fps, 180 frames | 32 | ball rolls behind a box; edited twin never reappears |
+| Continuity/teleportation | raw crop from 1280x720/1276x718 sources | 16 | ball skips the middle path and reappears left |
 
-SSRD separates this edited-real pair, while V-JEPA 2 and DINOv2 do not. The
-SSRD peak is late (`argmax=59` vs. `t*=32`), which matches the sustained
-absence behavior seen in the synthetic object-permanence clips: the detector
-notices the missing object, but the peak score lands near the end of the
-absence rather than at the onset.
+Pair results:
+
+| Pair | Detector | Pair result | Possible score | Impossible score | Margin | Argmax frame | Notes |
+| --- | --- | --- | ---: | ---: | ---: | ---: | --- |
+| Object permanence | V-JEPA 2 0.3B | wrong | -2.115 | -2.497 | -0.381 | 18 | ranks the possible clip as more anomalous |
+| Object permanence | DINOv2-small | wrong | -1.014 | -1.016 | -0.002 | 15 | essentially tied, slight possible-higher ranking |
+| Object permanence | SSRD | correct | 37.151 | 55.505 | 18.354 | 59 | top rule is `permanence_absence_run` |
+| Continuity/teleportation | V-JEPA 2 0.3B | wrong | -1.901 | -2.118 | -0.217 | 0 | ranks the possible clip as more anomalous |
+| Continuity/teleportation | DINOv2-small | wrong | 0.104 | -0.200 | -0.304 | 3 | ranks the possible clip as more anomalous |
+| Continuity/teleportation | SSRD | tied | 55.505 | 55.505 | 0.000 | 46 | late `permanence_absence_run` saturates both twins |
+
+The object-permanence edited-real pair matches the synthetic story: SSRD
+separates the edited absence, while V-JEPA 2 and DINOv2 do not. The SSRD peak
+is late (`argmax=59` vs. `t*=32`), which matches the sustained absence behavior
+seen in the synthetic object-permanence clips.
+
+The continuity/teleportation edited-real pair is a negative result. V-JEPA 2
+and DINOv2 both score the possible clip higher. SSRD does not reverse the pair,
+but it also does not detect the teleport: both twins hit the same late absence
+score after the ball leaves the frame, driven by `permanence_absence_run`
+rather than a continuity rule. That means this pair should be counted as
+missed by all three detectors under strict paired accuracy.
 
 Artifacts:
 
 - `results/phase4_edited_real_report.json`
-- `results/figures/phase4_edited_real/vjepa2_edited_real_object_permanence_000_score_overlay.png`
-- `results/figures/phase4_edited_real/dino_latent_edited_real_object_permanence_000_score_overlay.png`
-- `results/figures/phase4_edited_real/li_state_rules_edited_real_object_permanence_000_score_overlay.png`
+- `results/figures/phase4_edited_real/`
 
 ## Limitations
 
-The largest limitation is that the benchmark is still synthetic-only. The
-possible/impossible twins are carefully controlled, but no edited-real split has
-been run yet. Until the same conclusions survive on real or edited-real footage,
-the result should be read as a controlled probe, not an external
-validity claim about arbitrary video.
+The largest limitation is that the main benchmark is still synthetic. The
+possible/impossible twins are carefully controlled, and Phase 4 currently has
+only two edited-real starter pairs. Until the same conclusions survive on a
+larger edited-real split, the result should be read as a controlled probe, not
+an external validity claim about arbitrary video.
 
 The object-permanence SSRD result is likely partly circular. On these synthetic
 clips, the violation is defined by object mask disappearance and non-return,
