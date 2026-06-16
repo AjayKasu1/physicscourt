@@ -37,6 +37,14 @@ References for this framing:
 - World Labs Marble overview: <https://www.worldlabs.ai/blog/marble-world-model>
 - World Labs Spark 2.0 renderer note: <https://www.worldlabs.ai/blog/spark-2.0>
 
+## License And Acknowledgments
+
+PhysicsCourt's source code and project-written documentation are released under
+the [MIT License](LICENSE). The repo uses public research models including
+V-JEPA 2, DINOv2, SAM 2, Depth Anything V2, and CoTracker. Their checkpoints
+are downloaded into the user's local cache and are not redistributed here. See
+[ACKNOWLEDGMENTS.md](ACKNOWLEDGMENTS.md) for the third-party model note.
+
 ## Reproduce
 
 Fresh-clone command sequence:
