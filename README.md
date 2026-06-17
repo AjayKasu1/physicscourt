@@ -18,6 +18,18 @@ This repository is being built phase by phase. Phase 0 records the hardware and 
 
 The completed run and final interpretation are summarized in [RESULTS.md](RESULTS.md).
 
+## Short Explainer Reel
+
+[![PhysicsCourt Phase 4 reel poster](docs/media/physicscourt_phase4_reel_poster.png)](docs/media/physicscourt_phase4_reel.mp4)
+
+The 17-second vertical reel above shows the two edited-real ball tests with
+model score curves overlaid: SSRD catches the missing-ball edit, while all
+three detectors miss the teleport edit. Regenerate it with:
+
+```bash
+python scripts/make_phase4_social_reel.py
+```
+
 ### World Labs / Marble Anchor
 
 The explicit-geometry side is motivated by Fei-Fei Li's World Labs work, not implemented by it. PhysicsCourt does not run a private World Labs model. As of this run, the relevant public World Labs reference point is **Marble 1.1 / Marble 1.1 Plus**, released April 2, 2026. Marble generates navigable 3D environments as Gaussian splats, with Marble 1.1 improving visual quality and Marble 1.1 Plus adding auto-expansion for larger environments. That is the explicit-spatial-geometry commitment in its literal product form.
