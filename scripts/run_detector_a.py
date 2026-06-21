@@ -34,12 +34,13 @@ def _load_model_id(config_path: Path, key: str) -> str:
     return str(cfg["models"][key]["model_id"])
 
 
-def _detector(detector_name: str, config_path: Path, device: str, fp16: bool) -> Any:
+def _detector(detector_name: str, config_path: Path, device: str, fp16: bool, vjepa_topk_frac: float) -> Any:
     if detector_name == "vjepa2":
         return VJEPALatentPredictor(
             model_id=_load_model_id(config_path, "vjepa2"),
             device=device,
             fp16=fp16,
+            topk_frac=vjepa_topk_frac,
         )
     if detector_name == "dino_latent":
         return DINOLatentExtrapolator(
@@ -66,13 +67,14 @@ def main() -> None:
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--continue-on-error", action="store_true")
+    parser.add_argument("--vjepa-topk-frac", type=float, default=0.05)
     args = parser.parse_args()
 
     records = load_manifest(args.manifest)
     if args.limit is not None:
         records = records[: args.limit]
 
-    detector = _detector(args.detector, args.models_config, args.device, args.fp16)
+    detector = _detector(args.detector, args.models_config, args.device, args.fp16, args.vjepa_topk_frac)
     timings: list[dict[str, Any]] = []
     errors: list[dict[str, Any]] = []
     if args.timing_report is not None and args.timing_report.exists() and not args.force:
