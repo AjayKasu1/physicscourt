@@ -13,6 +13,10 @@ results_l4_download/
 !results/phase4_edited_real_report.json
 !results/phase4_edited_real_l4_fp32_report.json
 !results/phase4_l4_fp32_*_timing.json
+!results/vjepa21_l4_fp32*_timing.json
+!results/detector_a_vjepa21_l4_fp32_report.json
+!results/calibration_vjepa21_l4_fp32_report.json
+!results/vjepa21_reductions_l4_fp32_report.json
 !results/weights_report.json
 !results/summary_table.md
 !results/calibration_report.json

@@ -26,6 +26,18 @@ models:
     stop_after_timeout: true
     expected_risk: "0.3B parameters; may not fit in 8 GB even as a standalone model"
 
+  vjepa2_1:
+    role: "Detector A V-JEPA 2.1 follow-up on GCP L4"
+    model_id: "facebookresearch/vjepa2:vjepa2_1_vit_giant_384"
+    hub_model: "vjepa2_1_vit_giant_384"
+    checkpoint_url: "https://dl.fbaipublicfiles.com/vjepa2/vjepa2_1_vitg_384.pt"
+    checkpoint_key: "target_encoder"
+    loader: "torch.hub facebookresearch/vjepa2"
+    image_size: 384
+    window_frames: 64
+    stride_frames: 4
+    expected_risk: "1B parameters at 384px; use GCP L4/A100, not the 8 GB Mac"
+
   depth_anything_v2:
     role: "Detector B depth"
     model_id: "depth-anything/Depth-Anything-V2-Small-hf"

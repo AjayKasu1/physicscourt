@@ -1,7 +1,7 @@
 PYTHON ?= /Library/Frameworks/Python.framework/Versions/3.11/bin/python3
 export PYTHONPATH := $(CURDIR)/src
 
-.PHONY: phase0 smoke smoke-vjepa-offline smoke-cotracker-offline download-weights download-cotracker phase1-smoke generate-synthetic phase2-vjepa-first5 phase2-vjepa phase2-dino phase2-cache-detector-a phase2-evaluate vjepa2-reductions vjepa2-fairness vjepa2-fairness-cached vjepa2-fairness-live vjepa2-fairness-live-mps start-vjepa2-fairness-live phase3-b-first5 phase3-b-evaluate compare-detectors detector-b-ablation statistical-audit motion-correlation visual-audit phase4-a phase4-b phase4-evaluate phase4-edited-real phase4-a-l4-fp32 phase4-b-l4-fp32 phase4-evaluate-l4-fp32 phase4-edited-real-l4-fp32 final-results clean-cache test
+.PHONY: phase0 smoke smoke-vjepa-offline smoke-cotracker-offline download-weights download-cotracker phase1-smoke generate-synthetic phase2-vjepa-first5 phase2-vjepa phase2-dino phase2-cache-detector-a phase2-evaluate vjepa2-reductions vjepa21-first5-l4-fp32 vjepa21-l4-fp32 vjepa21-evaluate-l4-fp32 vjepa21-reductions-l4-fp32 vjepa2-fairness vjepa2-fairness-cached vjepa2-fairness-live vjepa2-fairness-live-mps start-vjepa2-fairness-live phase3-b-first5 phase3-b-evaluate compare-detectors detector-b-ablation statistical-audit motion-correlation visual-audit phase4-a phase4-b phase4-evaluate phase4-edited-real phase4-a-l4-fp32 phase4-b-l4-fp32 phase4-evaluate-l4-fp32 phase4-edited-real-l4-fp32 final-results clean-cache test
 
 phase0: smoke
 
@@ -43,6 +43,18 @@ phase2-evaluate:
 
 vjepa2-reductions:
 	$(PYTHON) scripts/recompute_vjepa_reductions.py --features-dir results/features --all --metric tie_half_accuracy --out results/vjepa2_reduction_report.json
+
+vjepa21-first5-l4-fp32:
+	$(PYTHON) scripts/run_detector_a.py --detector vjepa2_1 --limit 5 --features-dir results/features_vjepa21_l4_fp32 --timing-report results/vjepa21_l4_fp32_first5_timing.json --device cuda --continue-on-error
+
+vjepa21-l4-fp32:
+	$(PYTHON) scripts/run_detector_a.py --detector vjepa2_1 --features-dir results/features_vjepa21_l4_fp32 --timing-report results/vjepa21_l4_fp32_timing.json --device cuda --force --continue-on-error
+
+vjepa21-evaluate-l4-fp32:
+	$(PYTHON) scripts/evaluate_detector_a.py --detectors vjepa2_1 --features-dir results/features_vjepa21_l4_fp32 --report results/detector_a_vjepa21_l4_fp32_report.json --calibration-report results/calibration_vjepa21_l4_fp32_report.json --figures-dir results/figures/detector_a_vjepa21_l4_fp32
+
+vjepa21-reductions-l4-fp32:
+	$(PYTHON) scripts/recompute_vjepa_reductions.py --detector vjepa2_1 --features-dir results/features_vjepa21_l4_fp32 --all --metric tie_half_accuracy --out results/vjepa21_reductions_l4_fp32_report.json
 
 vjepa2-fairness:
 	HF_HUB_OFFLINE=1 $(PYTHON) scripts/vjepa2_fairness_sweep.py --device auto --fp16 --categories object_permanence --pairs-per-category 1 --strides 4 --max-live-windows-per-clip 1

@@ -22,6 +22,7 @@ if str(SRC) not in sys.path:
 
 from physicscourt.detectors.lecun_dino_baseline import DINOLatentExtrapolator
 from physicscourt.detectors.lecun_vjepa import VJEPALatentPredictor
+from physicscourt.detectors.lecun_vjepa21 import OfficialVJEPA21Predictor
 from physicscourt.pipeline.clip_dataset import ClipRecord, load_manifest
 from physicscourt.pipeline.score_utils import save_score_cache
 
@@ -34,12 +35,31 @@ def _load_model_id(config_path: Path, key: str) -> str:
     return str(cfg["models"][key]["model_id"])
 
 
+def _load_model_spec(config_path: Path, key: str) -> dict[str, Any]:
+    with config_path.open("r", encoding="utf-8") as fh:
+        cfg = yaml.safe_load(fh)
+    return dict(cfg["models"][key])
+
+
 def _detector(detector_name: str, config_path: Path, device: str, fp16: bool, vjepa_topk_frac: float) -> Any:
     if detector_name == "vjepa2":
         return VJEPALatentPredictor(
             model_id=_load_model_id(config_path, "vjepa2"),
             device=device,
             fp16=fp16,
+            topk_frac=vjepa_topk_frac,
+        )
+    if detector_name == "vjepa2_1":
+        spec = _load_model_spec(config_path, "vjepa2_1")
+        return OfficialVJEPA21Predictor(
+            hub_model=str(spec["hub_model"]),
+            checkpoint_url=str(spec["checkpoint_url"]),
+            checkpoint_key=str(spec.get("checkpoint_key", "target_encoder")),
+            device=device,
+            fp16=fp16,
+            image_size=int(spec.get("image_size", 384)),
+            window_frames=int(spec.get("window_frames", 64)),
+            stride_frames=int(spec.get("stride_frames", 4)),
             topk_frac=vjepa_topk_frac,
         )
     if detector_name == "dino_latent":
@@ -57,7 +77,7 @@ def _cache_path(features_dir: Path, detector_name: str, clip: ClipRecord) -> Pat
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--detector", choices=["vjepa2", "dino_latent"], required=True)
+    parser.add_argument("--detector", choices=["vjepa2", "vjepa2_1", "dino_latent"], required=True)
     parser.add_argument("--manifest", type=Path, default=ROOT / "data" / "manifests" / "synthetic_manifest.yaml")
     parser.add_argument("--models-config", type=Path, default=ROOT / "config" / "models.yaml")
     parser.add_argument("--features-dir", type=Path, default=ROOT / "results" / "features")
