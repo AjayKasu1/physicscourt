@@ -26,6 +26,15 @@ models:
     stop_after_timeout: true
     expected_risk: "0.3B parameters; may not fit in 8 GB even as a standalone model"
 
+  vjepa2_vitg384:
+    role: "Matched-size V-JEPA 2 control for V-JEPA 2.1 on GCP L4"
+    model_id: "facebook/vjepa2-vitg-fpc64-384"
+    loader: "transformers.AutoVideoProcessor+VJEPA2Model"
+    max_smoke_frames: 16
+    smoke_timeout_seconds: 240
+    stop_after_timeout: true
+    expected_risk: "1B parameters at 384px; use GCP L4/A100, not the 8 GB Mac"
+
   vjepa2_1:
     role: "Detector A V-JEPA 2.1 follow-up on GCP L4"
     model_id: "facebookresearch/vjepa2:vjepa2_1_vit_giant_384"

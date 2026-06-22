@@ -42,9 +42,9 @@ def _load_model_spec(config_path: Path, key: str) -> dict[str, Any]:
 
 
 def _detector(detector_name: str, config_path: Path, device: str, fp16: bool, vjepa_topk_frac: float) -> Any:
-    if detector_name == "vjepa2":
+    if detector_name in {"vjepa2", "vjepa2_vitg384"}:
         return VJEPALatentPredictor(
-            model_id=_load_model_id(config_path, "vjepa2"),
+            model_id=_load_model_id(config_path, detector_name),
             device=device,
             fp16=fp16,
             topk_frac=vjepa_topk_frac,
@@ -77,7 +77,7 @@ def _cache_path(features_dir: Path, detector_name: str, clip: ClipRecord) -> Pat
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--detector", choices=["vjepa2", "vjepa2_1", "dino_latent"], required=True)
+    parser.add_argument("--detector", choices=["vjepa2", "vjepa2_vitg384", "vjepa2_1", "dino_latent"], required=True)
     parser.add_argument("--manifest", type=Path, default=ROOT / "data" / "manifests" / "synthetic_manifest.yaml")
     parser.add_argument("--models-config", type=Path, default=ROOT / "config" / "models.yaml")
     parser.add_argument("--features-dir", type=Path, default=ROOT / "results" / "features")
