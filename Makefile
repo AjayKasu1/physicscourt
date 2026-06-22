@@ -1,7 +1,7 @@
 PYTHON ?= /Library/Frameworks/Python.framework/Versions/3.11/bin/python3
 export PYTHONPATH := $(CURDIR)/src
 
-.PHONY: phase0 smoke smoke-vjepa-offline smoke-cotracker-offline download-weights download-cotracker phase1-smoke generate-synthetic phase2-vjepa-first5 phase2-vjepa phase2-dino phase2-cache-detector-a phase2-evaluate vjepa2-reductions vjepa21-first5-l4-fp32 vjepa21-l4-fp32 vjepa21-evaluate-l4-fp32 vjepa21-reductions-l4-fp32 vjepa2-fairness vjepa2-fairness-cached vjepa2-fairness-live vjepa2-fairness-live-mps start-vjepa2-fairness-live phase3-b-first5 phase3-b-evaluate compare-detectors detector-b-ablation statistical-audit motion-correlation visual-audit phase4-a phase4-b phase4-evaluate phase4-edited-real phase4-a-l4-fp32 phase4-b-l4-fp32 phase4-evaluate-l4-fp32 phase4-edited-real-l4-fp32 final-results clean-cache test
+.PHONY: phase0 smoke smoke-vjepa-offline smoke-cotracker-offline download-weights download-cotracker phase1-smoke generate-synthetic phase2-vjepa-first5 phase2-vjepa phase2-dino phase2-cache-detector-a phase2-evaluate vjepa2-reductions vjepa21-shape-probe-l4-fp32 vjepa21-first5-l4-fp32 vjepa21-l4-fp32 vjepa21-evaluate-l4-fp32 vjepa21-reductions-l4-fp32 vjepa2-fairness vjepa2-fairness-cached vjepa2-fairness-live vjepa2-fairness-live-mps start-vjepa2-fairness-live phase3-b-first5 phase3-b-evaluate compare-detectors detector-b-ablation statistical-audit motion-correlation visual-audit phase4-a phase4-b phase4-evaluate phase4-edited-real phase4-a-l4-fp32 phase4-b-l4-fp32 phase4-evaluate-l4-fp32 phase4-edited-real-l4-fp32 final-results clean-cache test
 
 phase0: smoke
 
@@ -43,6 +43,9 @@ phase2-evaluate:
 
 vjepa2-reductions:
 	$(PYTHON) scripts/recompute_vjepa_reductions.py --features-dir results/features --all --metric tie_half_accuracy --out results/vjepa2_reduction_report.json
+
+vjepa21-shape-probe-l4-fp32:
+	$(PYTHON) scripts/inspect_vjepa21_shapes.py --device cuda --output results/vjepa21_shape_probe_l4_fp32.json
 
 vjepa21-first5-l4-fp32:
 	$(PYTHON) scripts/run_detector_a.py --detector vjepa2_1 --limit 5 --features-dir results/features_vjepa21_l4_fp32 --timing-report results/vjepa21_l4_fp32_first5_timing.json --device cuda --continue-on-error
