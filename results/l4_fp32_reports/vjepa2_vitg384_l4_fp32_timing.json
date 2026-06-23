@@ -1,0 +1,1522 @@
+{
+  "created_at": "2026-06-23T03:24:19.471101+00:00",
+  "detector": "vjepa2_vitg384",
+  "manifest": "/home/ajayyadav3826/physicscourt/data/manifests/synthetic_manifest.yaml",
+  "limit": null,
+  "num_requested": 252,
+  "timings": [
+    {
+      "clip_id": "test_object_permanence_000_possible",
+      "seconds": 58.080248690999994,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_000_impossible",
+      "seconds": 57.839677640000005,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_000_photo_possible",
+      "seconds": 58.84222242000001,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_000_photo_impossible",
+      "seconds": 59.362455220999976,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_001_possible",
+      "seconds": 59.75425212600004,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_001_impossible",
+      "seconds": 59.91980217600002,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_001_photo_possible",
+      "seconds": 60.01764827400001,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_001_photo_impossible",
+      "seconds": 59.97531839999999,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_002_possible",
+      "seconds": 59.91281212499996,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_002_impossible",
+      "seconds": 59.692232839999974,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_002_photo_possible",
+      "seconds": 60.071625434,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_002_photo_impossible",
+      "seconds": 60.06305587500003,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_003_possible",
+      "seconds": 60.02644688400005,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_003_impossible",
+      "seconds": 60.12508968700001,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_003_photo_possible",
+      "seconds": 60.02854735100004,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_003_photo_impossible",
+      "seconds": 60.09273301300004,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_004_possible",
+      "seconds": 59.71873843599997,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_004_impossible",
+      "seconds": 59.7982468350001,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_004_photo_possible",
+      "seconds": 60.054500696000105,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_004_photo_impossible",
+      "seconds": 59.98095674399997,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_005_possible",
+      "seconds": 60.08730547599998,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_005_impossible",
+      "seconds": 59.83821231000002,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_005_photo_possible",
+      "seconds": 60.04674589000001,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_005_photo_impossible",
+      "seconds": 59.980841045999796,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_006_possible",
+      "seconds": 59.813142393000135,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_006_impossible",
+      "seconds": 59.67966048099993,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_006_photo_possible",
+      "seconds": 59.988641446999964,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_006_photo_impossible",
+      "seconds": 60.02302443999997,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_007_possible",
+      "seconds": 60.04912708100005,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_007_impossible",
+      "seconds": 59.9074453610001,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_007_photo_possible",
+      "seconds": 60.00305396099998,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_007_photo_impossible",
+      "seconds": 60.07498662699982,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_008_possible",
+      "seconds": 59.71840155300015,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_008_impossible",
+      "seconds": 59.76870584299968,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_008_photo_possible",
+      "seconds": 59.943774876000134,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_008_photo_impossible",
+      "seconds": 59.99903064900036,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_009_possible",
+      "seconds": 59.89870682000037,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_009_impossible",
+      "seconds": 59.89137613699995,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_009_photo_possible",
+      "seconds": 59.902326321000146,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_009_photo_impossible",
+      "seconds": 60.02184198299983,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_000_possible",
+      "seconds": 59.93215769899962,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_000_impossible",
+      "seconds": 59.95987007899976,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_000_photo_possible",
+      "seconds": 60.03223033899985,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_000_photo_impossible",
+      "seconds": 59.99393212399991,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_001_possible",
+      "seconds": 59.754212714000005,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_001_impossible",
+      "seconds": 59.846226275999925,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_001_photo_possible",
+      "seconds": 60.00599278000027,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_001_photo_impossible",
+      "seconds": 60.02913334899995,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_002_possible",
+      "seconds": 59.949161151000226,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_002_impossible",
+      "seconds": 59.999206891000085,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_002_photo_possible",
+      "seconds": 59.99467830000003,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_002_photo_impossible",
+      "seconds": 59.94100756800026,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_003_possible",
+      "seconds": 59.77784240899973,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_003_impossible",
+      "seconds": 59.711155226999836,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_003_photo_possible",
+      "seconds": 60.177893522999966,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_003_photo_impossible",
+      "seconds": 59.978472220000185,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_004_possible",
+      "seconds": 60.12015839800006,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_004_impossible",
+      "seconds": 59.966600707,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_004_photo_possible",
+      "seconds": 60.086440178999965,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_004_photo_impossible",
+      "seconds": 60.04200711300018,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_005_possible",
+      "seconds": 59.75035803599985,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_005_impossible",
+      "seconds": 59.76205581300019,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_005_photo_possible",
+      "seconds": 60.065284466999856,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_005_photo_impossible",
+      "seconds": 60.072261187000095,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_006_possible",
+      "seconds": 59.95926988800011,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_006_impossible",
+      "seconds": 60.13188335899986,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_006_photo_possible",
+      "seconds": 60.03042118099984,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_006_photo_impossible",
+      "seconds": 60.0275367600002,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_007_possible",
+      "seconds": 59.721217140999215,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_007_impossible",
+      "seconds": 59.73691062600028,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_007_photo_possible",
+      "seconds": 60.13551787199958,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_007_photo_impossible",
+      "seconds": 60.014940891999686,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_008_possible",
+      "seconds": 60.002161011999306,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_008_impossible",
+      "seconds": 59.97324282599948,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_008_photo_possible",
+      "seconds": 60.10484303799967,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_008_photo_impossible",
+      "seconds": 60.07196783299969,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_009_possible",
+      "seconds": 59.74141462599982,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_009_impossible",
+      "seconds": 59.837467727999865,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_009_photo_possible",
+      "seconds": 60.06460023699947,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_solidity_009_photo_impossible",
+      "seconds": 60.19431848400018,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_000_possible",
+      "seconds": 59.574058678000256,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_000_impossible",
+      "seconds": 59.56927577100032,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_000_photo_possible",
+      "seconds": 60.00563261699972,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_000_photo_impossible",
+      "seconds": 59.91295921800065,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_001_possible",
+      "seconds": 59.9565332559996,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_001_impossible",
+      "seconds": 59.81171556299978,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_001_photo_possible",
+      "seconds": 59.94634216299983,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_001_photo_impossible",
+      "seconds": 59.976157088000036,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_002_possible",
+      "seconds": 59.54884383400076,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_002_impossible",
+      "seconds": 59.578373358000135,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_002_photo_possible",
+      "seconds": 59.92994687400005,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_002_photo_impossible",
+      "seconds": 59.979412204000255,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_003_possible",
+      "seconds": 59.85767375100022,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_003_impossible",
+      "seconds": 59.90670418100035,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_003_photo_possible",
+      "seconds": 59.977814609000234,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_003_photo_impossible",
+      "seconds": 60.03069246099949,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_004_possible",
+      "seconds": 59.568801876999714,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_004_impossible",
+      "seconds": 59.456815475999974,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_004_photo_possible",
+      "seconds": 59.95162192299995,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_004_photo_impossible",
+      "seconds": 59.952264775,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_005_possible",
+      "seconds": 59.969497864000004,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_005_impossible",
+      "seconds": 59.96230566599934,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_005_photo_possible",
+      "seconds": 60.05771124900002,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_005_photo_impossible",
+      "seconds": 60.055176275999656,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_006_possible",
+      "seconds": 59.65178594200006,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_006_impossible",
+      "seconds": 59.64394886299942,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_006_photo_possible",
+      "seconds": 60.031702944000244,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_006_photo_impossible",
+      "seconds": 60.018596361000164,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_007_possible",
+      "seconds": 59.97893309899973,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_007_impossible",
+      "seconds": 59.916243633000704,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_007_photo_possible",
+      "seconds": 60.015080507000675,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_007_photo_impossible",
+      "seconds": 60.09238230200026,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_008_possible",
+      "seconds": 59.563584750999325,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_008_impossible",
+      "seconds": 59.60027632100082,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_008_photo_possible",
+      "seconds": 59.93029002700041,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_008_photo_impossible",
+      "seconds": 59.983685809000235,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_009_possible",
+      "seconds": 59.900051811000594,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_009_impossible",
+      "seconds": 60.03416922999986,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_009_photo_possible",
+      "seconds": 59.96119682100016,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_continuity_teleportation_009_photo_impossible",
+      "seconds": 59.99221897699954,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_000_possible",
+      "seconds": 59.981689332000315,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_000_impossible",
+      "seconds": 59.911808142000154,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_000_photo_possible",
+      "seconds": 60.040278241000124,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_000_photo_impossible",
+      "seconds": 59.93939262299955,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_001_possible",
+      "seconds": 59.61546213600013,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_001_impossible",
+      "seconds": 59.538008544999684,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_001_photo_possible",
+      "seconds": 60.07289722299993,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_001_photo_impossible",
+      "seconds": 59.92490537699996,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_002_possible",
+      "seconds": 59.87396475800051,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_002_impossible",
+      "seconds": 59.94478759100002,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_002_photo_possible",
+      "seconds": 60.08179094599927,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_002_photo_impossible",
+      "seconds": 60.01931944700027,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_003_possible",
+      "seconds": 59.69140413399964,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_003_impossible",
+      "seconds": 59.603839698999764,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_003_photo_possible",
+      "seconds": 60.09910915300043,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_003_photo_impossible",
+      "seconds": 59.98338640299971,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_004_possible",
+      "seconds": 60.05144472499887,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_004_impossible",
+      "seconds": 60.035750858998654,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_004_photo_possible",
+      "seconds": 60.15945658700002,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_004_photo_impossible",
+      "seconds": 60.09994742299932,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_005_possible",
+      "seconds": 59.69178087,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_005_impossible",
+      "seconds": 59.70051759799935,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_005_photo_possible",
+      "seconds": 60.13361783500113,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_005_photo_impossible",
+      "seconds": 60.075727491999714,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_006_possible",
+      "seconds": 59.940884439,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_006_impossible",
+      "seconds": 59.89305149199936,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_006_photo_possible",
+      "seconds": 60.1081311120015,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_006_photo_impossible",
+      "seconds": 60.01320857599967,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_007_possible",
+      "seconds": 59.68306108700017,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_007_impossible",
+      "seconds": 59.64512354899853,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_007_photo_possible",
+      "seconds": 60.05897637800081,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_007_photo_impossible",
+      "seconds": 60.05789077699956,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_008_possible",
+      "seconds": 59.938735687999724,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_008_impossible",
+      "seconds": 59.97453825000048,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_008_photo_possible",
+      "seconds": 60.03871309999886,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_008_photo_impossible",
+      "seconds": 60.03587647299901,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_009_possible",
+      "seconds": 59.63077003500075,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_009_impossible",
+      "seconds": 59.657820398000695,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_009_photo_possible",
+      "seconds": 60.114647917000184,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_gravity_support_009_photo_impossible",
+      "seconds": 59.99098809099996,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_000_possible",
+      "seconds": 59.64984737799932,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_000_impossible",
+      "seconds": 59.49965457700091,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_000_photo_possible",
+      "seconds": 60.08151948699924,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_000_photo_impossible",
+      "seconds": 60.07338633099971,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_001_possible",
+      "seconds": 60.00705438899968,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_001_impossible",
+      "seconds": 59.82311032799953,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_001_photo_possible",
+      "seconds": 60.07463067400022,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_001_photo_impossible",
+      "seconds": 59.965267155999754,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_002_possible",
+      "seconds": 59.6688674119996,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_002_impossible",
+      "seconds": 59.60991561099945,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_002_photo_possible",
+      "seconds": 60.048670367999875,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_002_photo_impossible",
+      "seconds": 60.1488395209999,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_003_possible",
+      "seconds": 59.884998991999964,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_003_impossible",
+      "seconds": 59.9173612300001,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_003_photo_possible",
+      "seconds": 59.97866798799987,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_003_photo_impossible",
+      "seconds": 59.996414544999425,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_004_possible",
+      "seconds": 59.618623084999854,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_004_impossible",
+      "seconds": 59.58336624399999,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_004_photo_possible",
+      "seconds": 60.007227322999825,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_004_photo_impossible",
+      "seconds": 60.02855558800002,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_005_possible",
+      "seconds": 59.895369781001136,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_005_impossible",
+      "seconds": 59.90925540600074,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_005_photo_possible",
+      "seconds": 59.933551464999255,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_005_photo_impossible",
+      "seconds": 60.05876302700017,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_006_possible",
+      "seconds": 59.53332106900052,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_006_impossible",
+      "seconds": 59.57355477599958,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_006_photo_possible",
+      "seconds": 60.13819036699897,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_006_photo_impossible",
+      "seconds": 60.11783615500099,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_007_possible",
+      "seconds": 60.017543552999996,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_007_impossible",
+      "seconds": 59.894706173001396,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_007_photo_possible",
+      "seconds": 60.06298231499932,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_007_photo_impossible",
+      "seconds": 59.964127423998434,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_008_possible",
+      "seconds": 59.64924314699965,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_008_impossible",
+      "seconds": 59.41755838800054,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_008_photo_possible",
+      "seconds": 59.97206122899843,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_008_photo_impossible",
+      "seconds": 60.0185995060001,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_009_possible",
+      "seconds": 59.85476527799983,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_009_impossible",
+      "seconds": 59.92820153299908,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_009_photo_possible",
+      "seconds": 60.06598021600075,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_spontaneous_vanishing_009_photo_impossible",
+      "seconds": 60.05331243299952,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_000_possible",
+      "seconds": 59.983736991000114,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_000_impossible",
+      "seconds": 59.93408567499864,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_000_photo_possible",
+      "seconds": 60.154532346999986,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_000_photo_impossible",
+      "seconds": 60.12153015700096,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_001_possible",
+      "seconds": 59.7460563780005,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_001_impossible",
+      "seconds": 59.64070179999908,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_001_photo_possible",
+      "seconds": 60.02651734699975,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_001_photo_impossible",
+      "seconds": 60.16037224700085,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_002_possible",
+      "seconds": 59.964726603999225,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_002_impossible",
+      "seconds": 60.12082891799946,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_002_photo_possible",
+      "seconds": 60.105645315999936,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_002_photo_impossible",
+      "seconds": 60.066040074998455,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_003_possible",
+      "seconds": 59.67236906300059,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_003_impossible",
+      "seconds": 59.692864974998884,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_003_photo_possible",
+      "seconds": 60.073988387999634,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_003_photo_impossible",
+      "seconds": 60.10571473900018,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_004_possible",
+      "seconds": 59.99270885599981,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_004_impossible",
+      "seconds": 60.020598900999175,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_004_photo_possible",
+      "seconds": 60.03235852800026,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_004_photo_impossible",
+      "seconds": 60.07174332800059,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_005_possible",
+      "seconds": 59.77950378999958,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_005_impossible",
+      "seconds": 59.62204756199935,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_005_photo_possible",
+      "seconds": 60.09958819300118,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_005_photo_impossible",
+      "seconds": 60.07401778399981,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_006_possible",
+      "seconds": 59.95550378000007,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_006_impossible",
+      "seconds": 60.0497601499992,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_006_photo_possible",
+      "seconds": 60.12501682400034,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_006_photo_impossible",
+      "seconds": 60.01478179100013,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_007_possible",
+      "seconds": 59.73465621200012,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_007_impossible",
+      "seconds": 59.637818960000004,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_007_photo_possible",
+      "seconds": 60.12050572299995,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_007_photo_impossible",
+      "seconds": 60.0311057100007,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_008_possible",
+      "seconds": 59.97471994700027,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_008_impossible",
+      "seconds": 59.93869762599934,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_008_photo_possible",
+      "seconds": 60.12408503700135,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_008_photo_impossible",
+      "seconds": 60.08629160900091,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_009_possible",
+      "seconds": 59.655110883000816,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_009_impossible",
+      "seconds": 59.60234334100096,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_009_photo_possible",
+      "seconds": 60.02096585400068,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_momentum_causality_009_photo_impossible",
+      "seconds": 60.108996238001055,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "calibration_object_permanence_000_possible",
+      "seconds": 59.70916907600076,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "calibration_object_permanence_001_possible",
+      "seconds": 59.90627115400093,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "calibration_solidity_000_possible",
+      "seconds": 59.993151507998846,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "calibration_solidity_001_possible",
+      "seconds": 59.756231545001356,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "calibration_continuity_teleportation_000_possible",
+      "seconds": 59.582032316999175,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "calibration_continuity_teleportation_001_possible",
+      "seconds": 59.93574918299964,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "calibration_gravity_support_000_possible",
+      "seconds": 59.97438924999915,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "calibration_gravity_support_001_possible",
+      "seconds": 59.57835628599969,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "calibration_spontaneous_vanishing_000_possible",
+      "seconds": 59.608552292998866,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "calibration_spontaneous_vanishing_001_possible",
+      "seconds": 59.845490456000334,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "calibration_momentum_causality_000_possible",
+      "seconds": 59.99116607599899,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "calibration_momentum_causality_001_possible",
+      "seconds": 59.65115440599948,
+      "num_frames": 72,
+      "num_windows": 15
+    }
+  ],
+  "errors": []
+}

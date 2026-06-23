@@ -1,0 +1,40 @@
+{
+  "created_at": "2026-06-22T16:04:07.670196+00:00",
+  "detector": "vjepa2_vitg384",
+  "manifest": "/home/ajayyadav3826/physicscourt/data/manifests/synthetic_manifest.yaml",
+  "limit": 5,
+  "num_requested": 5,
+  "timings": [
+    {
+      "clip_id": "test_object_permanence_000_possible",
+      "seconds": 60.43754747999992,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_000_impossible",
+      "seconds": 62.091368702999944,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_000_photo_possible",
+      "seconds": 61.96259634000012,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_000_photo_impossible",
+      "seconds": 62.19781101599983,
+      "num_frames": 72,
+      "num_windows": 15
+    },
+    {
+      "clip_id": "test_object_permanence_001_possible",
+      "seconds": 61.99969541600012,
+      "num_frames": 72,
+      "num_windows": 15
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,761 @@
+{
+  "created_at": "2026-06-23T16:48:35.411769+00:00",
+  "features_dir": "results/features_vjepa2_vitg384_l4_fp32",
+  "detector": "vjepa2_vitg384",
+  "smooth_kernel": 5,
+  "margin_epsilon": 1e-06,
+  "metric_note": "strict treats ties as misses; tie_half gives tied pairs half credit; responsive ignores ties.",
+  "variants": {
+    "l2_mean": {
+      "calibration": {
+        "mean": 100.76866149902344,
+        "std": 1.1709684133529663,
+        "num_values": 864,
+        "min": 96.79327392578125,
+        "max": 102.94799041748047
+      },
+      "metrics_by_category": {
+        "continuity_teleportation": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 1,
+            "possible_higher": 0,
+            "tied": 19
+          },
+          "strict_accuracy": 0.05,
+          "tie_half_accuracy": 0.525,
+          "responsive_accuracy": 1.0,
+          "strict_wilson95": [
+            0.008881219432873136,
+            0.23613589351256675
+          ],
+          "sign_test_non_tied_p": 1.0,
+          "auroc": 0.50875,
+          "mean_margin": 0.014378964900970459,
+          "median_margin": 0.0
+        },
+        "gravity_support": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 1,
+            "possible_higher": 1,
+            "tied": 18
+          },
+          "strict_accuracy": 0.05,
+          "tie_half_accuracy": 0.5,
+          "responsive_accuracy": 0.5,
+          "strict_wilson95": [
+            0.008881219432873136,
+            0.23613589351256675
+          ],
+          "sign_test_non_tied_p": 1.0,
+          "auroc": 0.4975,
+          "mean_margin": -0.0015223383903503417,
+          "median_margin": 0.0
+        },
+        "momentum_causality": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 14,
+            "possible_higher": 0,
+            "tied": 6
+          },
+          "strict_accuracy": 0.7,
+          "tie_half_accuracy": 0.85,
+          "responsive_accuracy": 1.0,
+          "strict_wilson95": [
+            0.4810232237710206,
+            0.854524726031006
+          ],
+          "sign_test_non_tied_p": 0.0001220703125,
+          "auroc": 0.5625,
+          "mean_margin": 0.12035124897956848,
+          "median_margin": 0.07727009057998657
+        },
+        "object_permanence": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 14,
+            "possible_higher": 2,
+            "tied": 4
+          },
+          "strict_accuracy": 0.7,
+          "tie_half_accuracy": 0.8,
+          "responsive_accuracy": 0.875,
+          "strict_wilson95": [
+            0.4810232237710206,
+            0.854524726031006
+          ],
+          "sign_test_non_tied_p": 0.004180908203125,
+          "auroc": 0.7125,
+          "mean_margin": 0.7118117392063141,
+          "median_margin": 0.4548798203468323
+        },
+        "solidity": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 1,
+            "possible_higher": 9,
+            "tied": 10
+          },
+          "strict_accuracy": 0.05,
+          "tie_half_accuracy": 0.3,
+          "responsive_accuracy": 0.1,
+          "strict_wilson95": [
+            0.008881219432873136,
+            0.23613589351256675
+          ],
+          "sign_test_non_tied_p": 0.021484375,
+          "auroc": 0.45,
+          "mean_margin": -0.12187457531690597,
+          "median_margin": 0.0
+        },
+        "spontaneous_vanishing": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 8,
+            "possible_higher": 0,
+            "tied": 12
+          },
+          "strict_accuracy": 0.4,
+          "tie_half_accuracy": 0.7,
+          "responsive_accuracy": 1.0,
+          "strict_wilson95": [
+            0.21880396741419272,
+            0.613422057684794
+          ],
+          "sign_test_non_tied_p": 0.0078125,
+          "auroc": 0.6125,
+          "mean_margin": 0.31109386682510376,
+          "median_margin": 0.0
+        }
+      }
+    },
+    "l2_max": {
+      "calibration": {
+        "mean": 117.80088806152344,
+        "std": 2.4554505348205566,
+        "num_values": 864,
+        "min": 111.93402862548828,
+        "max": 123.41675567626953
+      },
+      "metrics_by_category": {
+        "continuity_teleportation": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 13,
+            "possible_higher": 1,
+            "tied": 6
+          },
+          "strict_accuracy": 0.65,
+          "tie_half_accuracy": 0.8,
+          "responsive_accuracy": 0.9285714285714286,
+          "strict_wilson95": [
+            0.43285051021946463,
+            0.8188104521320554
+          ],
+          "sign_test_non_tied_p": 0.0018310546875,
+          "auroc": 0.6425,
+          "mean_margin": 0.2842162910848856,
+          "median_margin": 0.16062599420547485
+        },
+        "gravity_support": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 3,
+            "possible_higher": 13,
+            "tied": 4
+          },
+          "strict_accuracy": 0.15,
+          "tie_half_accuracy": 0.25,
+          "responsive_accuracy": 0.1875,
+          "strict_wilson95": [
+            0.05236779195949584,
+            0.36042329588695743
+          ],
+          "sign_test_non_tied_p": 0.021270751953125,
+          "auroc": 0.46,
+          "mean_margin": -0.12837184611707925,
+          "median_margin": -0.05263470858335495
+        },
+        "momentum_causality": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 9,
+            "possible_higher": 8,
+            "tied": 3
+          },
+          "strict_accuracy": 0.45,
+          "tie_half_accuracy": 0.525,
+          "responsive_accuracy": 0.5294117647058824,
+          "strict_wilson95": [
+            0.25819502085709295,
+            0.6579179916924003
+          ],
+          "sign_test_non_tied_p": 1.0,
+          "auroc": 0.52125,
+          "mean_margin": 0.011149624921381473,
+          "median_margin": 0.0
+        },
+        "object_permanence": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 8,
+            "possible_higher": 7,
+            "tied": 5
+          },
+          "strict_accuracy": 0.4,
+          "tie_half_accuracy": 0.525,
+          "responsive_accuracy": 0.5333333333333333,
+          "strict_wilson95": [
+            0.21880396741419272,
+            0.613422057684794
+          ],
+          "sign_test_non_tied_p": 1.0,
+          "auroc": 0.57375,
+          "mean_margin": 0.15101395770907403,
+          "median_margin": 0.0
+        },
+        "solidity": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 7,
+            "possible_higher": 10,
+            "tied": 3
+          },
+          "strict_accuracy": 0.35,
+          "tie_half_accuracy": 0.425,
+          "responsive_accuracy": 0.4117647058823529,
+          "strict_wilson95": [
+            0.18118954786794464,
+            0.5671494897805354
+          ],
+          "sign_test_non_tied_p": 0.629058837890625,
+          "auroc": 0.46375,
+          "mean_margin": -0.05986592695116997,
+          "median_margin": -0.0028228163719177246
+        },
+        "spontaneous_vanishing": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 12,
+            "possible_higher": 3,
+            "tied": 5
+          },
+          "strict_accuracy": 0.6,
+          "tie_half_accuracy": 0.725,
+          "responsive_accuracy": 0.8,
+          "strict_wilson95": [
+            0.3865779423152061,
+            0.7811960325858074
+          ],
+          "sign_test_non_tied_p": 0.03515625,
+          "auroc": 0.62875,
+          "mean_margin": 0.21398202925920487,
+          "median_margin": 0.07301443815231323
+        }
+      }
+    },
+    "l2_topk": {
+      "calibration": {
+        "mean": 113.15946960449219,
+        "std": 1.6814050674438477,
+        "num_values": 864,
+        "min": 108.40205383300781,
+        "max": 116.5438461303711
+      },
+      "metrics_by_category": {
+        "continuity_teleportation": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 0,
+            "possible_higher": 0,
+            "tied": 20
+          },
+          "strict_accuracy": 0.0,
+          "tie_half_accuracy": 0.5,
+          "responsive_accuracy": NaN,
+          "strict_wilson95": [
+            0.0,
+            0.16113012549493322
+          ],
+          "sign_test_non_tied_p": NaN,
+          "auroc": 0.5,
+          "mean_margin": 0.0,
+          "median_margin": 0.0
+        },
+        "gravity_support": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 0,
+            "possible_higher": 19,
+            "tied": 1
+          },
+          "strict_accuracy": 0.0,
+          "tie_half_accuracy": 0.025,
+          "responsive_accuracy": 0.0,
+          "strict_wilson95": [
+            0.0,
+            0.16113012549493322
+          ],
+          "sign_test_non_tied_p": 3.814697265625e-06,
+          "auroc": 0.19875,
+          "mean_margin": -0.6804789978545159,
+          "median_margin": -0.7045870083384216
+        },
+        "momentum_causality": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 12,
+            "possible_higher": 2,
+            "tied": 6
+          },
+          "strict_accuracy": 0.6,
+          "tie_half_accuracy": 0.75,
+          "responsive_accuracy": 0.8571428571428571,
+          "strict_wilson95": [
+            0.3865779423152061,
+            0.7811960325858074
+          ],
+          "sign_test_non_tied_p": 0.012939453125,
+          "auroc": 0.605,
+          "mean_margin": 0.22970198038965464,
+          "median_margin": 0.1470040287822485
+        },
+        "object_permanence": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 11,
+            "possible_higher": 6,
+            "tied": 3
+          },
+          "strict_accuracy": 0.55,
+          "tie_half_accuracy": 0.625,
+          "responsive_accuracy": 0.6470588235294118,
+          "strict_wilson95": [
+            0.3420820083075997,
+            0.7418049791429071
+          ],
+          "sign_test_non_tied_p": 0.332305908203125,
+          "auroc": 0.59625,
+          "mean_margin": 0.15547738075256348,
+          "median_margin": 0.09163050353527069
+        },
+        "solidity": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 0,
+            "possible_higher": 17,
+            "tied": 3
+          },
+          "strict_accuracy": 0.0,
+          "tie_half_accuracy": 0.075,
+          "responsive_accuracy": 0.0,
+          "strict_wilson95": [
+            0.0,
+            0.16113012549493322
+          ],
+          "sign_test_non_tied_p": 1.52587890625e-05,
+          "auroc": 0.25875,
+          "mean_margin": -0.36900425106287005,
+          "median_margin": -0.21164315938949585
+        },
+        "spontaneous_vanishing": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 6,
+            "possible_higher": 1,
+            "tied": 13
+          },
+          "strict_accuracy": 0.3,
+          "tie_half_accuracy": 0.625,
+          "responsive_accuracy": 0.8571428571428571,
+          "strict_wilson95": [
+            0.14547527396899385,
+            0.5189767762289793
+          ],
+          "sign_test_non_tied_p": 0.125,
+          "auroc": 0.53875,
+          "mean_margin": 0.06421781601384283,
+          "median_margin": 0.0
+        }
+      }
+    },
+    "cos_mean": {
+      "calibration": {
+        "mean": 0.42006832361221313,
+        "std": 0.021010655909776688,
+        "num_values": 864,
+        "min": 0.35217538475990295,
+        "max": 0.45423614978790283
+      },
+      "metrics_by_category": {
+        "continuity_teleportation": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 0,
+            "possible_higher": 0,
+            "tied": 20
+          },
+          "strict_accuracy": 0.0,
+          "tie_half_accuracy": 0.5,
+          "responsive_accuracy": NaN,
+          "strict_wilson95": [
+            0.0,
+            0.16113012549493322
+          ],
+          "sign_test_non_tied_p": NaN,
+          "auroc": 0.5,
+          "mean_margin": 0.0,
+          "median_margin": 0.0
+        },
+        "gravity_support": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 0,
+            "possible_higher": 0,
+            "tied": 20
+          },
+          "strict_accuracy": 0.0,
+          "tie_half_accuracy": 0.5,
+          "responsive_accuracy": NaN,
+          "strict_wilson95": [
+            0.0,
+            0.16113012549493322
+          ],
+          "sign_test_non_tied_p": NaN,
+          "auroc": 0.5,
+          "mean_margin": 0.0,
+          "median_margin": 0.0
+        },
+        "momentum_causality": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 0,
+            "possible_higher": 5,
+            "tied": 15
+          },
+          "strict_accuracy": 0.0,
+          "tie_half_accuracy": 0.375,
+          "responsive_accuracy": 0.0,
+          "strict_wilson95": [
+            0.0,
+            0.16113012549493322
+          ],
+          "sign_test_non_tied_p": 0.0625,
+          "auroc": 0.47125,
+          "mean_margin": -0.03351081907749176,
+          "median_margin": 0.0
+        },
+        "object_permanence": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 0,
+            "possible_higher": 0,
+            "tied": 20
+          },
+          "strict_accuracy": 0.0,
+          "tie_half_accuracy": 0.5,
+          "responsive_accuracy": NaN,
+          "strict_wilson95": [
+            0.0,
+            0.16113012549493322
+          ],
+          "sign_test_non_tied_p": NaN,
+          "auroc": 0.5,
+          "mean_margin": 0.0,
+          "median_margin": 0.0
+        },
+        "solidity": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 0,
+            "possible_higher": 1,
+            "tied": 19
+          },
+          "strict_accuracy": 0.0,
+          "tie_half_accuracy": 0.475,
+          "responsive_accuracy": 0.0,
+          "strict_wilson95": [
+            0.0,
+            0.16113012549493322
+          ],
+          "sign_test_non_tied_p": 1.0,
+          "auroc": 0.49875,
+          "mean_margin": -5.780160427093506e-05,
+          "median_margin": 0.0
+        },
+        "spontaneous_vanishing": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 0,
+            "possible_higher": 0,
+            "tied": 20
+          },
+          "strict_accuracy": 0.0,
+          "tie_half_accuracy": 0.5,
+          "responsive_accuracy": NaN,
+          "strict_wilson95": [
+            0.0,
+            0.16113012549493322
+          ],
+          "sign_test_non_tied_p": NaN,
+          "auroc": 0.5,
+          "mean_margin": 0.0,
+          "median_margin": 0.0
+        }
+      }
+    },
+    "cos_max": {
+      "calibration": {
+        "mean": 0.7513896822929382,
+        "std": 0.033236779272556305,
+        "num_values": 864,
+        "min": 0.6500512361526489,
+        "max": 0.8214203119277954
+      },
+      "metrics_by_category": {
+        "continuity_teleportation": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 13,
+            "possible_higher": 2,
+            "tied": 5
+          },
+          "strict_accuracy": 0.65,
+          "tie_half_accuracy": 0.775,
+          "responsive_accuracy": 0.8666666666666667,
+          "strict_wilson95": [
+            0.43285051021946463,
+            0.8188104521320554
+          ],
+          "sign_test_non_tied_p": 0.00738525390625,
+          "auroc": 0.70375,
+          "mean_margin": 0.48338878750801084,
+          "median_margin": 0.2729795575141907
+        },
+        "gravity_support": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 0,
+            "possible_higher": 20,
+            "tied": 0
+          },
+          "strict_accuracy": 0.0,
+          "tie_half_accuracy": 0.0,
+          "responsive_accuracy": 0.0,
+          "strict_wilson95": [
+            0.0,
+            0.16113012549493322
+          ],
+          "sign_test_non_tied_p": 1.9073486328125e-06,
+          "auroc": 0.1575,
+          "mean_margin": -1.2709409882314504,
+          "median_margin": -1.4832898676395416
+        },
+        "momentum_causality": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 6,
+            "possible_higher": 10,
+            "tied": 4
+          },
+          "strict_accuracy": 0.3,
+          "tie_half_accuracy": 0.4,
+          "responsive_accuracy": 0.375,
+          "strict_wilson95": [
+            0.14547527396899385,
+            0.5189767762289793
+          ],
+          "sign_test_non_tied_p": 0.454498291015625,
+          "auroc": 0.4825,
+          "mean_margin": -0.1016669861972332,
+          "median_margin": -0.015781328082084656
+        },
+        "object_permanence": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 10,
+            "possible_higher": 3,
+            "tied": 7
+          },
+          "strict_accuracy": 0.5,
+          "tie_half_accuracy": 0.675,
+          "responsive_accuracy": 0.7692307692307693,
+          "strict_wilson95": [
+            0.2992949144298199,
+            0.7007050855701801
+          ],
+          "sign_test_non_tied_p": 0.09228515625,
+          "auroc": 0.59125,
+          "mean_margin": 0.1508147269487381,
+          "median_margin": 0.01599922776222229
+        },
+        "solidity": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 9,
+            "possible_higher": 6,
+            "tied": 5
+          },
+          "strict_accuracy": 0.45,
+          "tie_half_accuracy": 0.575,
+          "responsive_accuracy": 0.6,
+          "strict_wilson95": [
+            0.25819502085709295,
+            0.6579179916924003
+          ],
+          "sign_test_non_tied_p": 0.60723876953125,
+          "auroc": 0.49625,
+          "mean_margin": -0.06698470264673233,
+          "median_margin": 0.0
+        },
+        "spontaneous_vanishing": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 11,
+            "possible_higher": 2,
+            "tied": 7
+          },
+          "strict_accuracy": 0.55,
+          "tie_half_accuracy": 0.725,
+          "responsive_accuracy": 0.8461538461538461,
+          "strict_wilson95": [
+            0.3420820083075997,
+            0.7418049791429071
+          ],
+          "sign_test_non_tied_p": 0.0224609375,
+          "auroc": 0.65375,
+          "mean_margin": 0.2305872306227684,
+          "median_margin": 0.0898316502571106
+        }
+      }
+    },
+    "cos_topk": {
+      "calibration": {
+        "mean": 0.6676984429359436,
+        "std": 0.025348789989948273,
+        "num_values": 864,
+        "min": 0.5865102410316467,
+        "max": 0.7231301069259644
+      },
+      "metrics_by_category": {
+        "continuity_teleportation": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 1,
+            "possible_higher": 2,
+            "tied": 17
+          },
+          "strict_accuracy": 0.05,
+          "tie_half_accuracy": 0.475,
+          "responsive_accuracy": 0.3333333333333333,
+          "strict_wilson95": [
+            0.008881219432873136,
+            0.23613589351256675
+          ],
+          "sign_test_non_tied_p": 1.0,
+          "auroc": 0.50375,
+          "mean_margin": 0.0039250381290912625,
+          "median_margin": 0.0
+        },
+        "gravity_support": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 0,
+            "possible_higher": 19,
+            "tied": 1
+          },
+          "strict_accuracy": 0.0,
+          "tie_half_accuracy": 0.025,
+          "responsive_accuracy": 0.0,
+          "strict_wilson95": [
+            0.0,
+            0.16113012549493322
+          ],
+          "sign_test_non_tied_p": 3.814697265625e-06,
+          "auroc": 0.19875,
+          "mean_margin": -1.0555816235020756,
+          "median_margin": -1.1932196915149689
+        },
+        "momentum_causality": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 3,
+            "possible_higher": 0,
+            "tied": 17
+          },
+          "strict_accuracy": 0.15,
+          "tie_half_accuracy": 0.575,
+          "responsive_accuracy": 1.0,
+          "strict_wilson95": [
+            0.05236779195949584,
+            0.36042329588695743
+          ],
+          "sign_test_non_tied_p": 0.25,
+          "auroc": 0.53125,
+          "mean_margin": 0.059130631200969216,
+          "median_margin": 0.0
+        },
+        "object_permanence": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 7,
+            "possible_higher": 1,
+            "tied": 12
+          },
+          "strict_accuracy": 0.35,
+          "tie_half_accuracy": 0.65,
+          "responsive_accuracy": 0.875,
+          "strict_wilson95": [
+            0.18118954786794464,
+            0.5671494897805354
+          ],
+          "sign_test_non_tied_p": 0.0703125,
+          "auroc": 0.6075,
+          "mean_margin": 0.14375210215803236,
+          "median_margin": 0.0
+        },
+        "solidity": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 2,
+            "possible_higher": 6,
+            "tied": 12
+          },
+          "strict_accuracy": 0.1,
+          "tie_half_accuracy": 0.4,
+          "responsive_accuracy": 0.25,
+          "strict_wilson95": [
+            0.027865893984153206,
+            0.30103820641179335
+          ],
+          "sign_test_non_tied_p": 0.2890625,
+          "auroc": 0.4775,
+          "mean_margin": -0.10161924436688423,
+          "median_margin": 0.0
+        },
+        "spontaneous_vanishing": {
+          "pairs": 20,
+          "counts": {
+            "impossible_higher": 2,
+            "possible_higher": 1,
+            "tied": 17
+          },
+          "strict_accuracy": 0.1,
+          "tie_half_accuracy": 0.525,
+          "responsive_accuracy": 0.6666666666666666,
+          "strict_wilson95": [
+            0.027865893984153206,
+            0.30103820641179335
+          ],
+          "sign_test_non_tied_p": 1.0,
+          "auroc": 0.52125,
+          "mean_margin": 0.03037736117839813,
+          "median_margin": 0.0
+        }
+      }
+    }
+  },
+  "skipped_variants": []
+}

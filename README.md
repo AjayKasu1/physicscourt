@@ -159,7 +159,7 @@ Repo-owned generated artifacts live under `results/`, `.cache/`, and generated d
 
 ## Current Scientific Status
 
-The benchmark has completed Detector A, Detector B, ablations, visual audit, statistical uncertainty, motion-energy audit, the V-JEPA 2 fairness sweep, and a clean Google Cloud L4/fp32 reproduction run. The current result is in [RESULTS.md](RESULTS.md). The L4 run used the same copied MP4 clips, reproduced the V-JEPA 2 0.3B tie/near-chance result, and showed that a ViT-g 1B V-JEPA 2 larger-model check does not rescue the latent predictor under the current scoring harness. SSRD beats the tested V-JEPA 2 scores on this synthetic suite, with the caveats documented in the results.
+The benchmark has completed Detector A, Detector B, ablations, visual audit, statistical uncertainty, motion-energy audit, the V-JEPA 2 fairness sweep, a clean Google Cloud L4/fp32 reproduction run, and a V-JEPA 2.1 follow-up. The current result is in [RESULTS.md](RESULTS.md). The L4 run used the same copied MP4 clips, reproduced the V-JEPA 2 0.3B tie/near-chance result, and showed that larger V-JEPA predictor-error variants, including V-JEPA 2 ViT-g/384 and V-JEPA 2.1 ViT-g/384, do not broadly rescue latent-surprise detection under the tested readouts. SSRD beats the tested V-JEPA scores on this synthetic suite, with the caveats documented in the results.
 
 ## Phase 0 Result On This Machine
 

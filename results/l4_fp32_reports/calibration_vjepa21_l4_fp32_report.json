@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-06-23T16:49:46.656113+00:00",
+  "calibration_split": "calibration",
+  "normal_only": true,
+  "onset_threshold_z": 0.5,
+  "onset_consecutive_frames": 5,
+  "onset_prior_below_frames": 5,
+  "detectors": {
+    "vjepa2_1": {
+      "mean": 72.27772521972656,
+      "std": 2.138622522354126,
+      "num_values": 864,
+      "min": 68.41481018066406,
+      "max": 76.004638671875,
+      "split": "calibration",
+      "normal_clip_count": 12,
+      "smoothing_kernel": 5
+    }
+  }
+}

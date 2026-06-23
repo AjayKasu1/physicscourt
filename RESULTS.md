@@ -121,6 +121,61 @@ latent predictor: pair signs were 16 impossible-higher, 22 possible-higher, and
 82 tied, with near-chance AUCs in every category. In this setup, scaling V-JEPA
 2 from 0.3B to 1B did not improve the benchmark result.
 
+## V-JEPA 2.1 Follow-Up
+
+After the main run, we added a bounded V-JEPA 2.1 follow-up on the same copied
+synthetic clips. This is not part of the original Detector A gate, but it
+checks whether the newer dense V-JEPA 2.1 recipe changes the conclusion.
+
+The matched-size control was `facebook/vjepa2-vitg-fpc64-384` and the follow-up
+model was V-JEPA 2.1 ViT-g/384 from the official Meta `facebookresearch/vjepa2`
+code path. Both ran on the same GCP L4 VM in fp32. The V-JEPA 2 ViT-g/384 pass
+completed 252/252 clips with 0 errors in 4h11m35s (`59.90 s/clip`). The V-JEPA
+2.1 ViT-g/384 pass completed 252/252 clips with 0 errors in 7h25m35s
+(`106.09 s/clip`).
+
+This comparison is suggestive, not clean. The two models are matched for size
+class and 384px input resolution, but they are not scored through an identical
+prediction object. V-JEPA 2 uses the Hugging Face `VJEPA2Model` predictor output.
+V-JEPA 2.1 uses the official `torch.hub` code path, where the predictor returns
+a tuple and the first output is compared against the hierarchical target encoder
+state. The shape probe verified that the V-JEPA 2.1 direct predictor error is
+shape-compatible for ViT-g/384, but the prediction object is structurally
+different from the Hugging Face V-JEPA 2 output. A cleaner future test would
+score both models through one identical encoder-feature readout that avoids both
+predictors.
+
+The AUC audit keeps the claim narrow. Under the native `l2_mean` predictor-error
+score, V-JEPA 2.1 stays near chance on all six categories. Across the six
+exploratory token reductions, V-JEPA 2.1 shows one directional hint on solidity
+(`l2_topk` AUC 0.620), which is the category where a denser localized feature
+recipe might plausibly help. That hint is not a win: it is one cell among many,
+uses a different readout from the native mean score, and is not strong enough to
+change the project conclusion. Several max/top-k reductions also become strongly
+wrong-signed, including V-JEPA 2.1 AUC 0.000 on continuity and spontaneous
+vanishing. Those inverted cells are better treated as confounded readout behavior
+than as physics understanding.
+
+Summary AUCs from the follow-up audit:
+
+| Category | V-JEPA 2 ViT-g/384 `l2_mean` | V-JEPA 2 ViT-g/384 best exploratory AUC | V-JEPA 2.1 ViT-g/384 `l2_mean` | V-JEPA 2.1 ViT-g/384 best exploratory AUC |
+| --- | ---: | ---: | ---: | ---: |
+| continuity_teleportation | 0.509 | 0.704 | 0.480 | 0.480 |
+| gravity_support | 0.497 | 0.500 | 0.470 | 0.470 |
+| momentum_causality | 0.562 | 0.605 | 0.480 | 0.605 |
+| object_permanence | 0.713 | 0.713 | 0.515 | 0.520 |
+| solidity | 0.450 | 0.499 | 0.515 | 0.620 |
+| spontaneous_vanishing | 0.613 | 0.654 | 0.530 | 0.530 |
+
+The "best exploratory" column is descriptive only. It is not used to pick a
+winner because it searches across six reductions per category.
+
+The defensible conclusion is scoped: under the predictor-error latent-surprise
+readouts tested here, V-JEPA 2.1 does not rescue PhysicsCourt. This does not show
+that V-JEPA 2.1's representation lacks physical information. It shows that this
+surprise readout does not reliably turn that representation into possible versus
+impossible discrimination on these clips.
+
 ## L4/Fp32 Head-To-Head
 
 Clean cloud comparison by per-category ROC-AUC:
@@ -401,14 +456,26 @@ reflect training-distribution biases, domain mismatch with flat synthetic
 clips, or harness choices rather than a pure verdict on latent prediction world
 models.
 
+The V-JEPA 2.1 follow-up adds another harness caveat. The comparison to V-JEPA 2
+ViT-g/384 is matched on model scale and input resolution, but not on an identical
+prediction object. The V-JEPA 2 run uses the Hugging Face predictor output, while
+the V-JEPA 2.1 run uses the official Meta predictor path and a hierarchical
+target state. Because both runs remain weak or modest under their native
+predictor-error readouts, this mismatch does not create a false positive win for
+V-JEPA 2.1. It does mean the result should not be read as a clean recipe-only
+comparison or as evidence that the V-JEPA 2.1 representation itself lacks
+physical information.
+
 ## What Would Change Our Minds
 
 The LeCun-style latent prediction view gains support if a better scoring
 scheme, predictor target, or latent model separates the same possible/impossible
 twins without category labels, handcrafted rules, or test-statistic leakage.
 The completed post-`t*` sweep and the 1B ViT-g larger-model check did not do that
-under the current harness, so the next convincing evidence would need to change
-the latent prediction measurement itself rather than just rerun the same score.
+under the current harness. The later V-JEPA 2.1 follow-up also did not rescue the
+predictor-error readout. The clean next test would score V-JEPA 2 and V-JEPA 2.1
+through one identical encoder-feature readout, then check whether the newer
+dense recipe moves the same possible/impossible pairs by AUC.
 
 The explicit object-state view gains support if SSRD keeps separating
 violations after the synthetic-only weakness is removed: first on an
@@ -446,6 +513,11 @@ Cloud reproduction reports checked into this repo:
 - `results/l4_fp32_reports/head_to_head_l4_fp32_report.json`
 - `results/l4_fp32_reports/statistical_audit_l4_fp32_report.json`
 - `results/l4_fp32_reports/detector_b_ablation_l4_fp32_report.json`
+- `results/l4_fp32_reports/detector_a_vjepa2_vitg384_l4_fp32_report.json`
+- `results/l4_fp32_reports/detector_a_vjepa21_l4_fp32_report.json`
+- `results/l4_fp32_reports/vjepa2_vitg384_reductions_l4_fp32_report.json`
+- `results/l4_fp32_reports/vjepa21_reductions_l4_fp32_report.json`
+- `results/l4_fp32_reports/vjepa21_shape_probe_l4_fp32.json`
 
 Regenerate the final analysis from cached features:
 
@@ -460,9 +532,11 @@ On these copied synthetic clips, in a clean L4/fp32 environment, SSRD
 beats V-JEPA 2 0.3B on pair-level correctness and on four
 of six AUC categories. V-JEPA 2 0.3B still shows a real object-permanence
 signal, but it remains tied or near chance elsewhere; V-JEPA 2 ViT-g 1B does
-not rescue the result. The claim is still bounded: this is a synthetic-only,
-project-built explicit-state detector versus frozen external latent predictors,
-with known SSRD failures on gravity/support and momentum/causality. Within that
-scope, the clean result is no longer just a laptop artifact: explicit
-spatial-state rules win this controlled PhysicsCourt run, while the tested
-V-JEPA 2 latent prediction scores mostly tie the twins.
+not rescue the result, and the V-JEPA 2.1 follow-up does not rescue the
+predictor-error readout either. The claim is still bounded: this is a
+synthetic-only, project-built explicit-state detector versus frozen external
+latent predictors, with known SSRD failures on gravity/support and
+momentum/causality, plus a structurally mismatched V-JEPA 2.1 readout caveat.
+Within that scope, the clean result is no longer just a laptop artifact:
+explicit spatial-state rules win this controlled PhysicsCourt run, while the
+tested V-JEPA latent prediction scores mostly tie, miss, or invert the twins.
