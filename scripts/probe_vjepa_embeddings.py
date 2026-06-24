@@ -29,6 +29,11 @@ def stable_fold(value: str, num_folds: int) -> int:
     return int(digest[:8], 16) % num_folds
 
 
+def scene_group_id(pair_id: str) -> str:
+    """Group plain and photo-style siblings so they cannot leak across folds."""
+    return pair_id.removesuffix("_photo")
+
+
 def load_rows(features_dir: Path, detector: str, feature_key: str) -> list[dict[str, Any]]:
     rows = []
     for path in sorted((features_dir / detector).glob("*.npz")):
@@ -41,6 +46,7 @@ def load_rows(features_dir: Path, detector: str, feature_key: str) -> list[dict[
                     "path": str(path),
                     "clip_id": str(metadata["clip_id"]),
                     "pair_id": str(metadata["pair_id"]),
+                    "scene_group_id": scene_group_id(str(metadata["pair_id"])),
                     "split": str(metadata["split"]),
                     "category": str(metadata["category"]),
                     "possible": bool(metadata["possible"]),
@@ -99,12 +105,29 @@ def paired_accuracy(rows: list[dict[str, Any]]) -> dict[str, Any]:
     }
 
 
+def margin_stats(rows: list[dict[str, Any]]) -> dict[str, float]:
+    by_pair: dict[str, dict[bool, float]] = defaultdict(dict)
+    for row in rows:
+        by_pair[str(row["pair_id"])][bool(row["possible"])] = float(row["score"])
+    margins = []
+    for values in by_pair.values():
+        if True in values and False in values:
+            margins.append(values[False] - values[True])
+    if not margins:
+        return {"mean_margin": float("nan"), "median_margin": float("nan")}
+    return {
+        "mean_margin": float(np.mean(margins)),
+        "median_margin": float(np.median(margins)),
+    }
+
+
 def summarize_predictions(predictions: list[dict[str, Any]]) -> dict[str, Any]:
     out: dict[str, Any] = {
         "overall": {
             "num_clips": int(len(predictions)),
             "auc": safe_auc([int(row["label"]) for row in predictions], [float(row["score"]) for row in predictions]),
             "paired": paired_accuracy(predictions),
+            "margins": margin_stats(predictions),
         },
         "by_category": {},
     }
@@ -115,6 +138,7 @@ def summarize_predictions(predictions: list[dict[str, Any]]) -> dict[str, Any]:
             "num_clips": int(len(subset)),
             "auc": safe_auc([int(row["label"]) for row in subset], [float(row["score"]) for row in subset]),
             "paired": paired_accuracy(subset),
+            "margins": margin_stats(subset),
         }
     return out
 
@@ -138,21 +162,26 @@ def predict_with_train_test(
     scores = model.predict_proba(x_test)[:, 1].astype(np.float32)
     out = []
     for row, score in zip(test_rows, scores):
-        item = {key: row[key] for key in ("clip_id", "pair_id", "category", "possible", "label")}
+        item = {
+            key: row[key]
+            for key in ("clip_id", "pair_id", "scene_group_id", "category", "possible", "label")
+        }
         item.update({"score": float(score), "protocol": protocol, "fold": fold})
         out.append(item)
     return out
 
 
-def pair_cv_predictions(rows: list[dict[str, Any]], num_folds: int, c_value: float, max_iter: int) -> list[dict[str, Any]]:
+def grouped_pair_cv_predictions(
+    rows: list[dict[str, Any]], num_folds: int, c_value: float, max_iter: int
+) -> list[dict[str, Any]]:
     predictions = []
     for fold in range(num_folds):
-        train_rows = [row for row in rows if stable_fold(row["pair_id"], num_folds) != fold]
-        test_rows = [row for row in rows if stable_fold(row["pair_id"], num_folds) == fold]
+        train_rows = [row for row in rows if stable_fold(row["scene_group_id"], num_folds) != fold]
+        test_rows = [row for row in rows if stable_fold(row["scene_group_id"], num_folds) == fold]
         if not test_rows:
             continue
         predictions.extend(
-            predict_with_train_test(rows, train_rows, test_rows, c_value, max_iter, "pair_cv", str(fold))
+            predict_with_train_test(rows, train_rows, test_rows, c_value, max_iter, "grouped_pair_cv", str(fold))
         )
     return predictions
 
@@ -184,21 +213,25 @@ def print_summary(report: dict[str, Any]) -> None:
         print("-" * 72)
         for category, values in payload["by_category"].items():
             paired = values["paired"]
+            margins = values["margins"]
             surprise = baseline.get(category, float("nan"))
             print(
                 category.ljust(30)
                 + f"{values['auc']:9.3f} "
                 + f"{surprise:12.3f} "
                 + f"{paired['pairs']:6d} "
-                + f"{paired['tie_half_accuracy']:8.3f}"
+                + f"{paired['tie_half_accuracy']:8.3f} "
+                + f"median_margin={margins['median_margin']:.3f}"
             )
         overall = payload["overall"]
+        overall_margins = overall["margins"]
         print(
             "overall".ljust(30)
             + f"{overall['auc']:9.3f} "
             + f"{float('nan'):12.3f} "
             + f"{overall['paired']['pairs']:6d} "
-            + f"{overall['paired']['tie_half_accuracy']:8.3f}"
+            + f"{overall['paired']['tie_half_accuracy']:8.3f} "
+            + f"median_margin={overall_margins['median_margin']:.3f}"
         )
 
 
@@ -219,7 +252,7 @@ def main() -> None:
         raise SystemExit("not enough test rows for a supervised probe")
 
     protocols = {
-        "pair_cv": summarize_predictions(pair_cv_predictions(rows, args.num_folds, args.c, args.max_iter)),
+        "grouped_pair_cv": summarize_predictions(grouped_pair_cv_predictions(rows, args.num_folds, args.c, args.max_iter)),
         "category_holdout": summarize_predictions(category_holdout_predictions(rows, args.c, args.max_iter)),
     }
     report = {
@@ -230,7 +263,8 @@ def main() -> None:
         "num_test_rows": int(len(rows)),
         "note": (
             "Supervised representation audit. This is not calibration-only scoring. "
-            "Pair-CV holds out matched pairs; category-holdout tests transfer to an unseen violation type."
+            "Grouped pair-CV holds out matched pairs plus plain/photo sibling scenes; "
+            "category-holdout tests transfer to an unseen violation type."
         ),
         "surprise_baseline_auc_by_category": load_surprise_baseline(args.surprise_report, args.detector),
         "protocols": protocols,
