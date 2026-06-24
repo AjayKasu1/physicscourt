@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Train simple linear probes on cached V-JEPA embeddings.
+"""Train simple probes on cached V-JEPA embeddings.
 
 This is a representation audit, not a calibration-only detector. It tests
-whether possible/impossible information is linearly readable from frozen
-embeddings after the surprise readout has failed to expose it.
+whether possible/impossible information is readable from frozen embeddings
+after the surprise readout has failed to expose it.
 """
 
 from __future__ import annotations
@@ -20,6 +20,7 @@ from typing import Any
 import numpy as np
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import roc_auc_score
+from sklearn.neural_network import MLPClassifier
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 
@@ -59,17 +60,36 @@ def load_rows(features_dir: Path, detector: str, feature_key: str) -> list[dict[
     return rows
 
 
-def make_model(c_value: float, max_iter: int) -> Any:
-    return make_pipeline(
-        StandardScaler(),
-        LogisticRegression(
+def make_model(
+    probe_model: str,
+    c_value: float,
+    max_iter: int,
+    hidden_dim: int,
+    alpha: float,
+) -> Any:
+    if probe_model == "linear":
+        classifier: Any = LogisticRegression(
             C=c_value,
             class_weight="balanced",
             max_iter=max_iter,
             solver="liblinear",
             random_state=1729,
-        ),
-    )
+        )
+    elif probe_model == "mlp":
+        classifier = MLPClassifier(
+            hidden_layer_sizes=(hidden_dim,),
+            activation="relu",
+            alpha=alpha,
+            batch_size="auto",
+            learning_rate_init=1e-3,
+            max_iter=max_iter,
+            early_stopping=False,
+            n_iter_no_change=25,
+            random_state=1729,
+        )
+    else:
+        raise ValueError(f"unknown probe model {probe_model}")
+    return make_pipeline(StandardScaler(), classifier)
 
 
 def safe_auc(labels: list[int], scores: list[float]) -> float:
@@ -147,8 +167,11 @@ def predict_with_train_test(
     rows: list[dict[str, Any]],
     train_rows: list[dict[str, Any]],
     test_rows: list[dict[str, Any]],
+    probe_model: str,
     c_value: float,
     max_iter: int,
+    hidden_dim: int,
+    alpha: float,
     protocol: str,
     fold: str,
 ) -> list[dict[str, Any]]:
@@ -157,7 +180,7 @@ def predict_with_train_test(
     x_train = np.stack([row["x"] for row in train_rows], axis=0)
     y_train = np.array([row["label"] for row in train_rows], dtype=np.int32)
     x_test = np.stack([row["x"] for row in test_rows], axis=0)
-    model = make_model(c_value, max_iter)
+    model = make_model(probe_model, c_value, max_iter, hidden_dim, alpha)
     model.fit(x_train, y_train)
     scores = model.predict_proba(x_test)[:, 1].astype(np.float32)
     out = []
@@ -172,7 +195,13 @@ def predict_with_train_test(
 
 
 def grouped_pair_cv_predictions(
-    rows: list[dict[str, Any]], num_folds: int, c_value: float, max_iter: int
+    rows: list[dict[str, Any]],
+    num_folds: int,
+    probe_model: str,
+    c_value: float,
+    max_iter: int,
+    hidden_dim: int,
+    alpha: float,
 ) -> list[dict[str, Any]]:
     predictions = []
     for fold in range(num_folds):
@@ -181,18 +210,47 @@ def grouped_pair_cv_predictions(
         if not test_rows:
             continue
         predictions.extend(
-            predict_with_train_test(rows, train_rows, test_rows, c_value, max_iter, "grouped_pair_cv", str(fold))
+            predict_with_train_test(
+                rows,
+                train_rows,
+                test_rows,
+                probe_model,
+                c_value,
+                max_iter,
+                hidden_dim,
+                alpha,
+                "grouped_pair_cv",
+                str(fold),
+            )
         )
     return predictions
 
 
-def category_holdout_predictions(rows: list[dict[str, Any]], c_value: float, max_iter: int) -> list[dict[str, Any]]:
+def category_holdout_predictions(
+    rows: list[dict[str, Any]],
+    probe_model: str,
+    c_value: float,
+    max_iter: int,
+    hidden_dim: int,
+    alpha: float,
+) -> list[dict[str, Any]]:
     predictions = []
     for category in sorted({row["category"] for row in rows}):
         train_rows = [row for row in rows if row["category"] != category]
         test_rows = [row for row in rows if row["category"] == category]
         predictions.extend(
-            predict_with_train_test(rows, train_rows, test_rows, c_value, max_iter, "category_holdout", category)
+            predict_with_train_test(
+                rows,
+                train_rows,
+                test_rows,
+                probe_model,
+                c_value,
+                max_iter,
+                hidden_dim,
+                alpha,
+                "category_holdout",
+                category,
+            )
         )
     return predictions
 
@@ -207,6 +265,7 @@ def load_surprise_baseline(path: Path | None, detector: str) -> dict[str, float]
 
 def print_summary(report: dict[str, Any]) -> None:
     baseline = report.get("surprise_baseline_auc_by_category", {})
+    print(f"probe_model: {report.get('probe_model')}")
     for protocol, payload in report["protocols"].items():
         print(f"\nprotocol: {protocol}")
         print("category".ljust(30) + "probe_auc  surprise_auc  pairs  tiehalf")
@@ -242,7 +301,10 @@ def main() -> None:
     parser.add_argument("--feature-key", default="embedding_vector")
     parser.add_argument("--surprise-report", type=Path, default=None)
     parser.add_argument("--num-folds", type=int, default=5)
+    parser.add_argument("--probe-model", choices=["linear", "mlp"], default="linear")
     parser.add_argument("--c", type=float, default=0.1)
+    parser.add_argument("--hidden-dim", type=int, default=64)
+    parser.add_argument("--alpha", type=float, default=1e-3)
     parser.add_argument("--max-iter", type=int, default=2000)
     parser.add_argument("--out", type=Path, default=Path("results/vjepa21_linear_probe_l4_fp32_report.json"))
     args = parser.parse_args()
@@ -252,14 +314,40 @@ def main() -> None:
         raise SystemExit("not enough test rows for a supervised probe")
 
     protocols = {
-        "grouped_pair_cv": summarize_predictions(grouped_pair_cv_predictions(rows, args.num_folds, args.c, args.max_iter)),
-        "category_holdout": summarize_predictions(category_holdout_predictions(rows, args.c, args.max_iter)),
+        "grouped_pair_cv": summarize_predictions(
+            grouped_pair_cv_predictions(
+                rows,
+                args.num_folds,
+                args.probe_model,
+                args.c,
+                args.max_iter,
+                args.hidden_dim,
+                args.alpha,
+            )
+        ),
+        "category_holdout": summarize_predictions(
+            category_holdout_predictions(
+                rows,
+                args.probe_model,
+                args.c,
+                args.max_iter,
+                args.hidden_dim,
+                args.alpha,
+            )
+        ),
     }
     report = {
         "created_at": datetime.now(timezone.utc).isoformat(),
         "detector": args.detector,
         "features_dir": str(args.features_dir),
         "feature_key": args.feature_key,
+        "probe_model": args.probe_model,
+        "probe_params": {
+            "c": float(args.c),
+            "hidden_dim": int(args.hidden_dim),
+            "alpha": float(args.alpha),
+            "max_iter": int(args.max_iter),
+        },
         "num_test_rows": int(len(rows)),
         "note": (
             "Supervised representation audit. This is not calibration-only scoring. "

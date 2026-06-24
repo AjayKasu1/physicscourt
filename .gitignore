@@ -19,6 +19,7 @@ results_l4_download/
 !results/vjepa21_reductions_l4_fp32_report.json
 !results/vjepa21_probe_embeddings_l4_fp32_timing.json
 !results/vjepa21_linear_probe_l4_fp32_report.json
+!results/vjepa21_mlp_probe_l4_fp32_report.json
 !results/vjepa2_vitg384_l4_fp32*_timing.json
 !results/detector_a_vjepa2_vitg384_l4_fp32_report.json
 !results/calibration_vjepa2_vitg384_l4_fp32_report.json

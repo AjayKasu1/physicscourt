@@ -1,7 +1,7 @@
 PYTHON ?= /Library/Frameworks/Python.framework/Versions/3.11/bin/python3
 export PYTHONPATH := $(CURDIR)/src
 
-.PHONY: phase0 smoke smoke-vjepa-offline smoke-cotracker-offline download-weights download-cotracker phase1-smoke generate-synthetic phase2-vjepa-first5 phase2-vjepa phase2-dino phase2-cache-detector-a phase2-evaluate vjepa2-reductions vjepa2-vitg384-first5-l4-fp32 vjepa2-vitg384-l4-fp32 vjepa2-vitg384-evaluate-l4-fp32 vjepa2-vitg384-reductions-l4-fp32 vjepa21-shape-probe-l4-fp32 vjepa21-first5-l4-fp32 vjepa21-l4-fp32 vjepa21-evaluate-l4-fp32 vjepa21-reductions-l4-fp32 vjepa21-probe-embeddings-l4-fp32 vjepa21-linear-probe-l4-fp32 vjepa2-fairness vjepa2-fairness-cached vjepa2-fairness-live vjepa2-fairness-live-mps start-vjepa2-fairness-live phase3-b-first5 phase3-b-evaluate compare-detectors detector-b-ablation statistical-audit motion-correlation visual-audit phase4-a phase4-b phase4-evaluate phase4-edited-real phase4-a-l4-fp32 phase4-b-l4-fp32 phase4-evaluate-l4-fp32 phase4-edited-real-l4-fp32 final-results clean-cache test
+.PHONY: phase0 smoke smoke-vjepa-offline smoke-cotracker-offline download-weights download-cotracker phase1-smoke generate-synthetic phase2-vjepa-first5 phase2-vjepa phase2-dino phase2-cache-detector-a phase2-evaluate vjepa2-reductions vjepa2-vitg384-first5-l4-fp32 vjepa2-vitg384-l4-fp32 vjepa2-vitg384-evaluate-l4-fp32 vjepa2-vitg384-reductions-l4-fp32 vjepa21-shape-probe-l4-fp32 vjepa21-first5-l4-fp32 vjepa21-l4-fp32 vjepa21-evaluate-l4-fp32 vjepa21-reductions-l4-fp32 vjepa21-probe-embeddings-l4-fp32 vjepa21-linear-probe-l4-fp32 vjepa21-mlp-probe-l4-fp32 vjepa2-fairness vjepa2-fairness-cached vjepa2-fairness-live vjepa2-fairness-live-mps start-vjepa2-fairness-live phase3-b-first5 phase3-b-evaluate compare-detectors detector-b-ablation statistical-audit motion-correlation visual-audit phase4-a phase4-b phase4-evaluate phase4-edited-real phase4-a-l4-fp32 phase4-b-l4-fp32 phase4-evaluate-l4-fp32 phase4-edited-real-l4-fp32 final-results clean-cache test
 
 phase0: smoke
 
@@ -76,6 +76,9 @@ vjepa21-probe-embeddings-l4-fp32:
 
 vjepa21-linear-probe-l4-fp32:
 	$(PYTHON) scripts/probe_vjepa_embeddings.py --features-dir results/features_vjepa21_probe_l4_fp32 --detector vjepa2_1 --surprise-report results/detector_a_vjepa21_l4_fp32_report.json --out results/vjepa21_linear_probe_l4_fp32_report.json
+
+vjepa21-mlp-probe-l4-fp32:
+	$(PYTHON) scripts/probe_vjepa_embeddings.py --features-dir results/features_vjepa21_probe_l4_fp32 --detector vjepa2_1 --probe-model mlp --hidden-dim 64 --alpha 0.001 --max-iter 1000 --surprise-report results/detector_a_vjepa21_l4_fp32_report.json --out results/vjepa21_mlp_probe_l4_fp32_report.json
 
 vjepa2-fairness:
 	HF_HUB_OFFLINE=1 $(PYTHON) scripts/vjepa2_fairness_sweep.py --device auto --fp16 --categories object_permanence --pairs-per-category 1 --strides 4 --max-live-windows-per-clip 1
