@@ -7,6 +7,32 @@ NVIDIA L4, CUDA, and fp32 throughout, using the exact same copied MP4 clips.
 All model inference was local, cache-only after prefetch, and run one model at
 a time.
 
+## Headline Result
+
+The main result is a two-level dissociation in V-JEPA 2.1.
+
+First, the native V-JEPA 2.1 prediction-surprise readout is near chance on
+PhysicsCourt. Second, the frozen encoder features contain strong
+physical-violation signal when a supervised readout is allowed.
+
+| V-JEPA 2.1 readout | Overall AUC | Meaning |
+| --- | ---: | --- |
+| Native prediction-surprise | about 0.50 | The built-in surprise score misses the violations. |
+| Linear probe, grouped pair split | 0.904 | Physical-violation signal is linearly accessible within known violation families. |
+| MLP probe, grouped pair split | 0.845 | A nonlinear probe also reads strong within-family signal, though not better than linear. |
+| Linear probe, category-holdout | 0.546 | Transfer to unseen violation types is weak. |
+| MLP probe, category-holdout | 0.522 | Extra nonlinear capacity does not recover category-general transfer. |
+
+The grouped pair split holds out possible/impossible twins together and also
+keeps plain/photo sibling scenes in the same fold. This makes the 0.904 AUC
+result a leakage-controlled within-distribution probe.
+
+The interpretation is narrow and important: V-JEPA 2.1 encodes
+physical-violation signal that its prediction-surprise readout discards, but
+the signal is category-specific rather than a transferable concept of physical
+possibility. The probes are supervised and the surprise readout is zero-shot,
+so this does not claim that V-JEPA 2.1 understands physics unprompted.
+
 ## Experimental Setup
 
 PhysicsCourt uses 252 synthetic 512x512 MP4 clips:
@@ -170,11 +196,61 @@ Summary AUCs from the follow-up audit:
 The "best exploratory" column is descriptive only. It is not used to pick a
 winner because it searches across six reductions per category.
 
-The defensible conclusion is scoped: under the predictor-error latent-surprise
-readouts tested here, V-JEPA 2.1 does not rescue PhysicsCourt. This does not show
-that V-JEPA 2.1's representation lacks physical information. It shows that this
-surprise readout does not reliably turn that representation into possible versus
-impossible discrimination on these clips.
+The defensible conclusion from the predictor-error runs is scoped: under the
+latent-surprise readouts tested here, V-JEPA 2.1 does not rescue PhysicsCourt.
+That does not mean the representation lacks physical information. The probe
+audit below shows the opposite.
+
+### V-JEPA 2.1 Probe Audit
+
+To separate representation quality from readout quality, we froze V-JEPA 2.1,
+cached one pooled encoder representation per clip, and trained tiny supervised
+probes to classify possible versus impossible. This is a representation audit,
+not a replacement for the calibration-only detector benchmark.
+
+The linear probe uses logistic regression. The nonlinear probe is a one-hidden
+layer MLP. Both use the same frozen embeddings and the same splits.
+
+| Protocol | Linear probe AUC | MLP probe AUC | What it tests |
+| --- | ---: | ---: | --- |
+| Grouped pair CV | 0.904 | 0.845 | Can a supervised readout recover signal when all violation families are represented in training? |
+| Category holdout | 0.546 | 0.522 | Does the readout transfer to a violation type it never saw? |
+
+Per-category grouped-pair AUCs:
+
+| Category | Linear probe | MLP probe | Native V-JEPA 2.1 surprise |
+| --- | ---: | ---: | ---: |
+| continuity_teleportation | 0.912 | 0.810 | 0.480 |
+| gravity_support | 0.953 | 0.945 | 0.470 |
+| momentum_causality | 0.775 | 0.613 | 0.480 |
+| object_permanence | 0.932 | 0.927 | 0.515 |
+| solidity | 0.840 | 0.807 | 0.515 |
+| spontaneous_vanishing | 0.978 | 0.990 | 0.530 |
+
+Per-category category-holdout AUCs:
+
+| Held-out category | Linear probe | MLP probe | Native V-JEPA 2.1 surprise |
+| --- | ---: | ---: | ---: |
+| continuity_teleportation | 0.438 | 0.381 | 0.480 |
+| gravity_support | 0.715 | 0.613 | 0.470 |
+| momentum_causality | 0.340 | 0.328 | 0.480 |
+| object_permanence | 0.885 | 0.840 | 0.515 |
+| solidity | 0.170 | 0.258 | 0.515 |
+| spontaneous_vanishing | 0.953 | 0.963 | 0.530 |
+
+The paired margins clarify the category-holdout failure. Most failing held-out
+categories have near-zero median margins, which means the probe is mostly
+guessing rather than confidently wrong. Solidity is the clearest active
+inversion in the linear probe. Object permanence and spontaneous vanishing are
+the useful exception: they transfer because both are absence events, where an
+object that should exist is missing. That suggests the representation does
+encode some shared physical structure, but not a general concept of physical
+possibility across all violation types.
+
+This closes the obvious probe question. The signal is not merely hidden behind
+a linear boundary: the MLP also fails to recover category-general transfer.
+Within known violation families, the readout is the bottleneck. Across unseen
+violation families, the representation or training objective is the bottleneck.
 
 ## L4/Fp32 Head-To-Head
 
@@ -463,8 +539,9 @@ the V-JEPA 2.1 run uses the official Meta predictor path and a hierarchical
 target state. Because both runs remain weak or modest under their native
 predictor-error readouts, this mismatch does not create a false positive win for
 V-JEPA 2.1. It does mean the result should not be read as a clean recipe-only
-comparison or as evidence that the V-JEPA 2.1 representation itself lacks
-physical information.
+comparison. The later probe audit shows that the V-JEPA 2.1 representation does
+contain physical-violation information, but that information is not exposed as a
+category-general zero-shot surprise signal.
 
 ## What Would Change Our Minds
 
@@ -473,9 +550,11 @@ scheme, predictor target, or latent model separates the same possible/impossible
 twins without category labels, handcrafted rules, or test-statistic leakage.
 The completed post-`t*` sweep and the 1B ViT-g larger-model check did not do that
 under the current harness. The later V-JEPA 2.1 follow-up also did not rescue the
-predictor-error readout. The clean next test would score V-JEPA 2 and V-JEPA 2.1
-through one identical encoder-feature readout, then check whether the newer
-dense recipe moves the same possible/impossible pairs by AUC.
+predictor-error readout. The probe audit changes the question: V-JEPA 2.1 does
+contain physical-violation signal, but the native surprise readout misses it and
+small supervised probes do not transfer across held-out violation types. The
+LeCun-style view gains much stronger support if a future objective or readout
+turns that frozen-feature signal into category-general zero-shot separation.
 
 The explicit object-state view gains support if SSRD keeps separating
 violations after the synthetic-only weakness is removed: first on an
@@ -518,6 +597,9 @@ Cloud reproduction reports checked into this repo:
 - `results/l4_fp32_reports/vjepa2_vitg384_reductions_l4_fp32_report.json`
 - `results/l4_fp32_reports/vjepa21_reductions_l4_fp32_report.json`
 - `results/l4_fp32_reports/vjepa21_shape_probe_l4_fp32.json`
+- `results/vjepa21_probe_embeddings_l4_fp32_timing.json`
+- `results/vjepa21_linear_probe_l4_fp32_report.json`
+- `results/vjepa21_mlp_probe_l4_fp32_report.json`
 
 Regenerate the final analysis from cached features:
 
@@ -528,15 +610,19 @@ make test
 
 ## Bottom Line
 
-On these copied synthetic clips, in a clean L4/fp32 environment, SSRD
-beats V-JEPA 2 0.3B on pair-level correctness and on four
-of six AUC categories. V-JEPA 2 0.3B still shows a real object-permanence
-signal, but it remains tied or near chance elsewhere; V-JEPA 2 ViT-g 1B does
-not rescue the result, and the V-JEPA 2.1 follow-up does not rescue the
-predictor-error readout either. The claim is still bounded: this is a
-synthetic-only, project-built explicit-state detector versus frozen external
-latent predictors, with known SSRD failures on gravity/support and
-momentum/causality, plus a structurally mismatched V-JEPA 2.1 readout caveat.
-Within that scope, the clean result is no longer just a laptop artifact:
-explicit spatial-state rules win this controlled PhysicsCourt run, while the
-tested V-JEPA latent prediction scores mostly tie, miss, or invert the twins.
+PhysicsCourt now has two linked findings.
+
+First, on these copied synthetic clips in a clean L4/fp32 environment, SSRD
+beats V-JEPA 2 0.3B on pair-level correctness and on four of six AUC
+categories. V-JEPA 2 0.3B still shows a real object-permanence signal, but it
+remains tied or near chance elsewhere. V-JEPA 2 ViT-g and V-JEPA 2.1 do not
+rescue the native predictor-error surprise readout.
+
+Second, V-JEPA 2.1's frozen encoder features do contain physical-violation
+signal. A linear probe reaches 0.904 AUC under leakage-controlled grouped pair
+CV, while the native surprise readout stays near chance. But the same signal is
+not category-general: linear and MLP probes both collapse near chance under
+category holdout. The clean result is therefore not simply "latent prediction
+has no physics." It is sharper: V-JEPA 2.1 has physical features, its surprise
+readout discards them, and the frozen representation does not expose a
+transferable concept of physical possibility in this benchmark.

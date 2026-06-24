@@ -1,0 +1,243 @@
+{
+  "created_at": "2026-06-24T13:11:24.451420+00:00",
+  "detector": "vjepa2_1",
+  "features_dir": "results/features_vjepa21_probe_l4_fp32",
+  "feature_key": "embedding_vector",
+  "probe_model": "mlp",
+  "probe_params": {
+    "c": 0.1,
+    "hidden_dim": 64,
+    "alpha": 0.001,
+    "max_iter": 1000
+  },
+  "num_test_rows": 240,
+  "note": "Supervised representation audit. This is not calibration-only scoring. Grouped pair-CV holds out matched pairs plus plain/photo sibling scenes; category-holdout tests transfer to an unseen violation type.",
+  "surprise_baseline_auc_by_category": {
+    "continuity_teleportation": 0.48,
+    "gravity_support": 0.47,
+    "momentum_causality": 0.48,
+    "object_permanence": 0.515,
+    "solidity": 0.5149999999999999,
+    "spontaneous_vanishing": 0.53
+  },
+  "protocols": {
+    "grouped_pair_cv": {
+      "overall": {
+        "num_clips": 240,
+        "auc": 0.8446527777777777,
+        "paired": {
+          "pairs": 120,
+          "impossible_higher": 115,
+          "possible_higher": 3,
+          "tied": 2,
+          "tie_half_accuracy": 0.9666666666666667
+        },
+        "margins": {
+          "mean_margin": 0.5181156933085002,
+          "median_margin": 0.6335198130364006
+        }
+      },
+      "by_category": {
+        "continuity_teleportation": {
+          "num_clips": 40,
+          "auc": 0.81,
+          "paired": {
+            "pairs": 20,
+            "impossible_higher": 20,
+            "possible_higher": 0,
+            "tied": 0,
+            "tie_half_accuracy": 1.0
+          },
+          "margins": {
+            "mean_margin": 0.394826983560429,
+            "median_margin": 0.21599937913250794
+          }
+        },
+        "gravity_support": {
+          "num_clips": 40,
+          "auc": 0.9450000000000001,
+          "paired": {
+            "pairs": 20,
+            "impossible_higher": 20,
+            "possible_higher": 0,
+            "tied": 0,
+            "tie_half_accuracy": 1.0
+          },
+          "margins": {
+            "mean_margin": 0.5986092507139723,
+            "median_margin": 0.9098882377147093
+          }
+        },
+        "momentum_causality": {
+          "num_clips": 40,
+          "auc": 0.6125,
+          "paired": {
+            "pairs": 20,
+            "impossible_higher": 17,
+            "possible_higher": 3,
+            "tied": 0,
+            "tie_half_accuracy": 0.85
+          },
+          "margins": {
+            "mean_margin": 0.1760128354241937,
+            "median_margin": 0.0012953757723153103
+          }
+        },
+        "object_permanence": {
+          "num_clips": 40,
+          "auc": 0.9275,
+          "paired": {
+            "pairs": 20,
+            "impossible_higher": 19,
+            "possible_higher": 0,
+            "tied": 1,
+            "tie_half_accuracy": 0.975
+          },
+          "margins": {
+            "mean_margin": 0.7412665628726767,
+            "median_margin": 0.9996858367376262
+          }
+        },
+        "solidity": {
+          "num_clips": 40,
+          "auc": 0.8075,
+          "paired": {
+            "pairs": 20,
+            "impossible_higher": 19,
+            "possible_higher": 0,
+            "tied": 1,
+            "tie_half_accuracy": 0.975
+          },
+          "margins": {
+            "mean_margin": 0.4372301053162205,
+            "median_margin": 0.1330749981953156
+          }
+        },
+        "spontaneous_vanishing": {
+          "num_clips": 40,
+          "auc": 0.99,
+          "paired": {
+            "pairs": 20,
+            "impossible_higher": 20,
+            "possible_higher": 0,
+            "tied": 0,
+            "tie_half_accuracy": 1.0
+          },
+          "margins": {
+            "mean_margin": 0.7607484219635087,
+            "median_margin": 0.9952989098383114
+          }
+        }
+      }
+    },
+    "category_holdout": {
+      "overall": {
+        "num_clips": 240,
+        "auc": 0.5220833333333333,
+        "paired": {
+          "pairs": 120,
+          "impossible_higher": 58,
+          "possible_higher": 50,
+          "tied": 12,
+          "tie_half_accuracy": 0.5333333333333333
+        },
+        "margins": {
+          "mean_margin": 0.06656843441735041,
+          "median_margin": 3.887552502329678e-14
+        }
+      },
+      "by_category": {
+        "continuity_teleportation": {
+          "num_clips": 40,
+          "auc": 0.38125,
+          "paired": {
+            "pairs": 20,
+            "impossible_higher": 6,
+            "possible_higher": 13,
+            "tied": 1,
+            "tie_half_accuracy": 0.325
+          },
+          "margins": {
+            "mean_margin": -0.06029716640325937,
+            "median_margin": -0.001162540723271377
+          }
+        },
+        "gravity_support": {
+          "num_clips": 40,
+          "auc": 0.6125,
+          "paired": {
+            "pairs": 20,
+            "impossible_higher": 10,
+            "possible_higher": 5,
+            "tied": 5,
+            "tie_half_accuracy": 0.625
+          },
+          "margins": {
+            "mean_margin": -0.016820684917362713,
+            "median_margin": 8.847506801682481e-13
+          }
+        },
+        "momentum_causality": {
+          "num_clips": 40,
+          "auc": 0.3275,
+          "paired": {
+            "pairs": 20,
+            "impossible_higher": 1,
+            "possible_higher": 15,
+            "tied": 4,
+            "tie_half_accuracy": 0.15
+          },
+          "margins": {
+            "mean_margin": -0.06951918533568438,
+            "median_margin": -4.271331045421246e-06
+          }
+        },
+        "object_permanence": {
+          "num_clips": 40,
+          "auc": 0.8400000000000001,
+          "paired": {
+            "pairs": 20,
+            "impossible_higher": 19,
+            "possible_higher": 0,
+            "tied": 1,
+            "tie_half_accuracy": 0.975
+          },
+          "margins": {
+            "mean_margin": 0.2687108323954817,
+            "median_margin": 0.0285588800907135
+          }
+        },
+        "solidity": {
+          "num_clips": 40,
+          "auc": 0.2575,
+          "paired": {
+            "pairs": 20,
+            "impossible_higher": 2,
+            "possible_higher": 17,
+            "tied": 1,
+            "tie_half_accuracy": 0.125
+          },
+          "margins": {
+            "mean_margin": -0.349713824010507,
+            "median_margin": -0.03756904994472776
+          }
+        },
+        "spontaneous_vanishing": {
+          "num_clips": 40,
+          "auc": 0.9625,
+          "paired": {
+            "pairs": 20,
+            "impossible_higher": 20,
+            "possible_higher": 0,
+            "tied": 0,
+            "tie_half_accuracy": 1.0
+          },
+          "margins": {
+            "mean_margin": 0.6270506347754343,
+            "median_margin": 0.8106248155236244
+          }
+        }
+      }
+    }
+  }
+}

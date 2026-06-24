@@ -1,9 +1,35 @@
 # PhysicsCourt
 
-PhysicsCourt is a reproducible, inference-only benchmark for testing two ways of detecting physically impossible events in video:
+PhysicsCourt is a reproducible benchmark for asking a simple question:
+
+Can a video world model tell when physics breaks?
+
+The benchmark uses matched possible/impossible video pairs. Each pair is
+identical until a known violation frame, then one clip becomes physically
+impossible. The detector's job is to score the impossible clip as more
+surprising.
+
+The strongest result is now a readout-vs-representation finding on V-JEPA 2.1:
+
+| Readout on V-JEPA 2.1 | Overall result |
+| --- | ---: |
+| Native prediction-surprise | near chance, about 0.50 AUC |
+| Linear probe on frozen features, grouped pair split | 0.904 AUC |
+| MLP probe on frozen features, grouped pair split | 0.845 AUC |
+| Linear category-holdout | 0.546 AUC |
+| MLP category-holdout | 0.522 AUC |
+
+Interpretation: V-JEPA 2.1's frozen features contain strong physical-violation
+signal, but the native surprise readout misses it. The signal is mostly
+category-specific. When the probe is held out from a violation type, neither a
+linear probe nor a small MLP transfers well. So the model has physical features,
+but not a transferable concept of physical possibility under this test.
+
+The repository also includes the original detector comparison:
 
 - **V-JEPA 2 latent prediction detector:** surprise in pretrained video representation space.
-- **SSRD:** explicit object state from segmentation, depth, and point tracks, checked against physical constraints.
+- **DINOv2 baseline:** cheap visual latent extrapolation.
+- **Spatial-State Rule Detector (SSRD):** explicit object state from segmentation, depth, and point tracks, checked against physical constraints.
 
 ## Scientific Framing
 
@@ -13,8 +39,6 @@ The two hypotheses are deliberately steelmanned:
 
 - **H_LeCun:** latent prediction error from a pretrained video world model is a robust, rule-free detector of physical violations.
 - **H_Li:** explicit reconstructed state plus symbolic physics checks is more interpretable and less likely to confuse statistical novelty with physical impossibility.
-
-This repository is being built phase by phase. Phase 0 records the hardware and model viability before any benchmark code depends on a model.
 
 The completed run and final interpretation are summarized in [RESULTS.md](RESULTS.md).
 
@@ -93,6 +117,14 @@ make motion-correlation
 make visual-audit
 ```
 
+For the final V-JEPA 2.1 readout-vs-representation probe on the GCP L4 cache:
+
+```bash
+make vjepa21-probe-embeddings-l4-fp32
+make vjepa21-linear-probe-l4-fp32
+make vjepa21-mlp-probe-l4-fp32
+```
+
 For a reproducible cloud rerun on Google Cloud L4, use the fp32-only runbook in
 [docs/gcp_l4_reproduce.md](docs/gcp_l4_reproduce.md). That path copies the
 existing Mac-generated MP4s instead of regenerating clips, rewrites only
@@ -159,7 +191,30 @@ Repo-owned generated artifacts live under `results/`, `.cache/`, and generated d
 
 ## Current Scientific Status
 
-The benchmark has completed Detector A, Detector B, ablations, visual audit, statistical uncertainty, motion-energy audit, the V-JEPA 2 fairness sweep, a clean Google Cloud L4/fp32 reproduction run, and a V-JEPA 2.1 follow-up. The current result is in [RESULTS.md](RESULTS.md). The L4 run used the same copied MP4 clips, reproduced the V-JEPA 2 0.3B tie/near-chance result, and showed that larger V-JEPA predictor-error variants, including V-JEPA 2 ViT-g/384 and V-JEPA 2.1 ViT-g/384, do not broadly rescue latent-surprise detection under the tested readouts. SSRD beats the tested V-JEPA scores on this synthetic suite, with the caveats documented in the results.
+The benchmark has completed Detector A, Detector B, ablations, visual audit,
+statistical uncertainty, motion-energy audit, the V-JEPA 2 fairness sweep, a
+clean Google Cloud L4/fp32 reproduction run, a V-JEPA 2.1 follow-up, and a
+supervised probe audit on frozen V-JEPA 2.1 features.
+
+The most important result is no longer only "V-JEPA versus SSRD." It is the
+readout-vs-representation split:
+
+1. Native V-JEPA 2.1 prediction-surprise stays near chance on these physical
+   violations.
+2. Supervised probes on frozen V-JEPA 2.1 encoder features recover strong
+   within-category signal.
+3. The same probes fail category-holdout transfer, even with an MLP.
+
+This means physical-violation signal is present in the representation, but the
+native surprise readout misses it, and the representation does not expose a
+category-general concept of physical possibility in this setup.
+
+The L4 run used the same copied MP4 clips, reproduced the V-JEPA 2 0.3B
+tie/near-chance result, and showed that larger V-JEPA predictor-error variants,
+including V-JEPA 2 ViT-g/384 and V-JEPA 2.1 ViT-g/384, do not broadly rescue
+latent-surprise detection under the tested readouts. SSRD beats the tested
+V-JEPA surprise scores on this synthetic suite, with the caveats documented in
+the results.
 
 ## Phase 0 Result On This Machine
 
